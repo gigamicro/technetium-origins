@@ -5,24 +5,12 @@
 		"modifier":{
 			"attribute":"minecraft:generic.movement_speed",
 			"operation":"multiply_total",
-			"value":-1
+			"value":-0.875
 		},
 		"condition":{
-			"type":"origins:or",
-			"conditions":[
-				{
-					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/fire_bar",
-					"comparison":"==",
-					"compare_to":0
-				},
-				{
-					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/water_bar",
-					"comparison":"==",
-					"compare_to":0
-				}
-			]
+			"type": "origins:food_level",
+			"comparison": "<=",
+			"compare_to": 4
 		}
 	},
 	"no_jump":{
@@ -32,21 +20,9 @@
 			"value":-2
 		},
 		"condition":{
-			"type":"origins:or",
-			"conditions":[
-				{
-					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/fire_bar",
-					"comparison":"==",
-					"compare_to":0
-				},
-				{
-					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/water_bar",
-					"comparison":"==",
-					"compare_to":0
-				}
-			]
+			"type": "origins:food_level",
+			"comparison": "<=",
+			"compare_to": 4
 		}
 	},
 	"blindness":{
@@ -57,21 +33,9 @@
 			"command":"effect give @s minecraft:blindness 2 1 true"
 		},
 		"condition":{
-			"type":"origins:or",
-			"conditions":[
-				{
-					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/fire_bar",
-					"comparison":"==",
-					"compare_to":0
-				},
-				{
-					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/water_bar",
-					"comparison":"==",
-					"compare_to":0
-				}
-			]
+			"type": "origins:food_level",
+			"comparison": "<=",
+			"compare_to": 4
 		}
 	}
 }
