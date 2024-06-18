@@ -11,6 +11,15 @@
 		"bar_index":1
 	}
 },
+"respawn":{
+	"type": "origins:action_on_callback",
+	"entity_action_respawned":{
+		"type": "origins:change_resource",
+		"resource": "origins-plus-plus:automaton/waterbar",
+		"operation":"set",
+		"change": 5000
+	}
+},
 "small":{
 	"type": "origins:action_on_item_use",
 	"entity_action": {

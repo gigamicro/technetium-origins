@@ -15,9 +15,7 @@
 		"origins-plus-plus:automaton/hot",
 		"origins-plus-plus:automaton/humidity",
 		"origins-plus-plus:automaton/drown",
-		"origins-plus-plus:automaton/dense",
-
-		"origins-plus-plus:automaton/respawn"
+		"origins-plus-plus:automaton/dense"
 	],
 	"icon":"minecraft:weathered_copper",
 	"impact":3
