@@ -9,11 +9,21 @@
 		"operation":"add",
 		"change": -1
 	},
-	"condition":{
-		"type":"origins:biome",
-		"condition":{
-			"type":"origins:precipitation",
-			"precipitation":"snow"
+	"condition":{"type":"origins:or","conditions":[
+		{
+			"type":"origins:biome",
+			"condition":{
+				"type":"origins:temperature",
+				"comparison": "<",
+				"compare_to": 0.5
+			}
+		},
+		{
+			"type":"origins:in_block",
+			"block_condition": {
+				"type": "origins:block",
+				"block":"minecraft:powder_snow"
+			}
 		}
-	}
+	]}
 }
