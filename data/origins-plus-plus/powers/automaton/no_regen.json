@@ -1,5 +1,5 @@
 {
 	"name":"No Regen",
-	"description":"You do not regenerate naturally",
+	"description":"You do not regenerate naturally.",
 	"type":"origins:disable_regen"
 }

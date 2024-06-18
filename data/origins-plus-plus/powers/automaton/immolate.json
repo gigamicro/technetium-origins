@@ -1,4 +1,5 @@
 {
+	"name":"Immolate",
 	"description":"Expend Fire to set yourself on fire.",
 	"type":"origins:active_self",
 	"entity_action":{

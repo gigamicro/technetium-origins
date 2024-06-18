@@ -1,12 +1,19 @@
 {
 	"name":"Burn Utility",
 	"description":"Fire damage boils water and patches your Vessel (if it's not pressurized).",
-	"type":"origins:action_when_damage_taken",
-	"entity_action": {
+	"type":"origins:modify_damage_taken",
+	"damage_condition":{"type":"origins:or","conditions":[
+		{"type":"origins:name","name": "inFire" },
+		{"type":"origins:name","name": "onFire" },
+		{"type":"origins:name","name": "lava"   },
+		{"type":"origins:name","name": "hotFloor"},
+		{"type":"origins:name","name": "fireball" },
+		{"type":"origins:name","name": "campfire" }
+	]},
+	"self_action":{
 		"type": "origins:and",
 		"actions":[
 			{
-				"name":"heal",
 				"type":"origins:heal",
 				"amount":1,
 				"condition":{
@@ -24,13 +31,12 @@
 				"type":"origins:change_resource",
 				"resource": "origins-plus-plus:automaton/water_bar",
 				"operation": "add",
-				"change": -50
+				"change": -200
 			}
 		]
 	},
-	"damage_condition": {
-		"type": "origins:in_tag",
-		"damage_type": "minecraft:is_fire"
-	},
-	"cooldown": 1
+	"modifier":{
+		"value":-1,
+		"operation":"multiply_total"
+	}
 }

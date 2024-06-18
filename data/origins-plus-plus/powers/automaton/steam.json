@@ -8,7 +8,7 @@
 	},
 	"generate":{
 		"type":"origins:action_over_time",
-		"interval":40,
+		"interval":400,
 		"entity_action":{ "type":"origins:and", "actions": [
 			{
 				"type": "origins:feed",
