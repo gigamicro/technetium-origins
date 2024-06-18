@@ -1,55 +1,83 @@
 {
-	"type":"origins:multiple",
-	"hidden":true,
-	"water_bottle":{
-		"type":"origins:action_on_item_use",
-		"entity_action":{
-			"type":"origins:execute_command",
-			"command":"function origins-plus-plus:automaton/waterbar_increase_bottle"
-		},
-		"item_condition":{
-			"type":"origins:nbt",
-			"nbt":"{Potion:\"minecraft:water\"}"
-		}
-	},
-	"water_bucket":{
-		"type":"origins:active_self",
-		"entity_action":{
-			"type":"origins:and",
-			"actions":[
-				{
-					"type":"origins:execute_command",
-					"command":"function origins-plus-plus:automaton/waterbar_increase_bucket"
-				},
-				{
-					"type":"origins:equipped_item_action",
-					"equipment_slot":"mainhand",
-					"action":{
-						"type":"origins:consume",
-						"amount":1
-					}
-				}
-			]
-		},
-		"condition":{
-			"type":"origins:and",
-			"conditions":[
-				{
-					"type":"origins:equipped_item",
-					"equipment_slot":"mainhand",
-					"item_condition":{
-						"type":"origins:ingredient",
-						"ingredient":{
-							"item":"minecraft:water_bucket"
-						}
-					}
-				},
-				{
-					"type":"origins:sneaking"
-				}
-			]
-		},
-		"cooldown":500,
-		"key":"key.use"
-	}
+    "hidden": true,
+    "type": "origins:multiple",
+    "water_bottle": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "upgraded_automaton:waterbar",
+                    "change": 1250,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:item.bucket.empty voice @a ~ ~ ~ 2 0.75"
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:nbt",
+            "nbt": "{Potion:\"minecraft:water\"}"
+        },
+        "trigger": "finish",
+        "priority": 0
+    },
+    "water_bucket": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:water_bucket"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:change_resource",
+                            "resource": "upgraded_automaton:waterbar",
+                            "change": 7500,
+                            "operation": "add"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "playsound minecraft:item.bucket.empty voice @a ~ ~ ~ 2 0.5"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "give @s minecraft:bucket 1"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                }
+            ]
+        },
+        "cooldown": 500,
+        "key": "key.use"
+    }
 }

@@ -1,4 +1,8 @@
 {
+"name":"Fuel Supply",
+"description":"You can consume any fuel to replenish your Fire.",
+"type":"origins/multiple",
+"bar":{
 	"type":"origins:resource",
 	"min":0,
 	"max":10000,
@@ -6,4 +10,117 @@
 	"hud_render":{
 		"bar_index":7
 	}
+},
+"small":{
+	"type":"origins:active_self",
+	"entity_action":{
+		"type":"origins:and",
+		"actions":[
+			{
+				"type":"origins:execute_command",
+				"command":"function origins-plus-plus:automaton/firebar_increase_coal"
+			},
+			{
+				"type":"origins:equipped_item_action",
+				"equipment_slot":"mainhand",
+				"action":{
+					"type":"origins:consume",
+					"amount":1
+				}
+			}
+		]
+	},
+	"condition":{
+		"type":"origins:equipped_item",
+		"equipment_slot":"mainhand",
+		"item_condition":{
+			"type":"origins:ingredient",
+			"ingredient":{
+				"tag":"origins-plus-plus-modded-support:fuel_small"
+			}
+		}
+	},
+	"cooldown":5,
+	"key":"key.use"
+},
+"medium":{
+	"type":"origins:active_self",
+	"entity_action":{
+		"type":"origins:and",
+		"actions":[
+			{
+				"type":"origins:execute_command",
+				"command":"function origins-plus-plus:automaton/firebar_increase_coal_block"
+			},
+			{
+				"type":"origins:equipped_item_action",
+				"equipment_slot":"mainhand",
+				"action":{
+					"type":"origins:consume",
+					"amount":1
+				}
+			}
+		]
+	},
+	"condition":{
+		"type":"origins:and",
+		"conditions":[
+			{
+				"type":"origins:equipped_item",
+				"equipment_slot":"mainhand",
+				"item_condition":{
+					"type":"origins:ingredient",
+					"ingredient":{
+						"tag":"origins-plus-plus-modded-support:fuel_medium"
+					}
+				}
+			},
+			{
+				"type":"origins:sneaking"
+			}
+		]
+	},
+	"cooldown":5,
+	"key":"key.use"
+},
+"large":{
+	"type":"origins:active_self",
+	"entity_action":{
+		"type":"origins:and",
+		"actions":[
+			{
+				"type":"origins:execute_command",
+				"command":"function origins-plus-plus:automaton/firebar_increase_lava"
+			},
+			{
+				"type":"origins:equipped_item_action",
+				"equipment_slot":"mainhand",
+				"action":{
+					"type":"origins:consume",
+					"amount":1
+				}
+			}
+		]
+	},
+	"condition":{
+		"type":"origins:and",
+		"conditions":[
+			{
+				"type":"origins:equipped_item",
+				"equipment_slot":"mainhand",
+				"item_condition":{
+					"type":"origins:ingredient",
+					"ingredient":{
+						"tag":"origins-plus-plus-modded-support:fuel_large"
+					}
+				}
+			},
+			{
+				"type":"origins:sneaking"
+			}
+		]
+	},
+	"cooldown":500,
+	"key":"key.use"
+},
 }

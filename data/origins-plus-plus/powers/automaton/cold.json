@@ -1,4 +1,5 @@
 {
+	"description":"You lose Fire faster in the snow.",
 	"type":"origins:action_over_time",
 	"interval":5,
 	"entity_action":{
@@ -6,11 +7,11 @@
 		"command":"resource change @s origins-plus-plus:automaton/firebar -1"
 	},
 	"condition":{
+		// or in powdersnow
 		"type":"origins:biome",
 		"condition":{
 			"type":"origins:precipitation",
 			"precipitation":"snow"
 		}
 	},
-	"hidden":true
 }

@@ -1,38 +1,33 @@
 {
-	"type":"origins:self_action_on_hit",
+	"name":"Scald",
+	"description":"When you hit someone, they're knocked back and scalded.",
+	"type":"origins:target_action_on_hit",
 	"entity_action":{
-		"type":"origins:if_else",
-		"condition":{
-			"type":"origins:power_active",
-			"power":"origins-plus-plus:automaton/toggle"
-		},
-		"if_action":{
-			"type":"origins:if_else",
-			"condition":{
-				"type":"origins:resource",
-				"resource":"origins-plus-plus:automaton/waterbar",
-				"comparison":">",
-				"compare_to":1499
+		"type":"origins:and",
+		"actions":[
+			{
+				"type":"origins:add_velocity",
+				"y":0.4
 			},
-			"if_action":{
-				"type":"origins:execute_command",
-				"command":"function origins-plus-plus:automaton/decrease_waterbar"
-			}
-		},
-		"else_action":{
-			"type":"origins:if_else",
-			"condition":{
-				"type":"origins:resource",
-				"resource":"origins-plus-plus:automaton/firebar",
-				"comparison":">",
-				"compare_to":1499
+			{
+				"type": "origins:execute_command",
+				"command": "particle minecraft:smoke ~ ~.5 ~ 0.5 1 0.5 9 25 force" // PH
 			},
-			"if_action":{
-				"type":"origins:execute_command",
-				"command":"function origins-plus-plus:automaton/decrease_firebar"
+			{
+				"type": "origins:damage",
+				"amount": 4,
+				"source": {
+					"name": "hurt_by_water",
+					"unblockable": false,
+					"bypasses_armor": false
+				}
 			}
-		}
+			//add more
+		]
 	},
-	"cooldown":40,
-	"hidden":true
+	"condition":{
+		"type": "origins:food_level",
+		"comparison": ">",
+		"compare_to": 15
+	}
 }

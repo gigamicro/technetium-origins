@@ -1,4 +1,6 @@
 {
+	"name":"Unnatural",
+	"description":"You cannot eat organic food.",
 	"type":"origins:prevent_item_use",
 	"item_condition":{
 		"type":"origins:and",
