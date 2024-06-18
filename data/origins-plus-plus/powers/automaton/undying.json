@@ -1,4 +1,6 @@
 {
+	"name":"Undying",
+	"description":"You cannot die normally",
 	"type":"origins:multiple",
 	"timer":{
 		"type":"origins:resource",

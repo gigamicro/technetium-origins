@@ -1,4 +1,5 @@
 {
+	"name":"Weak to Cold",
 	"description":"You lose Fire faster in the snow.",
 	"type":"origins:action_over_time",
 	"interval":5,

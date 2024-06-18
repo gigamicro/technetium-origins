@@ -12,8 +12,8 @@
 		"origins-plus-plus:automaton/burn",
 		"origins-plus-plus:automaton/health",
 		"origins-plus-plus:automaton/cold",
+		"origins-plus-plus:automaton/hot",
 		"origins-plus-plus:automaton/humidity",
-		"origins-plus-plus:automaton/nether",
 		"origins-plus-plus:automaton/drown",
 		"origins-plus-plus:automaton/dense",
 

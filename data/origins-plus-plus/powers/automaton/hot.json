@@ -1,0 +1,32 @@
+{
+"type":"origins:multiple",
+"biome":{
+	"type":"origins:action_over_time",
+	"interval":5,
+	"entity_action":{
+		"type":"origins:execute_command",
+		"command":"resource change @s origins-plus-plus:automaton/waterbar -1"
+	},
+	"condition":{
+		"type":"origins:biome",
+		"condition":{
+			"type":"origins:precipitation",
+			"precipitation":"none"
+		}
+	},
+	"hidden":true
+},
+"nether":{
+	"type":"origins:action_over_time",
+	"interval":5,
+	"entity_action":{
+		"type":"origins:execute_command",
+		"command":"function origins-plus-plus:automaton/hot"
+	},
+	"condition":{
+		"type":"origins:dimension",
+		"dimension":"minecraft:the_nether"
+	},
+	"hidden":true
+}
+}

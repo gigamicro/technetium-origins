@@ -1,4 +1,5 @@
 {
-	"description":"Fire damage converts water to steam, heals while at low steam",
+	"name":"Burn Utility",
+	"description":"Fire damage boils water and patches over your Vessel (if it's not pressurized).",
 	"type":"origins:simple"
 }
