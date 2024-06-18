@@ -1,4 +1,5 @@
 {
+	"name":"Steam-Powered",
 	"description":"You are powered by Steam, generated from water by Fire.",
 	"type":"origins:multiple",
 	"bar":{
@@ -11,26 +12,26 @@
 		"entity_action":{ "type":"origins:and", "actions": [
 			{
 				"type": "origins:feed",
-				"food": 2,
+				"food": 1,
 				"saturation": 0
 			},
 			{
 				"type":"origins:change_resource",
 				"resource": "origins-plus-plus:automaton/fire_bar",
 				"operation": "add",
-				"change": -100
+				"change": -50
 			},
 			{
 				"type":"origins:change_resource",
 				"resource": "origins-plus-plus:automaton/water_bar",
 				"operation": "add",
-				"change": -100
+				"change": -50
 			}
 		]},
 		"condition":{
 			"type": "origins:food_level",
-			"comparison": "<=",
-			"compare_to": 18
+			"comparison": "<",
+			"compare_to": 20
 		}
 	}
 }
