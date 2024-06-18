@@ -8,7 +8,7 @@
 	"generate":{
 		"type":"origins:action_over_time",
 		"interval":40,
-		"action":{ "type":"origins:and", "actions": [
+		"entity_action":{ "type":"origins:and", "actions": [
 			{
 				"type": "origins:feed",
 				"food": 2,

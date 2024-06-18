@@ -52,14 +52,9 @@
 	"blindness":{
 		"type":"origins:action_over_time",
 		"interval":1,
-		"entity_action": {
-			"type": "origins:apply_effect",
-			"effect": {
-				"effect": "minecraft:blindness",
-				"show_particles": false,
-				"duration": 2,
-				"amplifier": 1
-			},
+		"entity_action":{
+			"type":"origins:execute_command",
+			"command":"effect give @s minecraft:blindness 2 1 true"
 		},
 		"condition":{
 			"type":"origins:or",

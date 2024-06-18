@@ -1,6 +1,6 @@
 {
-	"name":"Steam Vessel",
-	"description":"Your Health represents the state of your Steam Vessel, which leaks when damaged.",
+	"name":"(!)Steam Vessel",
+	"description":"(! unimplemented)Your Health represents the state of your Steam Vessel, which leaks when damaged.",
 	"type":"origins:status_bar_texture",
 	"texture":"origins-plus-plus:textures/gui/hide_hearts.png"
 }
