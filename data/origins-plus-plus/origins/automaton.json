@@ -14,7 +14,7 @@
 		"origins-plus-plus:automaton/cold",
 		"origins-plus-plus:automaton/humidity",
 		"origins-plus-plus:automaton/nether",
-		"origins-plus-plus:automaton/drown", // also get water
+		"origins-plus-plus:automaton/drown",
 		"origins-plus-plus:automaton/dense",
 
 		"origins-plus-plus:automaton/respawn"

@@ -11,7 +11,7 @@
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "particle minecraft:smoke ~ ~.5 ~ 0.5 1 0.5 9 25 force" // PH
+				"command": "particle minecraft:smoke ~ ~.5 ~ 0.5 1 0.5 9 25 force"
 			},
 			{
 				"type": "origins:damage",
@@ -22,7 +22,6 @@
 					"bypasses_armor": false
 				}
 			}
-			//add more
 		]
 	},
 	"condition":{

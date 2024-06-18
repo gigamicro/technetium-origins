@@ -3,6 +3,6 @@
 		{
 			"id": "minecraft:lava_bucket",
 			"required":false
-		},
+		}
 	]
 }

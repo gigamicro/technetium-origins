@@ -35,7 +35,6 @@
 	"trigger": "finish",
 	"priority": 0
 },
-// "medium":{},
 "large":{
 	"condition": {
 		"type": "origins:and",
@@ -90,5 +89,5 @@
 	},
 	"cooldown": 500,
 	"key": "key.use"
-},
+}
 }
