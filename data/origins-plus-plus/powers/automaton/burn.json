@@ -25,7 +25,13 @@
 			{
 				"type":"origins:feed",
 				"food": 1,
-				"saturation": 0
+				"saturation": 0,
+				"condition":{
+					"type": "origins:resource",
+					"resource": "origins-plus-plus:automaton/water_bar",
+					"comparison": ">",
+					"compare_to": 100
+				}
 			},
 			{
 				"type":"origins:change_resource",
