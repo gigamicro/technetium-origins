@@ -17,12 +17,25 @@
 			}
 		]
 	},
-	"condition":{
-		"type":"origins:resource",
-		"resource":"origins-plus-plus:automaton/fire_bar",
-		"comparison":">=",
-		"compare_to":500
-	},
+	"condition":{"type":"origins:and","conditions":[
+		{
+			"type":"origins:resource",
+			"resource":"origins-plus-plus:automaton/fire_bar",
+			"comparison":">=",
+			"compare_to":500
+		},
+		{
+			"type":"origins:in_block",
+			"block_condition": {
+				"type": "origins:fluid",
+				"fluid_condition": {
+					"type": "origins:in_tag",
+					"tag": "minecraft:water"
+				}
+			},
+			"inverted": true
+		}
+	]},
 	"key":"key.origins.primary_active",
 	"cooldown":20
 }
