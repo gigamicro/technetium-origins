@@ -1,8 +1,8 @@
 {
 	"powers":[
 		"origins-plus-plus:automaton/unnatural",
-		"origins-plus-plus:automaton/firebar",
-		"origins-plus-plus:automaton/waterbar",
+		"origins-plus-plus:automaton/fire",
+		"origins-plus-plus:automaton/water",
 		"origins-plus-plus:automaton/no_regen",
 		"origins-plus-plus:automaton/steam",
 		"origins-plus-plus:automaton/attack",

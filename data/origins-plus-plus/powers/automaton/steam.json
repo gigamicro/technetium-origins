@@ -16,13 +16,13 @@
 			},
 			{
 				"type":"origins:change_resource",
-				"resource": "origins-plus-plus:automaton/firebar",
+				"resource": "origins-plus-plus:automaton/fire_bar",
 				"operation": "add",
 				"change": -100
 			},
 			{
 				"type":"origins:change_resource",
-				"resource": "origins-plus-plus:automaton/waterbar",
+				"resource": "origins-plus-plus:automaton/water_bar",
 				"operation": "add",
 				"change": -100
 			}

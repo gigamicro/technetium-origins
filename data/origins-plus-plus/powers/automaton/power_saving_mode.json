@@ -12,13 +12,13 @@
 			"conditions":[
 				{
 					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/firebar",
+					"resource":"origins-plus-plus:automaton/fire_bar",
 					"comparison":"==",
 					"compare_to":0
 				},
 				{
 					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/waterbar",
+					"resource":"origins-plus-plus:automaton/water_bar",
 					"comparison":"==",
 					"compare_to":0
 				}
@@ -36,13 +36,13 @@
 			"conditions":[
 				{
 					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/firebar",
+					"resource":"origins-plus-plus:automaton/fire_bar",
 					"comparison":"==",
 					"compare_to":0
 				},
 				{
 					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/waterbar",
+					"resource":"origins-plus-plus:automaton/water_bar",
 					"comparison":"==",
 					"compare_to":0
 				}
@@ -52,22 +52,27 @@
 	"blindness":{
 		"type":"origins:action_over_time",
 		"interval":1,
-		"entity_action":{
-			"type":"origins:execute_command",
-			"command":"effect give @s minecraft:blindness 2 1 true"
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "minecraft:blindness",
+				"show_particles": false,
+				"duration": 2,
+				"amplifier": 1
+			},
 		},
 		"condition":{
 			"type":"origins:or",
 			"conditions":[
 				{
 					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/firebar",
+					"resource":"origins-plus-plus:automaton/fire_bar",
 					"comparison":"==",
 					"compare_to":0
 				},
 				{
 					"type":"origins:resource",
-					"resource":"origins-plus-plus:automaton/waterbar",
+					"resource":"origins-plus-plus:automaton/water_bar",
 					"comparison":"==",
 					"compare_to":0
 				}

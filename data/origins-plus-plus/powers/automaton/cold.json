@@ -5,7 +5,7 @@
 	"interval":5,
 	"entity_action":{
 		"type": "origins:change_resource",
-		"resource": "origins-plus-plus:automaton/firebar",
+		"resource": "origins-plus-plus:automaton/fire_bar",
 		"operation":"add",
 		"change": -1
 	},

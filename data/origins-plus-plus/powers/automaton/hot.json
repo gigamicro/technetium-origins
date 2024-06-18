@@ -5,7 +5,7 @@
 	"interval":5,
 	"entity_action":{
 		"type": "origins:change_resource",
-		"resource": "origins-plus-plus:automaton/waterbar",
+		"resource": "origins-plus-plus:automaton/water_bar",
 		"operation":"add",
 		"change": -1
 	},

@@ -2,8 +2,21 @@
 	"type":"origins:action_over_time",
 	"interval":5,
 	"entity_action":{
-		"type":"origins:execute_command",
-		"command":"function origins-plus-plus:automaton/cold"
+		"type":"origins:and",
+		"actions":[
+			{
+				"type": "origins:change_resource",
+				"resource": "origins-plus-plus:automaton/fire_bar",
+				"operation":"add",
+				"change": -1
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "origins-plus-plus:automaton/water_bar",
+				"operation":"add",
+				"change": 2
+			}
+		]
 	},
 	"condition":{
 		"type":"origins:biome",

@@ -15,7 +15,7 @@
 	"type": "origins:action_on_callback",
 	"entity_action_respawned":{
 		"type": "origins:change_resource",
-		"resource": "origins-plus-plus:automaton/firebar",
+		"resource": "origins-plus-plus:automaton/fire_bar",
 		"operation":"set",
 		"change": 5000
 	}
@@ -26,8 +26,10 @@
 		"type":"origins:and",
 		"actions":[
 			{
-				"type":"origins:execute_command",
-				"command":"function origins-plus-plus:automaton/firebar_increase_coal"
+				"type": "origins:change_resource",
+				"resource": "origins-plus-plus:automaton/fire_bar",
+				"operation":"add",
+				"change": 400
 			},
 			{
 				"type":"origins:equipped_item_action",
@@ -58,8 +60,10 @@
 		"type":"origins:and",
 		"actions":[
 			{
-				"type":"origins:execute_command",
-				"command":"function origins-plus-plus:automaton/firebar_increase_coal_block"
+				"type": "origins:change_resource",
+				"resource": "origins-plus-plus:automaton/fire_bar",
+				"operation":"add",
+				"change": 3600
 			},
 			{
 				"type":"origins:equipped_item_action",
@@ -98,8 +102,10 @@
 		"type":"origins:and",
 		"actions":[
 			{
-				"type":"origins:execute_command",
-				"command":"function origins-plus-plus:automaton/firebar_increase_lava"
+				"type": "origins:change_resource",
+				"resource": "origins-plus-plus:automaton/fire_bar",
+				"operation":"add",
+				"change": 7500
 			},
 			{
 				"type":"origins:equipped_item_action",

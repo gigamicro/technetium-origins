@@ -10,7 +10,7 @@
 			},
 			{
 				"type":"origins:change_resource",
-				"resource": "origins-plus-plus:automaton/firebar",
+				"resource": "origins-plus-plus:automaton/fire_bar",
 				"operation": "add",
 				"change": -500
 			}
@@ -18,7 +18,7 @@
 	},
 	"condition":{
 		"type":"origins:resource",
-		"resource":"origins-plus-plus:automaton/firebar",
+		"resource":"origins-plus-plus:automaton/fire_bar",
 		"comparison":">=",
 		"compare_to":500
 	},
