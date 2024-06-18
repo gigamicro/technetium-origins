@@ -6,27 +6,29 @@
 		"type":"origins:name",
 		"name":"drown"
 	},
-	"self_action":{
-		"type":"origins:if_else",
-		"condition":{
-			"type":"origins:resource",
-			"resource":"origins-plus-plus:automaton/water_bar",
-			"comparison":"<",
-			"compare_to":20000
+	"self_action":{"type":"origins:and","actions":[
+		{
+			"type":"origins:if_else",
+			"condition":{
+				"type":"origins:resource",
+				"resource":"origins-plus-plus:automaton/water_bar",
+				"comparison":">=",
+				"compare_to":19000
+			},
+			"if_action":{
+				"type": "origins:change_resource",
+				"resource": "origins-plus-plus:automaton/fire_bar",
+				"operation":"add",
+				"change": -20
+			}
 		},
-		"if_action":{
+		{
 			"type": "origins:change_resource",
 			"resource": "origins-plus-plus:automaton/water_bar",
 			"operation":"add",
 			"change": 200
-		},
-		"else_action":{
-			"type": "origins:change_resource",
-			"resource": "origins-plus-plus:automaton/fire_bar",
-			"operation":"add",
-			"change": -20
 		}
-	},
+	]},
 	"modifier":{
 		"value":-1,
 		"operation":"multiply_total"
