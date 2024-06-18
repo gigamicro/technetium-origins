@@ -6,6 +6,14 @@
 		"type":"origins:status_bar_texture",
 		"texture":"origins-plus-plus:textures/gui/hide_hearts.png"
 	},
+	"exhausting":{
+		"type": "origins:modify_exhaustion",
+		"modifier": {
+			"name": "Increased exhaustion",
+			"operation": "multiply_base",
+			"value": 4.0
+		}
+	},
 	"generate":{
 		"type":"origins:action_over_time",
 		"interval":400,
@@ -28,10 +36,24 @@
 				"change": -50
 			}
 		]},
-		"condition":{
-			"type": "origins:food_level",
-			"comparison": "<",
-			"compare_to": 20
-		}
+		"condition":{"type":"origins:and","conditions":[
+			{
+				"type": "origins:food_level",
+				"comparison": "<",
+				"compare_to": 20
+			},
+			{
+				"type":"origins:resource",
+				"resource":"origins-plus-plus:automaton/fire_bar",
+				"comparison":">",
+				"compare_to":25
+			},
+			{
+				"type":"origins:resource",
+				"resource":"origins-plus-plus:automaton/water_bar",
+				"comparison":">",
+				"compare_to":25
+			}
+		]}
 	}
 }
