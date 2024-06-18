@@ -1,5 +1,36 @@
 {
 	"name":"Burn Utility",
-	"description":"Fire damage boils water and patches over your Vessel (if it's not pressurized).",
-	"type":"origins:simple"
+	"description":"Fire damage boils water and patches your Vessel (if it's not pressurized).",
+	"type":"origins:action_when_damage_taken",
+	"entity_action": {
+		"type": "origins:and",
+		"actions":[
+			{
+				"name":"heal",
+				"type":"origins:heal",
+				"amount":1,
+				"condition":{
+					"type": "origins:food_level",
+					"comparison": "<=",
+					"compare_to": 8
+				}
+			},
+			{
+				"type":"origins:feed",
+				"food": 1,
+				"saturation": 0
+			},
+			{
+				"type":"origins:change_resource",
+				"resource": "origins-plus-plus:automaton/waterbar",
+				"operation": "add",
+				"change": -50
+			}
+		]
+	},
+	"damage_condition": {
+		"type": "origins:in_tag",
+		"damage_type": "minecraft:is_fire"
+	},
+	"cooldown": 1
 }

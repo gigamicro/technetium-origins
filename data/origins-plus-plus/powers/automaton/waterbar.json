@@ -1,7 +1,7 @@
 {
 "name":"Water Supply",
 "description":"You can consume water with which to produce Steam.",
-"type":"origins/multiple",
+"type":"origins:multiple",
 "bar":{
 	"type":"origins:resource",
 	"min":0,
@@ -17,7 +17,7 @@
 		"type": "origins:change_resource",
 		"resource": "origins-plus-plus:automaton/waterbar",
 		"operation":"set",
-		"change": 5000
+		"change": 10000
 	}
 },
 "small":{

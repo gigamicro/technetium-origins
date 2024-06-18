@@ -1,7 +1,7 @@
 {
 "name":"Fuel Supply",
 "description":"You can consume any fuel to replenish your Fire.",
-"type":"origins/multiple",
+"type":"origins:multiple",
 "bar":{
 	"type":"origins:resource",
 	"min":0,

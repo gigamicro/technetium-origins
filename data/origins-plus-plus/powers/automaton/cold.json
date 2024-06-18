@@ -4,8 +4,10 @@
 	"type":"origins:action_over_time",
 	"interval":5,
 	"entity_action":{
-		"type":"origins:execute_command",
-		"command":"resource change @s origins-plus-plus:automaton/firebar -1"
+		"type": "origins:change_resource",
+		"resource": "origins-plus-plus:automaton/firebar",
+		"operation":"add",
+		"change": -1
 	},
 	"condition":{
 		"type":"origins:biome",
