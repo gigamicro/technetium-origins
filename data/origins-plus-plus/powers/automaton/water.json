@@ -27,7 +27,7 @@
 		"actions": [
 			{
 				"type": "origins:change_resource",
-				"resource": "upgraded_automaton:water_bar",
+				"resource": "origins-plus-plus:automaton/water_bar",
 				"change": 1250,
 				"operation": "add"
 			},
@@ -72,7 +72,7 @@
 				"actions": [
 					{
 						"type": "origins:change_resource",
-						"resource": "upgraded_automaton:water_bar",
+						"resource": "origins-plus-plus:automaton/water_bar",
 						"change": 7500,
 						"operation": "add"
 					},
