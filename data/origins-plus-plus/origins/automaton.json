@@ -1,4 +1,5 @@
 {
+	"name":"Automaton",
 	"powers":[
 		"origins-plus-plus:automaton/unnatural",
 		"origins-plus-plus:automaton/undying",

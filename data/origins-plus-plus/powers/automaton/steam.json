@@ -2,10 +2,6 @@
 	"name":"Steam-Powered",
 	"description":"You are powered by Steam, generated from water by Fire.",
 	"type":"origins:multiple",
-	"bar":{
-		"type":"origins:status_bar_texture",
-		"texture":"origins-plus-plus:textures/gui/hide_hearts.png"
-	},
 	"exhausting":{
 		"type": "origins:modify_exhaustion",
 		"modifier": {

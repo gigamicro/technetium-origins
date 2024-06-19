@@ -1,13 +1,13 @@
 {
     "pack": {
         "name": "Upgraded Automaton",
-        "id": "upgraded_automaton",
         "pack_format": 15,
         "version": "1.0.13",
         "authors": [
+            "gigamicro",
             "praoubl"
         ],
-        "description": "automaton from origins++ with a few tweaks",
+        "description": "rework for automaton from origins++",
         "license": "MIT"
     }
 }
