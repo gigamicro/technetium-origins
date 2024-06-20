@@ -32,8 +32,10 @@
 				"operation": "add"
 			},
 			{
-				"type": "origins:execute_command",
-				"command": "playsound minecraft:item.bucket.empty voice @a ~ ~ ~ 2 0.75"
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.bucket.empty",
+				"volume": 1.5,
+				"pitch": 0.75
 			}
 		]
 	},
@@ -68,23 +70,16 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:and",
-				"actions": [
-					{
-						"type": "origins:change_resource",
-						"resource": "origins-plus-plus:automaton/water_bar",
-						"change": 7500,
-						"operation": "add"
-					},
-					{
-						"type": "origins:execute_command",
-						"command": "playsound minecraft:item.bucket.empty voice @a ~ ~ ~ 2 0.5"
-					},
-					{
-						"type": "origins:execute_command",
-						"command": "give @s minecraft:bucket 1"
-					}
-				]
+				"type": "origins:change_resource",
+				"resource": "origins-plus-plus:automaton/water_bar",
+				"change": 7500,
+				"operation": "add"
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.bucket.empty",
+				"volume": 1.5,
+				"pitch": 0.5
 			},
 			{
 				"type": "origins:equipped_item_action",
@@ -93,10 +88,14 @@
 					"type": "origins:consume",
 					"amount": 1
 				}
+			},
+			{
+				"type": "origins:execute_command",
+				"command":"give @s minecraft:bucket"
 			}
 		]
 	},
-	"cooldown": 500,
+	"cooldown": 5,
 	"key": "key.use"
 }
 }

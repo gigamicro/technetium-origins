@@ -20,6 +20,24 @@
 				"saturation": 0
 			},
 			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.generic.burn",
+				"volume": 0.375,
+				"pitch": 0.5
+			},
+			{
+				"type": "origins:spawn_particles",
+				"particle": "minecraft:smoke",
+				"count": 5,
+				"speed": 0.0,
+				"force": true,
+				"spread": {
+					"x": 0.5,
+					"y": 1.0,
+					"z": 0.5
+				}
+			},
+			{
 				"type":"origins:change_resource",
 				"resource": "origins-plus-plus:automaton/fire_bar",
 				"operation": "add",

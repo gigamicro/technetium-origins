@@ -13,7 +13,7 @@
 				"type":"origins:resource",
 				"resource":"origins-plus-plus:automaton/water_bar",
 				"comparison":">=",
-				"compare_to":19000
+				"compare_to":19900
 			},
 			"if_action":{
 				"type": "origins:change_resource",

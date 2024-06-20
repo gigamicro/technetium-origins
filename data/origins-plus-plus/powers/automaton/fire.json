@@ -32,6 +32,12 @@
 				"change": 400
 			},
 			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.firecharge.use",
+				"volume": 1,
+				"pitch": 0.75
+			},
+			{
 				"type":"origins:equipped_item_action",
 				"equipment_slot":"mainhand",
 				"action":{
@@ -64,6 +70,12 @@
 				"resource": "origins-plus-plus:automaton/fire_bar",
 				"operation":"add",
 				"change": 3600
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.firecharge.use",
+				"volume": 1.5,
+				"pitch": 0.5
 			},
 			{
 				"type":"origins:equipped_item_action",
@@ -108,12 +120,28 @@
 				"change": 7500
 			},
 			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.firecharge.use",
+				"volume": 9,
+				"pitch": 0.5
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.bucket.empty",
+				"volume": 1.5,
+				"pitch": 0.5
+			},
+			{
 				"type":"origins:equipped_item_action",
 				"equipment_slot":"mainhand",
 				"action":{
 					"type":"origins:consume",
 					"amount":1
 				}
+			},
+			{
+				"type": "origins:execute_command",
+				"command":"give @s minecraft:bucket"
 			}
 		]
 	},
@@ -135,7 +163,7 @@
 			}
 		]
 	},
-	"cooldown":500,
+	"cooldown":5,
 	"key":"key.use"
 }
 }

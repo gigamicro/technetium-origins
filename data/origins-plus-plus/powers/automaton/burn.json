@@ -17,20 +17,65 @@
 				"type":"origins:heal",
 				"amount":1,
 				"condition":{
+					"type": "origins:health",
+					"comparison": ">",
+					"compare_to": 16
+				}
+			},
+			{
+				"type":"origins:heal",
+				"amount":1,
+				"condition":{
 					"type": "origins:food_level",
 					"comparison": "<=",
 					"compare_to": 8
 				}
 			},
 			{
-				"type":"origins:feed",
-				"food": 1,
-				"saturation": 0,
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.generic.burn",
+				"volume": 0.25,
+				"pitch": 0.5
+			},
+			{
+				"type": "origins:spawn_particles",
+				"particle": "minecraft:smoke",
+				"count": 10,
+				"speed": 1.0,
+				"force": true,
+				"spread": {
+					"x": 0.5,
+					"y": 1.0,
+					"z": 0.5
+				}
+			},
+			{
+				"type":"origins:if_else",
 				"condition":{
 					"type": "origins:resource",
 					"resource": "origins-plus-plus:automaton/water_bar",
 					"comparison": ">",
 					"compare_to": 100
+				},
+				"if_action":{
+					"type":"origins:feed",
+					"food": 1,
+					"saturation": 0
+				}
+			},
+			{
+				"type":"origins:if_else",
+				"condition":{
+					"type": "origins:resource",
+					"resource": "origins-plus-plus:automaton/water_bar",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				"if_action":{
+					"type":"origins:play_sound",
+					"sound": "minecraft:entity.cat.hiss",
+					"volume": 1,
+					"pitch": 1
 				}
 			},
 			{
