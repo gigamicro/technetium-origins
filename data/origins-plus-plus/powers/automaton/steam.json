@@ -10,6 +10,13 @@
 			"value": 4.0
 		}
 	},
+	"effects":{
+		"type": "origins:effect_immunity",
+		"effects": [
+			"minecraft:hunger",
+			"minecraft:saturation"
+		]
+	},
 	"generate":{
 		"type":"origins:action_over_time",
 		"interval":400,
