@@ -27,6 +27,18 @@
 				"condition":{
 					"type": "origins:food_level",
 					"comparison": "<=",
+					"compare_to": 12
+				},
+				"if_action":{
+					"type":"origins:heal",
+					"amount":1
+				}
+			},
+			{
+				"type":"origins:if_else",
+				"condition":{
+					"type": "origins:food_level",
+					"comparison": "<=",
 					"compare_to": 8
 				},
 				"if_action":{
@@ -114,6 +126,18 @@
 					"type": "origins:health",
 					"comparison": ">",
 					"compare_to": 16
+				},
+				"if_action":{
+					"type":"origins:heal",
+					"amount":1
+				}
+			},
+			{
+				"type":"origins:if_else",
+				"condition":{
+					"type": "origins:food_level",
+					"comparison": "<=",
+					"compare_to": 12
 				},
 				"if_action":{
 					"type":"origins:heal",
