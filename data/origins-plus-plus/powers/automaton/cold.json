@@ -1,6 +1,8 @@
 {
 	"name":"Weak to Cold",
-	"description":"You lose Fire faster in the snow.",
+	"description":"You lose Fire faster in the snow and your Steam condenses when you freeze.",
+"type":"origins:multiple"
+,"climate":{
 	"type":"origins:action_over_time",
 	"interval":5,
 	"entity_action":{
@@ -9,21 +11,51 @@
 		"operation":"add",
 		"change": -1
 	},
-	"condition":{"type":"origins:or","conditions":[
+	"condition":{
+		"type":"origins:biome",
+		"condition":{
+			"type":"origins:temperature",
+			"comparison": "<",
+			"compare_to": 0.5
+		}
+	}
+}
+,"damage":{
+	"type":"origins:modify_damage_taken",
+	"damage_condition":{
+		"type":"origins:name",
+		"name":"freeze"
+	},
+	"self_action":{"type":"origins:and","actions":[
 		{
-			"type":"origins:biome",
+			"type":"origins:if_else",
 			"condition":{
-				"type":"origins:temperature",
-				"comparison": "<",
-				"compare_to": 0.5
+				"type": "origins:food_level",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			"if_action":{
+				"type":"origins:change_resource",
+				"resource": "origins-plus-plus:automaton/water_bar",
+				"operation": "add",
+				"change": 50
 			}
 		},
 		{
-			"type":"origins:in_block",
-			"block_condition": {
-				"type": "origins:block",
-				"block":"minecraft:powder_snow"
-			}
+			"type":"origins:change_resource",
+			"resource": "origins-plus-plus:automaton/fire_bar",
+			"operation": "add",
+			"change": -50
+		},
+		{
+			"type": "origins:feed",
+			"food": -1,
+			"saturation": 0
 		}
-	]}
+	]},
+	"modifier":{
+		"value":-0.95,
+		"operation":"multiply_total"
+	}
+}
 }
