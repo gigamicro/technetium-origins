@@ -1,0 +1,24 @@
+{
+	"name":"Flash",
+	"description":"You occasionally see in complete darkness.",
+	"type":"origins:action_over_time",
+	"interval":48,
+	"entity_action":{
+		"type":"origins:chance",
+		"chance":0.25,
+		"action":{
+			"type":"origins:apply_effect",
+			"effect":{
+				"effect": "minecraft:night_vision",
+				"duration": 6,
+				"show_icon":false,
+				"show_particles":false
+			}
+		}
+	},
+	"condition":{
+		"type": "origins:brightness",
+		"comparison": "<=",
+		"compare_to": 0.0
+	}
+}
