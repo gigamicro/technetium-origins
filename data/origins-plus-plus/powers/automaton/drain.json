@@ -1,34 +1,49 @@
 {
-	"name":"Immolate",
-	"description":"Expend Fire to set yourself on fire.",
+	"name":"Drain",
+	"description":"Expend water, while in water, to temporarily float.",
 	"type":"origins:active_self",
 	"entity_action":{
 		"type":"origins:and",
 		"actions":[
 			{
-				"type":"origins:set_on_fire",
-				"duration":5
+				"type": "origins:gain_air",
+				"value": 100
 			},
 			{
 				"type": "origins:play_sound",
-				"sound": "minecraft:item.firecharge.use",
+				"sound": "minecraft:item.bucket.fill",
 				"volume": 1.0,
 				"pitch": 1.0
 			},
 			{
+				"type": "origins:apply_effect",
+				"effects": [
+					{
+						"effect": "minecraft:levitation",
+						"duration": 100,
+						"amplifier": 0
+					},
+					{
+						"effect": "minecraft:conduit_power",
+						"duration": 100,
+						"amplifier": 0
+					}
+				]
+			},
+			{
 				"type":"origins:change_resource",
-				"resource": "origins-plus-plus:automaton/fire_bar",
+				"resource": "origins-plus-plus:automaton/water_bar",
 				"operation": "add",
-				"change": -500
+				"change": -5000
 			}
 		]
 	},
 	"condition":{"type":"origins:and","conditions":[
 		{
 			"type":"origins:resource",
-			"resource":"origins-plus-plus:automaton/fire_bar",
+			"resource":"origins-plus-plus:automaton/water_bar",
 			"comparison":">=",
-			"compare_to":500
+			"compare_to":4000
 		},
 		{
 			"type":"origins:in_block",
@@ -38,8 +53,7 @@
 					"type": "origins:in_tag",
 					"tag": "minecraft:water"
 				}
-			},
-			"inverted": true
+			}
 		}
 	]},
 	"key":"key.origins.primary_active",
