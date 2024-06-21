@@ -57,7 +57,7 @@
 			}
 		}
 	},
-	"cooldown":5,
+	"cooldown":1,
 	"key":"key.use"
 },
 "medium":{

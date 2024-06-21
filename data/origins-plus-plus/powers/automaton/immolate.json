@@ -12,7 +12,7 @@
 			{
 				"type": "origins:play_sound",
 				"sound": "minecraft:item.firecharge.use",
-				"volume": 1.0,
+				"volume": 0.5,
 				"pitch": 1.0
 			},
 			{
