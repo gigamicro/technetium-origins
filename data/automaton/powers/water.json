@@ -15,7 +15,7 @@
 	"type": "origins:action_on_callback",
 	"entity_action_respawned":{
 		"type": "origins:change_resource",
-		"resource": "origins-plus-plus:automaton/water_bar",
+		"resource": "automaton:water_bar",
 		"operation":"set",
 		"change": 10000
 	}
@@ -27,7 +27,7 @@
 		"actions": [
 			{
 				"type": "origins:change_resource",
-				"resource": "origins-plus-plus:automaton/water_bar",
+				"resource": "automaton:water_bar",
 				"change": 1250,
 				"operation": "add"
 			},
@@ -71,7 +71,7 @@
 		"actions": [
 			{
 				"type": "origins:change_resource",
-				"resource": "origins-plus-plus:automaton/water_bar",
+				"resource": "automaton:water_bar",
 				"change": 7500,
 				"operation": "add"
 			},

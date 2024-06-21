@@ -15,7 +15,7 @@
 	"type": "origins:action_on_callback",
 	"entity_action_respawned":{
 		"type": "origins:change_resource",
-		"resource": "origins-plus-plus:automaton/fire_bar",
+		"resource": "automaton:fire_bar",
 		"operation":"set",
 		"change": 5000
 	}
@@ -33,14 +33,14 @@
 	"condition":{"type":"origins:and","conditions":[
 		{
 			"type":"origins:resource",
-			"resource":"origins-plus-plus:automaton/fire_bar",
+			"resource":"automaton:fire_bar",
 			"comparison":">",
 			"compare_to":3200
 		},
 		{
 			"type": "origins:inventory",
 			"inventory_types":["power"],
-			"power":"origins-plus-plus:automaton/fire_box",
+			"power":"automaton:fire_box",
 			"process_mode": "stacks",
 			"item_condition":{"type":"origins:and","conditions":[
 				{"type":"origins:smeltable"},
@@ -53,7 +53,7 @@
 	"entity_action":{
 		"type":"origins:modify_inventory",
 		"inventory_type":"power",
-		"power":"origins-plus-plus:automaton/fire_box",
+		"power":"automaton:fire_box",
 		"limit":1,
 		"item_condition":{"type":"origins:and","conditions":[
 			{"type":"origins:smeltable"},
@@ -64,14 +64,14 @@
 				"type":"apoli:holder",
 				"entity_action":{
 					"type": "origins:change_resource",
-					"resource": "origins-plus-plus:automaton/fire_bar",
+					"resource": "automaton:fire_bar",
 					"operation":"add",
 					"change": -100
 				}
 			},
 			{
 				"type":"origins:modify",
-				"modifier":"origins-plus-plus:smelt"
+				"modifier":"automaton:smelt"
 			}
 		]}
 	}
@@ -82,21 +82,21 @@
 	"condition":{"type":"origins:or","conditions":[
 		{
 			"type":"origins:resource",
-			"resource":"origins-plus-plus:automaton/fire_bar",
+			"resource":"automaton:fire_bar",
 			"comparison":"<",
 			"compare_to":2500
 		},
 		{"type":"origins:and","conditions":[
 			{
 				"type":"origins:resource",
-				"resource":"origins-plus-plus:automaton/fire_bar",
+				"resource":"automaton:fire_bar",
 				"comparison":"<",
 				"compare_to":6400
 			},
 			{
 				"type": "origins:inventory",
 				"inventory_types":["power"],
-				"power":"origins-plus-plus:automaton/fire_box",
+				"power":"automaton:fire_box",
 				"process_mode": "stacks",
 				"item_condition":{"type":"origins:ingredient","ingredient":[
 					{"item":"minecraft:lava_bucket"},
@@ -109,7 +109,7 @@
 	]},"entity_action":{
 	"type":"origins:modify_inventory",
 	"inventory_type":"power",
-	"power":"origins-plus-plus:automaton/fire_box",
+	"power":"automaton:fire_box",
 	"limit":1,
 	"process_mode":"items",
 	"item_condition":{"type":"origins:and","conditions":[
@@ -129,7 +129,7 @@
 				"type":"apoli:holder",
 				"entity_action":{
 					"type": "origins:change_resource",
-					"resource": "origins-plus-plus:automaton/fire_bar",
+					"resource": "automaton:fire_bar",
 					"operation":"add",
 					"change": 400
 				}
@@ -161,7 +161,7 @@
 				"type":"apoli:holder",
 				"entity_action":{
 					"type": "origins:change_resource",
-					"resource": "origins-plus-plus:automaton/fire_bar",
+					"resource": "automaton:fire_bar",
 					"operation":"add",
 					"change": 3600
 				}
@@ -193,7 +193,7 @@
 				"type":"apoli:holder",
 				"entity_action":{
 					"type": "origins:change_resource",
-					"resource": "origins-plus-plus:automaton/fire_bar",
+					"resource": "automaton:fire_bar",
 					"operation":"add",
 					"change": 7500
 				}
@@ -223,7 +223,7 @@
 		{"type":"apoli:holder","entity_action":{"type":"origins:and","actions":[
 			{
 				"type": "origins:change_resource",
-				"resource": "origins-plus-plus:automaton/fire_bar",
+				"resource": "automaton:fire_bar",
 				"operation":"add",
 				"change": 7500
 			},

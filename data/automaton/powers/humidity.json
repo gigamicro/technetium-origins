@@ -6,13 +6,13 @@
 	"entity_action":{"type":"origins:and","actions":[
 		{
 			"type": "origins:change_resource",
-			"resource": "origins-plus-plus:automaton/fire_bar",
+			"resource": "automaton:fire_bar",
 			"operation":"add",
 			"change": -1
 		},
 		{
 			"type": "origins:change_resource",
-			"resource": "origins-plus-plus:automaton/water_bar",
+			"resource": "automaton:water_bar",
 			"operation":"add",
 			"change": 5
 		}

@@ -11,20 +11,20 @@
 			"type":"origins:if_else",
 			"condition":{
 				"type":"origins:resource",
-				"resource":"origins-plus-plus:automaton/water_bar",
+				"resource":"automaton:water_bar",
 				"comparison":">=",
 				"compare_to":19900
 			},
 			"if_action":{
 				"type": "origins:change_resource",
-				"resource": "origins-plus-plus:automaton/fire_bar",
+				"resource": "automaton:fire_bar",
 				"operation":"add",
 				"change": -20
 			}
 		},
 		{
 			"type": "origins:change_resource",
-			"resource": "origins-plus-plus:automaton/water_bar",
+			"resource": "automaton:water_bar",
 			"operation":"add",
 			"change": 200
 		}
