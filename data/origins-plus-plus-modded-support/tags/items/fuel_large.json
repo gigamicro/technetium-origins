@@ -1,7 +1,7 @@
 {
 	"values": [
 		{
-			"id": "minecraft:lava_bucket",
+			"id": "modern_industrialization:coke_block",
 			"required":false
 		}
 	]

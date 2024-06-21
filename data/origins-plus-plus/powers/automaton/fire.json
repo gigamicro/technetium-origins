@@ -126,10 +126,58 @@
 				"pitch": 0.5
 			},
 			{
+				"type":"origins:equipped_item_action",
+				"equipment_slot":"mainhand",
+				"action":{
+					"type":"origins:consume",
+					"amount":1
+				}
+			}
+		]
+	},
+	"condition":{
+		"type":"origins:and",
+		"conditions":[
+			{
+				"type":"origins:equipped_item",
+				"equipment_slot":"mainhand",
+				"item_condition":{
+					"type":"origins:ingredient",
+					"ingredient":{
+						"tag":"origins-plus-plus-modded-support:fuel_large"
+					}
+				}
+			},
+			{
+				"type":"origins:sneaking"
+			}
+		]
+	},
+	"cooldown":5,
+	"key":"key.use"
+},
+"large_bucket":{
+	"type":"origins:active_self",
+	"entity_action":{
+		"type":"origins:and",
+		"actions":[
+			{
+				"type": "origins:change_resource",
+				"resource": "origins-plus-plus:automaton/fire_bar",
+				"operation":"add",
+				"change": 7500
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.firecharge.use",
+				"volume": 9,
+				"pitch": 0.5
+			},
+			{
 				"type": "origins:play_sound",
 				"sound": "minecraft:item.bucket.empty",
 				"volume": 1.5,
-				"pitch": 0.5
+				"pitch": 0.4
 			},
 			{
 				"type":"origins:equipped_item_action",
@@ -154,7 +202,7 @@
 				"item_condition":{
 					"type":"origins:ingredient",
 					"ingredient":{
-						"tag":"origins-plus-plus-modded-support:fuel_large"
+						"item":"minecraft:lava_bucket"
 					}
 				}
 			},
