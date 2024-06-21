@@ -1,6 +1,6 @@
 {
 	"name":"Steam-Powered",
-	"description":"You are powered by Steam, generated from water by Fire.",
+	"description":"You are powered by Steam, generated from water by Fire. You cannot die while you have Steam.",
 	"type":"origins:multiple",
 	"exhausting":{
 		"type": "origins:modify_exhaustion",
@@ -8,6 +8,30 @@
 			"name": "Increased exhaustion",
 			"operation": "multiply_base",
 			"value": 3.0
+		}
+	},
+	"death_prevent":{
+		"type":"origins:prevent_death",
+		"damage_condition":{
+			"type":"origins:name",
+			"name":"starve",
+			"inverted":true
+		}
+		,"condition":{
+			"type":"origins:food_level",
+			"comparison":"!=",
+			"compare_to":0
+		}
+	},
+	"death":{
+		"type":"origins:modify_damage_taken",
+		"damage_condition":{
+			"type":"origins:name",
+			"name":"starve"
+		},
+		"modifier":{
+			"value":99999,
+			"operation":"multiply_total"
 		}
 	},
 	"effects":{
