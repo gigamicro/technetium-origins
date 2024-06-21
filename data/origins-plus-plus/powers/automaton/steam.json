@@ -7,7 +7,7 @@
 		"modifier": {
 			"name": "Increased exhaustion",
 			"operation": "multiply_base",
-			"value": 4.0
+			"value": 3.0
 		}
 	},
 	"effects":{
@@ -19,7 +19,7 @@
 	},
 	"generate":{
 		"type":"origins:action_over_time",
-		"interval":400,
+		"interval":160,
 		"entity_action":{ "type":"origins:and", "actions": [
 			{
 				"type": "origins:feed",

@@ -1,34 +1,37 @@
 {
 	"name":"Burn Utility",
 	"description":"Fire damage boils water and patches your Vessel (if it's not pressurized).",
+"type":"origins:multiple","sparse":{
 	"type":"origins:modify_damage_taken",
 	"damage_condition":{"type":"origins:or","conditions":[
-		{"type":"origins:name","name": "inFire" },
 		{"type":"origins:name","name": "onFire" },
-		{"type":"origins:name","name": "lava"   },
-		{"type":"origins:name","name": "hotFloor"},
-		{"type":"origins:name","name": "fireball" },
-		{"type":"origins:name","name": "campfire" }
+		{"type":"origins:name","name": "fireball" }
 	]},
 	"self_action":{
 		"type": "origins:and",
 		"actions":[
 			{
-				"type":"origins:heal",
-				"amount":1,
+				"type":"origins:if_else",
 				"condition":{
 					"type": "origins:health",
 					"comparison": ">",
 					"compare_to": 16
+				},
+				"if_action":{
+					"type":"origins:heal",
+					"amount":1
 				}
 			},
 			{
-				"type":"origins:heal",
-				"amount":1,
+				"type":"origins:if_else",
 				"condition":{
 					"type": "origins:food_level",
 					"comparison": "<=",
 					"compare_to": 8
+				},
+				"if_action":{
+					"type":"origins:heal",
+					"amount":1
 				}
 			},
 			{
@@ -90,4 +93,104 @@
 		"value":-1,
 		"operation":"multiply_total"
 	}
+}
+,"dense":{
+	"type":"origins:modify_damage_taken",
+	"damage_condition":{"type":"origins:or","conditions":[
+		{"type":"origins:name","name": "inFire" },
+		{"type":"origins:name","name": "lava"   },
+		{"type":"origins:name","name": "hotFloor"},
+		{"type":"origins:name","name": "campfire" }
+	]},
+	"self_action":{
+	"type":"origins:chance",
+	"chance":0.125,
+	"action":{
+		"type": "origins:and",
+		"actions":[
+			{
+				"type":"origins:if_else",
+				"condition":{
+					"type": "origins:health",
+					"comparison": ">",
+					"compare_to": 16
+				},
+				"if_action":{
+					"type":"origins:heal",
+					"amount":1
+				}
+			},
+			{
+				"type":"origins:if_else",
+				"condition":{
+					"type": "origins:food_level",
+					"comparison": "<=",
+					"compare_to": 8
+				},
+				"if_action":{
+					"type":"origins:heal",
+					"amount":1
+				}
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.generic.burn",
+				"volume": 0.25,
+				"pitch": 0.5
+			},
+			{
+				"type": "origins:spawn_particles",
+				"particle": "minecraft:smoke",
+				"count": 10,
+				"speed": 1.0,
+				"force": true,
+				"spread": {
+					"x": 0.5,
+					"y": 1.0,
+					"z": 0.5
+				}
+			},
+			{
+				"type":"origins:if_else",
+				"condition":{
+					"type": "origins:resource",
+					"resource": "origins-plus-plus:automaton/water_bar",
+					"comparison": ">",
+					"compare_to": 100
+				},
+				"if_action":{
+					"type":"origins:feed",
+					"food": 1,
+					"saturation": 0
+				}
+			},
+			{
+				"type":"origins:if_else",
+				"condition":{
+					"type": "origins:resource",
+					"resource": "origins-plus-plus:automaton/water_bar",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				"if_action":{
+					"type":"origins:play_sound",
+					"sound": "minecraft:entity.cat.hiss",
+					"volume": 1,
+					"pitch": 1
+				}
+			},
+			{
+				"type":"origins:change_resource",
+				"resource": "origins-plus-plus:automaton/water_bar",
+				"operation": "add",
+				"change": -200
+			}
+		]
+	}
+	},
+	"modifier":{
+		"value":-1,
+		"operation":"multiply_total"
+	}
+}
 }

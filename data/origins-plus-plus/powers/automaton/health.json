@@ -8,7 +8,9 @@
 			"minecraft:poison"
 		]
 	},
-	"no_regen":{"type":"origins:disable_regen"},
+	"no_regen":{
+		"type":"origins:disable_regen"
+	},
 	"damage":{
 		"type":"origins:modify_damage_taken",
 		"modifier":{
@@ -21,7 +23,7 @@
 		"interval":1,
 		"entity_action": {
 			"type": "origins:exhaust",
-			"amount": 0.03125
+			"amount": 0.015625
 		},
 		"condition": {
 			"type": "origins:health",
@@ -34,7 +36,7 @@
 		"interval":1,
 		"entity_action": {
 			"type": "origins:exhaust",
-			"amount": 0.03125
+			"amount": 0.015625
 		},
 		"condition": {
 			"type": "origins:health",
@@ -47,7 +49,7 @@
 		"interval":1,
 		"entity_action": {
 			"type": "origins:exhaust",
-			"amount": 0.0625
+			"amount": 0.03125
 		},
 		"condition": {
 			"type": "origins:health",
@@ -60,7 +62,7 @@
 		"interval":1,
 		"entity_action": {
 			"type": "origins:exhaust",
-			"amount": 0.125
+			"amount": 0.0625
 		},
 		"condition": {
 			"type": "origins:health",
