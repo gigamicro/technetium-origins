@@ -20,9 +20,11 @@
 		"change": 5000
 	}
 },
-"small":{
-	"type":"origins:active_self",
-	"entity_action":{
+"consume":{
+"type":"origins:active_self","key":"key.use","entity_action":{
+"type":"origins:if_else_list","actions":[
+{
+	"action":{
 		"type":"origins:and",
 		"actions":[
 			{
@@ -56,13 +58,10 @@
 				"tag":"origins-plus-plus-modded-support:fuel_small"
 			}
 		}
-	},
-	"cooldown":1,
-	"key":"key.use"
+	}
 },
-"medium":{
-	"type":"origins:active_self",
-	"entity_action":{
+{
+	"action":{
 		"type":"origins:and",
 		"actions":[
 			{
@@ -108,9 +107,8 @@
 	"cooldown":5,
 	"key":"key.use"
 },
-"large":{
-	"type":"origins:active_self",
-	"entity_action":{
+{
+	"action":{
 		"type":"origins:and",
 		"actions":[
 			{
@@ -156,9 +154,8 @@
 	"cooldown":5,
 	"key":"key.use"
 },
-"large_bucket":{
-	"type":"origins:active_self",
-	"entity_action":{
+{
+	"action":{
 		"type":"origins:and",
 		"actions":[
 			{
@@ -213,5 +210,8 @@
 	},
 	"cooldown":5,
 	"key":"key.use"
+}
+]
+}
 }
 }
