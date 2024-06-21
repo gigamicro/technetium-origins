@@ -1,4 +1,6 @@
 {
+	"name":"Low Power Mode",
+	"description":"When you run very low on Steam you become blind and nearly immobile.",
 	"type":"origins:multiple",
 	"slowness":{
 		"type":"origins:conditioned_attribute",
