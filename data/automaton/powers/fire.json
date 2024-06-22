@@ -1,6 +1,6 @@
 {
 "name":"Fuel Supply",
-"description":"You can consume any fuel to replenish your Fire.",
+"description":"You replenish your Fire by placing fuel in your Fire Box.",
 "type":"origins:multiple",
 "bar":{
 	"type":"origins:resource",

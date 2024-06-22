@@ -5,7 +5,7 @@
 		"automaton:fire",
 		"automaton:water",
 		"automaton:steam",
-		"automaton:power_saving_mode",
+		"automaton:low",
 		"automaton:health",
 		"automaton:burn",
 		"automaton:immolate",
