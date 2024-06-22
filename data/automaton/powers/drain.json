@@ -22,11 +22,6 @@
 						"effect": "minecraft:levitation",
 						"duration": 100,
 						"amplifier": 0
-					},
-					{
-						"effect": "minecraft:conduit_power",
-						"duration": 100,
-						"amplifier": 0
 					}
 				]
 			},
@@ -56,6 +51,6 @@
 			}
 		}
 	]},
-	"key":"key.origins.primary_active",
-	"cooldown":20
+	"key":{"key":"key.origins.primary_active","continuous":true},
+	"cooldown":99
 }
