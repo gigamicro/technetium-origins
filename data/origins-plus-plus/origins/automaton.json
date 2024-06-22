@@ -14,8 +14,6 @@
 		"automaton:humidity",
 		"automaton:drown",
 		"automaton:dense",
-		"automaton:drain",
-		"automaton:dark",
 		"automaton:attack"
 	],
 	"icon":"minecraft:weathered_copper",
