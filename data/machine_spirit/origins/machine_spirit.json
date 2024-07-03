@@ -1,0 +1,9 @@
+{
+	"name":"Machine Spirit",
+	"powers":[
+		"automaton:unnatural",
+		"machine_spirit:",
+	],
+	"icon":"minecraft:",
+	"impact":3
+}

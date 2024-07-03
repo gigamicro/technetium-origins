@@ -1,0 +1,17 @@
+machine spirit origin
+
+make bodies
+stored how? entity creation? locked chest? equipment & modded equipment? status effects?? health?? exhaustion?? *modded properties*???
+multiple types?
+bonuses? how many? health, vision, speed, jump?, ; tradeoffs? durability (health loss?)?
+regular material path? that plus copper/etc? modded materials? vanilla paths for modded materials; optional?
+iron golems - interactions? interactions with modded machines?
+exhaustion? different fuels?
+
+incorporeal
+flying? speed?
+ignores specific blocks? all non-metals? all organics? visibility in dirt?
+
+limited to range
+from redstone? variable range by block? powers redstone components? mod support 
+visibility - can't see outside range? can't see entities outside range?
