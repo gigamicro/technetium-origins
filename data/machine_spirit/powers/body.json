@@ -1,0 +1,28 @@
+{
+	"name":"Possessions",
+	"description":"You can create and possess your own bodies.",
+	"type":"origins:multiple",
+	"death":{
+		"type":"origins:prevent_death",
+	    "entity_action": {"type":"origins:and","actions":[{
+	    	"type":"origins:execute_command",
+	    	"command":"/effect clear"
+	    },{
+		    "type": "origins:grant_power",
+		    "power": "machine_spirit:spirit",
+		    "source": "machine_spirit:machine_spirit"
+	    }]}
+	},
+	"dispirit":{
+	    "type": "origins:active_self",
+	    "entity_action": {
+		    "type": "origins:revoke_power",
+		    "power": "machine_spirit:spirit",
+		    "source": "machine_spirit:machine_spirit"
+	    },
+	    "cooldown": 200
+	},
+	"craft":{},
+	"":{},
+	"":{}
+}

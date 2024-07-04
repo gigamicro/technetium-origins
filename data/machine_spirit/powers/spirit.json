@@ -1,0 +1,77 @@
+{
+	"name":"Spirit Form",
+	"description":"You can barely affect the physical world, nor can it you.",
+	"type":"origins:multiple",
+	"flight":{"type":"origins:creative_flight"},
+	"alpha":{"type":"origins:model_color","alpha":0.125},
+	"invisible":{
+		"type":"origins:invisibility",
+		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
+	},
+	"phase":{
+	    "type": "origins:phasing",
+	    "blacklist": true,
+	    "render_type": "blindness",
+	    "view_distance": 10,
+	    "block_condition": {
+	        "type": "origins:in_tag",
+	        "tag": "origins:unphasable"
+	    },
+	    "phase_down_condition":{"type":"origins:sneaking"}
+	},
+	"invuln":{
+		"type":"origins:invulnerability",
+		"damage_condition":{"type":"origins:or","inverted":true,"conditions":[
+			{"type":"origins:name","name":"starve"},
+			{"type":"origins:name","name":"magic"},
+			{"type":"origins:name","name":"indirectMagic"},
+			{"type":"origins:name","name":"outOfWorld"}
+		]}
+	},
+	"halfheart":{
+		"type":"origins:attribute",
+		"modifier":{
+			"name":"Spirit",
+			"attribute":"minecraft:generic.max_health",
+			"value":-1,
+			"operation":"multiply_total"
+		}
+	},
+	"nightvision":{"type":"origins:night_vision","strength":0.03125},
+	"nowater":{"type":"origins:ignore_water"},
+	"nowater_vision":{"type":"origins:modify_camera_submersion","from":"water","to":"none"},
+	"entitycollision":{"type":"origins:prevent_entity_collision"},
+	"noattack":{"type":"origins:modify_damage_dealt","modifier":{"operation":"multiply_total","value":-1}},
+	"noburn":{"type":"origins:fire_immunity"},
+
+	"activity":{"type":"origins:cooldown","cooldown":20},
+	"noinventory":{
+		"type":"origins:action_over_time",
+		"entity_action":{"type":"origins:drop_inventory","throw_randomly":true},
+		"interval":1,
+		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
+	},
+	"noinventory_pickup":{
+		"type":"apoli:prevent_item_pickup",
+		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
+	},
+	"noblocks":{
+		"type":"origins:prevent_block_selection",
+		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
+	},
+	"noentityuse":{
+		"type":"origins:prevent_entity_use",
+		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
+	},
+
+	"activity_hit":{
+		"type":"origins:self_action_when_hit",
+		"entity_action":{"type":"origins:trigger_cooldown","power":"machine_spirit:spirit_activity"}
+	},
+
+	"":{},
+	"":{},
+	"":{},
+	"":{},
+	"":{}
+}
