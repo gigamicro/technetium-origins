@@ -69,7 +69,22 @@
 		"entity_action":{"type":"origins:trigger_cooldown","power":"machine_spirit:spirit_activity"}
 	},
 
-	"":{},
+	"redpower":{
+	"type":"origins:action_over_time","interval":2,"entity_action":{
+	"type":"origins:block_action_at","block_action":{
+	"type":"origins:if_else_list","actions":[
+		{
+			"condition":{"type":"origins:block", "block": "minecraft:redstone_wire" },
+			"action":{"type":"origins:set_block","block": "minecraft:redstone_wire[power=15]" }
+		},
+		{
+			"condition":{"type":"origins:block", "block": "minecraft:redstone_lamp" },
+			"action":{"type":"origins:set_block","block": "minecraft:redstone_lamp[lit=true]" }
+		}
+	]
+	}
+	}
+	},
 	"":{},
 	"":{},
 	"":{},

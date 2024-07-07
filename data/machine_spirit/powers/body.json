@@ -1,28 +1,254 @@
 {
 	"name":"Possessions",
-	"description":"You can create and possess your own bodies.",
+	"description":"You can possess your own bodies, created with redstone upon material blocks, stone, or logs.",
 	"type":"origins:multiple",
+	"redstone":{
+		"type":"origins:resource",
+		"min":0,
+		"max":14,
+		"hud_render":{
+			"sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"bar_index":14,
+			"condition":{
+				"type":"origins:power_active",
+				"power":"machine_spirit:spirit",
+				"inverted":true
+			}
+		}
+	},
+	"dispirit_init":{
+		"type":"origins:action_on_callback",
+		"entity_action_added":{
+			"type":"origins:if_else",
+			"condition":{
+				"type":"origins:resource",
+				"resource":"machine_spirit:body_redstone",
+				"comparison":">",
+				"compare_to":0
+			},
+			"if_action":{
+				"type":"origins:delay",
+				"ticks":1,
+				"action":{
+					"type":"origins:revoke_power",
+					"power":"machine_spirit:spirit",
+					"source":"machine_spirit:machine_spirit"
+				}
+			}
+		}
+	},
+	"possess":{
+		"type":"origins:active_self",
+		"condition":{"type":"origins:and","conditions":[{
+			"type":"origins:sneaking",
+			"inverted":true
+		},{
+			"type":"origins:in_block",
+			"block_condition":{
+				"type":"origins:and",
+				"conditions":[
+					{
+						"type":"origins:in_tag",
+						"tag":"machine_spirit:possessable"
+					},
+					{"type":"origins:offset","y":1,"condition":{
+						"type":"origins:or",
+						"conditions":[{
+							"type":"origins:block",
+							"block":"minecraft:redstone_block"
+						},{
+							"type":"origins:block",
+							"block":"minecraft:redstone_wire"
+						},{
+							"type":"origins:block",
+							"block":"minecraft:redstone_torch"
+						}]
+					}}
+				]
+			}
+		}]},
+		"entity_action":{"type":"origins:and","actions":[{
+			"type":"origins:if_else_list","actions":[{
+				"condition":{
+					"type":"origins:in_block",
+					"block_condition":{"type":"origins:offset","y":1,"condition":{
+						"type":"origins:block",
+						"block":"minecraft:redstone_block"
+					}}
+				},
+				"action":{
+					"type":"origins:change_resource",
+					"resource":"machine_spirit:body_redstone",
+					"operation":"add",
+					"change":9
+				}
+			},{
+				"condition":{
+					"type":"origins:in_block",
+					"block_condition":{"type":"origins:offset","y":1,"condition":{
+						"type":"origins:block",
+						"block":"minecraft:redstone_wire"
+					}}
+				},
+				"action":{
+					"type":"origins:change_resource",
+					"resource":"machine_spirit:body_redstone",
+					"operation":"add",
+					"change":1
+				}
+			}]
+		},{
+			"type":"origins:block_action_at",
+			"block_action":{
+				"type":"origins:and",
+				"actions":[
+					{
+						"type":"origins:offset","y":1,
+						"action":{
+							"type":"origins:set_block",
+							"block":"minecraft:air"
+						}
+					},
+					{
+						"type":"origins:set_block",
+						"block":"minecraft:air"
+					}
+				]
+			}
+		},{
+			"type":"origins:revoke_power",
+			"power":"machine_spirit:spirit",
+			"source":"machine_spirit:machine_spirit"
+		}]},
+		"cooldown":200
+	},
 	"death":{
 		"type":"origins:prevent_death",
-	    "entity_action": {"type":"origins:and","actions":[{
-	    	"type":"origins:execute_command",
-	    	"command":"/effect clear"
-	    },{
-		    "type": "origins:grant_power",
-		    "power": "machine_spirit:spirit",
-		    "source": "machine_spirit:machine_spirit"
-	    }]}
+		"note":"should be same as below but currently one copy for ease of edit"
 	},
-	"dispirit":{
-	    "type": "origins:active_self",
-	    "entity_action": {
-		    "type": "origins:revoke_power",
-		    "power": "machine_spirit:spirit",
-		    "source": "machine_spirit:machine_spirit"
-	    },
-	    "cooldown": 200
-	},
-	"craft":{},
-	"":{},
-	"":{}
+	"respirit":{
+		"type":"origins:active_self",
+		"condition":{"type":"origins:and","conditions":[{
+			"type":"origins:sneaking"
+		},{
+			"type":"origins:in_block",
+			"block_condition":{"type":"origins:offset","y":1,"condition":{
+				"type":"origins:in_tag",
+				"tag":"minecraft:replaceable"
+			}}
+		}]},
+		"entity_action":{"type":"origins:and","actions":[{
+			"type":"origins:clear_effect"
+		},{
+			"type":"origins:grant_power",
+			"power":"machine_spirit:spirit",
+			"source":"machine_spirit:machine_spirit"
+		},{
+			"type":"origins:block_action_at",
+			"block_action":{
+				"type":"origins:set_block",
+				"block":"minecraft:stone"
+			}
+		},{
+			"type":"origins:if_else",
+			"condition":{
+				"type":"origins:resource",
+				"resource":"machine_spirit:body_redstone",
+				"comparison":">=",
+				"compare_to":9
+			},
+			"if_action":{"type":"origins:and","actions":[{
+				"type":"origins:block_action_at",
+				"block_action":{"type":"origins:offset","y":1,"action":{
+					"type":"origins:set_block",
+					"block":"minecraft:redstone_block"
+				}}
+			},{
+				"type":"origins:change_resource",
+				"resource":"machine_spirit:body_redstone",
+				"operation":"add",
+				"change":-9
+			}]},
+			"else_action":{"type":"origins:and","actions":[{
+				"type":"origins:block_action_at",
+				"block_action":{"type":"origins:offset","y":1,"action":{
+					"type":"origins:set_block",
+					"block":"minecraft:redstone_wire"
+				}}
+			},{
+				"type":"origins:change_resource",
+				"resource":"machine_spirit:body_redstone",
+				"operation":"add",
+				"change":-1
+			}]}
+		},{
+			"type":"origins:if_else_list","actions":[
+				{
+					"condition":{
+						"type":"origins:resource",
+						"resource":"machine_spirit:body_redstone",
+						"comparison":">=",
+						"compare_to":5
+					},
+					"action":{
+						"type":"origins:execute_command",
+						"command":"/give @s minecraft:redstone 5"
+					}
+				},
+				{
+					"condition":{
+						"type":"origins:resource",
+						"resource":"machine_spirit:body_redstone",
+						"comparison":">=",
+						"compare_to":4
+					},
+					"action":{
+						"type":"origins:execute_command",
+						"command":"/give @s minecraft:redstone 4"
+					}
+				},
+				{
+					"condition":{
+						"type":"origins:resource",
+						"resource":"machine_spirit:body_redstone",
+						"comparison":">=",
+						"compare_to":3
+					},
+					"action":{
+						"type":"origins:execute_command",
+						"command":"/give @s minecraft:redstone 3"
+					}
+				},
+				{
+					"condition":{
+						"type":"origins:resource",
+						"resource":"machine_spirit:body_redstone",
+						"comparison":">=",
+						"compare_to":2
+					},
+					"action":{
+						"type":"origins:execute_command",
+						"command":"/give @s minecraft:redstone 2"
+					}
+				},
+				{
+					"condition":{
+						"type":"origins:resource",
+						"resource":"machine_spirit:body_redstone",
+						"comparison":">=",
+						"compare_to":1
+					},
+					"action":{
+						"type":"origins:execute_command",
+						"command":"/give @s minecraft:redstone 1"
+					}
+				}
+			]
+		},{
+			"type":"origins:change_resource",
+			"resource":"machine_spirit:body_redstone",
+			"operation":"set",
+			"change":0
+		}]}
+	}
 }

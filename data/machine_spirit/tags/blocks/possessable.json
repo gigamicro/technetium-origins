@@ -1,0 +1,14 @@
+{
+	"values": [
+		"#minecraft:dirt",
+		"#minecraft:logs",
+
+		"#minecraft:base_stone_overworld",
+		"#minecraft:base_stone_nether",
+
+		"minecraft:iron_block",
+		"minecraft:gold_block",
+		"minecraft:diamond_block",
+		"minecraft:netherite_block"
+	]
+}
