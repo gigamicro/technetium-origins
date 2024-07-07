@@ -16,6 +16,61 @@
 			}
 		}
 	},
+	"redstone_high_vis":{
+		"condition":{
+			"type":"origins:resource",
+			"resource":"machine_spirit:body_redstone",
+			"comparison":">",
+			"compare_to":9
+		},
+		"type":"origins:night_vision",
+		"strength":0.667
+	},
+	"redstone_high_particle":{
+		"condition":{
+			"type":"origins:resource",
+			"resource":"machine_spirit:body_redstone",
+			"comparison":">",
+			"compare_to":9
+		},
+		"type":"origins:particle",
+		"particle":{
+			"type":"minecraft:dust",
+			"params":"0.922 0.314 0.314 1"
+		},
+		"visible_in_first_person":true,
+		"frequency":18
+	},
+	"redstone_consume":{
+		"condition":{"type":"origins:and","conditions":[{
+			"type":"origins:resource",
+			"resource":"machine_spirit:body_redstone",
+			"comparison":"<",
+			"compare_to":14
+		},{
+			"type":"origins:sneaking"
+		}]},
+		"type":"origins:action_over_time",
+		"entity_action":{
+			"type":"origins:modify_inventory",
+			"item_condition":{
+				"type":"origins:ingredient",
+				"ingredient":{
+					"item":"minecraft:redstone"
+				}
+			},
+			"entity_action":{
+				"type":"origins:change_resource",
+				"resource":"machine_spirit:body_redstone",
+				"operation":"add",
+				"change":1
+			},
+			"item_action":{
+				"type":"origins:consume"
+			}
+		},
+		"interval":6
+	},
 	"dispirit_init":{
 		"type":"origins:action_on_callback",
 		"entity_action_added":{
