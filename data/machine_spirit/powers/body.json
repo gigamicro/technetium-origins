@@ -16,6 +16,11 @@
 			}
 		}
 	},
+	"material":{
+		"type":"origins:resource",
+		"min":-1,
+		"max":7
+	},
 	"redstone_high_vis":{
 		"condition":{
 			"type":"origins:resource",
@@ -59,6 +64,7 @@
 					"item":"minecraft:redstone"
 				}
 			},
+			"limit":1,
 			"entity_action":{
 				"type":"origins:change_resource",
 				"resource":"machine_spirit:body_redstone",
@@ -84,11 +90,28 @@
 			"if_action":{
 				"type":"origins:delay",
 				"ticks":1,
-				"action":{
+				"action":{"type":"origins:and","actions":[{
 					"type":"origins:revoke_power",
 					"power":"machine_spirit:spirit",
 					"source":"machine_spirit:machine_spirit"
-				}
+				},{
+					"type":"origins:if_else_list","actions":[
+						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":1},
+						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/wood"}},
+						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":2},
+						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/stone"}},
+						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":3},
+						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/iron"}},
+						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":4},
+						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/gold"}},
+						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":5},
+						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/diamond"}},
+						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":6},
+						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/netherite"}},
+						{"condition":{"type":"origins:constant","value":true},
+						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/other"}}
+					]
+				}]}
 			}
 		}
 	},
@@ -155,18 +178,33 @@
 		},{
 		"type":"origins:if_else_list","actions":[
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:in_tag","tag":"minecraft:logs"}},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/wood"}},
+				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":1}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:in_tag","tag":"minecraft:base_stone_overworld"}},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/stone"}},
-				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:in_tag","tag":"minecraft:base_stone_nether"}},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/stone"}},
+				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":2}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:iron_block"}},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/iron"}},
+				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":3}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:gold_block"}},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/gold"}},
+				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":4}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:diamond_block"}},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/diamond"}},
+				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":5}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:netherite_block"}},
+				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":6}},
+				{"condition":{"type":"origins:constant","value":true},
+				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":-1}}
+			]
+		},{
+		"type":"origins:if_else_list","actions":[
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":1},
+				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/wood"}},
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":2},
+				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/stone"}},
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":3},
+				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/iron"}},
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":4},
+				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/gold"}},
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":5},
+				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/diamond"}},
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":6},
 				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/netherite"}},
 				{"condition":{"type":"origins:constant","value":true},
 				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/other"}}
@@ -223,6 +261,31 @@
 				"type":"origins:set_block",
 				"block":"minecraft:stone"
 			}
+		},
+		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/wood"},
+		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/stone"},
+		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/iron"},
+		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/gold"},
+		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/diamond"},
+		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/netherite"},
+		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/other"}
+		,{
+		"type":"origins:if_else_list","actions":[
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":1},
+				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:cherry_log"}}},
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":2},
+				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:stone"}}},
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":3},
+				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:iron_block"}}},
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":4},
+				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:gold_block"}}},
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":5},
+				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:diamond_block"}}},
+				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":6},
+				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:netherite_block"}}},
+				{"condition":{"type":"origins:constant","value":true},
+				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:diorite"}}}
+			]
 		},{
 			"type":"origins:if_else",
 			"condition":{
@@ -321,6 +384,11 @@
 		},{
 			"type":"origins:change_resource",
 			"resource":"machine_spirit:body_redstone",
+			"operation":"set",
+			"change":0
+		},{
+			"type":"origins:change_resource",
+			"resource":"machine_spirit:body_material",
 			"operation":"set",
 			"change":0
 		},{
