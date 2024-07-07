@@ -1,0 +1,5 @@
+{
+	"type":"origins:multiple",
+	"nowater":{"type":"origins:ignore_water"},
+	"nofire":{"type":"origins:fire_immunity"}
+}

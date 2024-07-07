@@ -1,0 +1,8 @@
+{
+	"type":"origins:particle",
+	"frequency":1,
+	"particle":{
+		"type":"minecraft:block",
+		"params":"minecraft:gold_block"
+	}
+}
