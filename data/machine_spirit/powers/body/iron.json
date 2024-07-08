@@ -1,8 +1,36 @@
 {
-	"type":"origins:particle",
-	"frequency":1,
-	"particle":{
-		"type":"minecraft:block",
-		"params":"minecraft:iron_block"
+	"type":"origins:multiple",
+	"nowater":{"type":"origins:ignore_water"},
+	"attr":{
+		"type":"origins:attribute",
+		"modifiers":[
+			{"attribute":"generic.armor","operation":"addition","value":16},
+			{"attribute":"generic.movement_speed","operation":"multiply_base","value":0.5}
+		]
+	},
+	"lessfire":{
+		"type":"origins:modify_damage_taken",
+		"damage_condition":{"type":"origins:or","conditions":[
+			{"type":"origins:name","name":"onFire"},
+			{"type":"origins:name","name":"inFire"},
+			{"type":"origins:name","name":"lava"},
+			{"type":"origins:name","name":"hotFloor"},
+			{"type":"origins:name","name":"campfire"}
+		]},
+		"modifier":{
+			"operation":"multiply_total",
+			"value":-0.95
+		}
+	},
+	"madjycks":{
+		"type":"origins:modify_damage_taken",
+		"damage_condition":{"type":"origins:or","conditions":[
+			{"type":"origins:name","name":"magic"},
+			{"type":"origins:name","name":"indirectMagic"}
+		]},
+		"modifier":{
+			"value":-1,
+			"operation":"multiply_total"
+		}
 	}
 }

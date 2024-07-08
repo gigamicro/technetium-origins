@@ -1,8 +1,26 @@
 {
-	"type":"origins:particle",
-	"frequency":1,
-	"particle":{
-		"type":"minecraft:block",
-		"params":"minecraft:netherite_block"
-	}
+	"type":"origins:multiple",
+	"nowater":{"type":"origins:ignore_water"},
+	"attr":{
+		"type":"origins:attribute",
+		"modifiers":[
+			{"attribute":"generic.armor","operation":"addition","value":20},
+			{"attribute":"generic.armor_toughness","operation":"addition","value":14},
+			{"attribute":"generic.knockback_resistance","operation":"addition","value":0.5},
+			{"attribute":"generic.movement_speed","operation":"multiply_base","value":0.2}
+		]
+	},
+	"madjycks":{
+		"type":"origins:modify_damage_taken",
+		"damage_condition":{"type":"origins:or","conditions":[
+			{"type":"origins:name","name":"magic"},
+			{"type":"origins:name","name":"indirectMagic"}
+		]},
+		"modifier":{
+			"value":-1,
+			"operation":"multiply_total"
+		}
+	},
+	"nofire":{"type":"origins:fire_immunity"},
+	"lavavis":{"type":"origins:lava_vision","s":0,"v":15}
 }
