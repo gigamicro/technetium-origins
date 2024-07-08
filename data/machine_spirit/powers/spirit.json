@@ -6,7 +6,7 @@
 	"alpha":{"type":"origins:model_color","alpha":0.125},
 	"invisible":{
 		"type":"origins:invisibility",
-		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
+		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<","compare_to":50}
 	},
 	"phase":{
 		"type":"origins:phasing",
@@ -138,21 +138,21 @@
 	"noattack":{"type":"origins:modify_damage_dealt","modifier":{"operation":"multiply_total","value":-1}},
 	"noburn":{"type":"origins:fire_immunity"},
 
-	"activity":{"type":"origins:cooldown","cooldown":20},
+	"activity":{"type":"origins:cooldown","cooldown":100},
 	"noinventory":{
 		"type":"origins:action_over_time",
 		"entity_action":{"type":"origins:drop_inventory","throw_randomly":true},
 		"interval":1,
-		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
+		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<","compare_to":50}
 	},
 	},
 	"noblocks":{
 		"type":"origins:prevent_block_selection",
-		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
+		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<","compare_to":50}
 	},
 	"noentityuse":{
 		"type":"origins:prevent_entity_use",
-		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
+		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<","compare_to":50}
 	},
 
 	"activity_hit":{
