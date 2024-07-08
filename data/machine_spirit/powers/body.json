@@ -358,12 +358,6 @@
 			"type":"origins:grant_power",
 			"power":"machine_spirit:spirit",
 			"source":"machine_spirit:machine_spirit"
-		},{
-			"type":"origins:block_action_at",
-			"block_action":{
-				"type":"origins:set_block",
-				"block":"minecraft:stone"
-			}
 		},
 		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/wood"},
 		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/stone"},
