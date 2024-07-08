@@ -100,7 +100,7 @@
 				"process_mode": "stacks",
 				"item_condition":{"type":"origins:ingredient","ingredient":[
 					{"item":"minecraft:lava_bucket"},
-					{"tag":"origins-plus-plus-modded-support:fuel_large"}
+					{"tag":"automaton:fuel_large"}
 				]},
 				"comparison": "==",
 				"compare_to": 0
@@ -120,7 +120,7 @@
 	{"condition":{
 		"type":"origins:ingredient",
 		"ingredient":{
-			"tag":"origins-plus-plus-modded-support:fuel_small"
+			"tag":"automaton:fuel_small"
 		}
 	},"action":{
 		"type":"origins:and",
@@ -152,7 +152,7 @@
 	{"condition":{
 		"type":"origins:ingredient",
 		"ingredient":{
-			"tag":"origins-plus-plus-modded-support:fuel_medium"
+			"tag":"automaton:fuel_medium"
 		}
 	},"action":{
 		"type":"origins:and",
@@ -184,7 +184,7 @@
 	{"condition":{
 		"type":"origins:ingredient",
 		"ingredient":{
-			"tag":"origins-plus-plus-modded-support:fuel_large"
+			"tag":"automaton:fuel_large"
 		}
 	},"action":{
 		"type":"origins:and",
