@@ -178,6 +178,25 @@
 		},
 		"interval":6
 	},
+	"redblockharvest":{
+		"type":"origins:modify_harvest",
+		"block_condition":{
+			"type":"origins:block",
+			"block":"minecraft:redstone_block"
+		},
+		"allow":true
+	},
+	"redblockbreak":{
+		"type":"origins:modify_break_speed",
+		"block_condition":{
+			"type":"origins:block",
+			"block":"minecraft:redstone_block"
+		},
+		"modifier":{
+			"operation":"multiply_total",
+			"value":7.0
+		}
+	},
 	"dispirit_init":{
 		"type":"origins:action_on_callback",
 		"entity_action_added":{
