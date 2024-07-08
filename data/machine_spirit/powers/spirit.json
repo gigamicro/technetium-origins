@@ -9,15 +9,16 @@
 		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
 	},
 	"phase":{
-	    "type": "origins:phasing",
-	    "blacklist": true,
-	    "render_type": "blindness",
-	    "view_distance": 10,
-	    "block_condition": {
-	        "type": "origins:in_tag",
-	        "tag": "origins:unphasable"
-	    },
-	    "phase_down_condition":{"type":"origins:sneaking"}
+		"type":"origins:phasing",
+		"blacklist":true,
+		"render_type":"blindness",
+		"view_distance":10,
+		"block_condition":{
+			"note":"should there be something else here?",
+			"type":"origins:in_tag",
+			"tag":"origins:unphasable"
+		},
+		"phase_down_condition":{"type":"origins:sneaking"}
 	},
 	"invuln":{
 		"type":"origins:invulnerability",
@@ -40,6 +41,14 @@
 	"nightvision":{"type":"origins:night_vision","strength":0.03125},
 	"nowater":{"type":"origins:ignore_water"},
 	"nowater_vision":{"type":"origins:modify_camera_submersion","from":"water","to":"none"},
+	"nolava_vision":{"type":"origins:modify_camera_submersion","from":"lava","to":"none"},
+	"lava_speed":{
+	    "type": "origins:modify_lava_speed",
+	    "modifier": {
+	        "operation": "addition",
+	        "value": 0.4
+	    }
+	},
 	"entitycollision":{"type":"origins:prevent_entity_collision"},
 	"noattack":{"type":"origins:modify_damage_dealt","modifier":{"operation":"multiply_total","value":-1}},
 	"noburn":{"type":"origins:fire_immunity"},
@@ -51,9 +60,6 @@
 		"interval":1,
 		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
 	},
-	"noinventory_pickup":{
-		"type":"apoli:prevent_item_pickup",
-		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<=","compare_to":10}
 	},
 	"noblocks":{
 		"type":"origins:prevent_block_selection",
@@ -74,12 +80,12 @@
 	"type":"origins:block_action_at","block_action":{
 	"type":"origins:if_else_list","actions":[
 		{
-			"condition":{"type":"origins:block", "block": "minecraft:redstone_wire" },
-			"action":{"type":"origins:set_block","block": "minecraft:redstone_wire[power=15]" }
+			"condition":{"type":"origins:block", "block":"minecraft:redstone_wire" },
+			"action":{"type":"origins:set_block","block":"minecraft:redstone_wire[power=15]" }
 		},
 		{
-			"condition":{"type":"origins:block", "block": "minecraft:redstone_lamp" },
-			"action":{"type":"origins:set_block","block": "minecraft:redstone_lamp[lit=true]" }
+			"condition":{"type":"origins:block", "block":"minecraft:redstone_lamp" },
+			"action":{"type":"origins:set_block","block":"minecraft:redstone_lamp[lit=true]" }
 		}
 	]
 	}
