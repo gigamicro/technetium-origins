@@ -128,11 +128,11 @@
 	"nowater_vision":{"type":"origins:modify_camera_submersion","from":"water","to":"none"},
 	"nolava_vision":{"type":"origins:modify_camera_submersion","from":"lava","to":"none"},
 	"lava_speed":{
-	    "type": "origins:modify_lava_speed",
-	    "modifier": {
-	        "operation": "addition",
-	        "value": 0.4
-	    }
+		"type":"origins:modify_lava_speed",
+		"modifier":{
+			"operation":"addition",
+			"value":0.4
+		}
 	},
 	"entitycollision":{"type":"origins:prevent_entity_collision"},
 	"noattack":{"type":"origins:modify_damage_dealt","modifier":{"operation":"multiply_total","value":-1}},
