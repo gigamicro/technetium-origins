@@ -282,6 +282,8 @@
 				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":1}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:in_tag","tag":"minecraft:base_stone_overworld"}},
 				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":2}},
+				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:cobblestone"}},
+				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":2}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:iron_block"}},
 				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":3}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:gold_block"}},
