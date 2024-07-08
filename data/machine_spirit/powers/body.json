@@ -358,6 +358,12 @@
 	},
 	"death":{
 		"type":"origins:prevent_death",
+		"condition":{
+			"type":"origins:resource",
+			"resource":"machine_spirit:body_redstone",
+			"comparison":">",
+			"compare_to":0
+		},
 		"note":"should be same as below but currently one copy for ease of edit"
 	},
 	"respirit":{
