@@ -145,7 +145,6 @@
 		"interval":1,
 		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<","compare_to":50}
 	},
-	},
 	"noblocks":{
 		"type":"origins:prevent_block_selection",
 		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"<","compare_to":50}
