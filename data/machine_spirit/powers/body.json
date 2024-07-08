@@ -351,6 +351,12 @@
 				"type":"origins:in_tag",
 				"tag":"minecraft:replaceable"
 			}}
+		},{
+			"type":"origins:in_block",
+			"block_condition":{
+				"type":"origins:in_tag",
+				"tag":"minecraft:replaceable"
+			}
 		}]},
 		"entity_action":{"type":"origins:and","actions":[{
 			"type":"origins:clear_effect"
