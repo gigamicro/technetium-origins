@@ -1,6 +1,6 @@
 #!/bin/sh
 cd "$(readlink -zf "$0" | xargs -0 dirname)"
 while true; do
-	zip -ru automaton.zip data pack.mcmeta; cp -uvfT ./automaton.zip ../datapacks/automaton.zip
-	sleep 0.25 & tail -n0 -f --pid $! ../datapacks/../../../logs/latest.log
+	zip -ru technetium-origins.zip data pack.mcmeta; cp -uvft ../datapacks/ ./*.zip
+	sleep 0.25 & tail --pid $! -n0 -f ../datapacks/../../../logs/latest.log
 done
