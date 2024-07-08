@@ -1,91 +1,28 @@
 machine spirit origin
 
-make bodies
-stored how? entity creation? locked chest? equipment & modded equipment? status effects?? health?? exhaustion?? *modded properties*???
-multiple types?
-bonuses? how many? health, vision, speed, jump?, ; tradeoffs? durability (health loss?)?
-regular material path? that plus copper/etc? modded materials? vanilla paths for modded materials; optional?
-iron golems - interactions? interactions with modded machines?
 exhaustion? different fuels?
 
 incorporeal
-flying? speed?
 ignores specific blocks? all non-metals? all organics? visibility in dirt?
-
 limited to range
 from redstone? variable range by block? powers redstone components? mod support 
 visibility - can't see outside range? can't see entities outside range?
 
-spirit should? be able to open chests and dump the contents on the ground
-if bodies have an item form that should be enough to deploy them
-if no custom item ids?
-wait are there? not that i can tell
-so what represents the bodies?
-armor stands? do armor stands have enough item slots?
-is it possible to make this work well enough without saving the full player state?
-stand on/in representative block + press button:
-what if it's just golems without the pumpkin?
-not the snow golem, but maybe just two iron/copper/gold/diamond/stone blocks?
-two stone is too cheap; one block & one redstone block? 2 & 1? redstone dust? t1 just a dust and a block, t2 a block of each, t3 two&one?
-stone (cobble? smooth?): base player stats? no swimming; lava reaction?
-log: "natural", swimming, maybe regen; have to remember type
+bonuses? how many? health, vision, speed, jump?, ; tradeoffs? durability (health loss?)?
+log: "natural", swimming, maybe regen
+stone: slower
 iron: healthy, faster
 copper: same but lightning?
 gold: speed but -health
 diamond: ...shiny?
-netherite: if it takes more than one block it might just be fucking invincible
+netherite: no lava, no fire, maybe just entirely invincible
 modded stuff
-drop partial reclamation; third?
-heavy damage but left: maybe just have scaling portion by health
-to cover the log cases should that never take two blocks? or keep the items somewhere weird? armor slots? redstone shouldn't show up
 
 graves don't interact with this as-is, is that needed? is there a way to store the items in a chest?
 
-downgrade high tiers at high damage?
-
-the effect of adding eight more redstone should be mostly nonphysical: single dust bodies have worse senses? exhaustion?
-
-counteract dropping and picking a body back up via long cooldown?
-
-two blocks and a dust?
-
-have tiers not affect anything but health?
-
-... redstone block with optional chest and armor stand?
-
-literally just a redstone block, the player should put away their own items before dying :p
-
-curse of binding on armor slot blocks
-t2 can't elytra
-eschew redstone (block) on head?
-just use resource to register redstone count; change how? what effects?
-gives armor equivalent to same material in same slots
-
-given ability to stand inside blocks, where should be valid to stand?
-for that matter is there a reason to go beyond up-to-three-block vertical pillars?
-should it be so restrictive you have to be standing with your head in the redstone (block)?
-should it be valid to stand entirely under the redstone, if there's two material blocks there?
-
-should there even be more than one block of material (and one of redstone)?
-should it be impossible to make a body with just one redstone?
-should there be a dirt+dust one for extreme cheapness? just have to spawn on dirt and place it then, but server spawns aren't dirt
-spawn in a dirt+dust body by default?
-more than two mat blocks? four and a redstone?
-
 invulnerable to magic damage in body, invulnerable to nonmagic damage outside?
-
-ability:
-if has spirit power try to incarnate
-elif has 
-
-dirtdust respawn power
-spirit power
-possession power
-body power(s) - power for rblock, elif chain for mats in armor slots?
-restrictive power
 
 restriction: radius? timer? 
 
-torch in place of dust gives the stick back
-
+torch in place of dust gives the stick back?
 what uses redstone in components?
