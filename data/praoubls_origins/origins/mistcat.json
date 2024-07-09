@@ -2,18 +2,17 @@
     "name": "Mistcat",
     "description": "Floating with the clouds, mistcats are hard to spot, and far harder to catch. They are cat-like cloud elementals that wander the skies bringing storms and mischief wherever they go.",
     "powers": [
-        "praoubls_origins:floating",
-        "praoubls_origins:snowing",
+        "praoubls_origins:cloud_body",
         "praoubls_origins:no_gravity",
         "praoubls_origins:windwalker",
         "praoubls_origins:calm_breeze",
         "praoubls_origins:scare_creepers",
         "praoubls_origins:cat_size",
-        "praoubls_origins:phase_holes",
-        "praoubls_origins:cloud_body"
+        "origins:fall_immunity",
+        "praoubls_origins:phase_holes"
     ],
     "icon": {
-        "item": "minecraft:white_wool"
+        "item": "minecraft:white_stained_glass_pane"
     },
     "impact": 3
 }
