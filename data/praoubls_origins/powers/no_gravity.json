@@ -1,6 +1,6 @@
 {
     "name": "No Gravity",
-    "description":"You don't fall in non-freezing temperatures.",
+    "description":"You only fall in freezing temperatures or when sneaking.",
     "condition": {
         "type": "origins:and",
         "conditions": [
@@ -11,6 +11,15 @@
             {
                 "inverted": true,
                 "type": "origins:creative_flying"
+            },
+            {
+                "inverted": true,
+                "type": "origins:sneaking"
+            },
+            {
+                "inverted": true,
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
             },
             {
                 "inverted": true,
@@ -27,6 +36,6 @@
     "interval": 1,
     "entity_action": {
         "type": "origins:add_velocity",
-        "y": 0.06
+        "y": 0.08
     }
 }
