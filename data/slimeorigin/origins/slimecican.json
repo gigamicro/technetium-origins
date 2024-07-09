@@ -1,0 +1,32 @@
+{
+    "name": "Slimecican",
+    "description": "A type of slime that has evolved to act as a player.",
+    "powers": [
+        "slimeorigin:bouncy",
+        "slimeorigin:no_fall_damage_dummy",
+        "slimeorigin:better_jump",
+        "slimeorigin:better_jump_dummy",
+        "slimeorigin:fragmentation",
+        "slimeorigin:slime_skin",
+        "slimeorigin:melting",
+        "slimeorigin:mitosis",
+        "slimeorigin:amethyst_grant_power",
+        "slimeorigin:nonsolid",
+        "slimeorigin:start_size",
+        "slimeorigin:air_speed",
+        "slimeorigin:size",
+        "slimeorigin:health_r",
+        "slimeorigin:health",
+        "slimeorigin:slime_family",
+        "slimeorigin:sticky",
+        "slimeorigin:no_slime_damage",
+        "slimeorigin:slime",
+        "slimeorigin:bad_swimmer",
+        "slimeorigin:slide"
+    ],
+    "icon": {
+        "item": "minecraft:slime_ball"
+    },
+    "order": 100,
+    "impact": 2
+}

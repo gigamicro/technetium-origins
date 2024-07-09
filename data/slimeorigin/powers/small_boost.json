@@ -1,0 +1,36 @@
+{
+    "name": "small boost",
+    "hidden": true,
+    "type": "origins:multiple",
+    "speed": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "slimeorigin:size",
+            "comparison": ">=",
+            "compare_to": 2
+        },
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "multiply_total",
+                "value": 1.25
+            }
+        ],
+        "tick_rate": 20,
+        "update_health": true
+    },
+    "jump": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "slimeorigin:size",
+            "comparison": ">=",
+            "compare_to": 2
+        },
+        "type": "origins:modify_jump",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1.25
+        }
+    }
+}

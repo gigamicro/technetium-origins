@@ -1,0 +1,37 @@
+{
+    "name": "Fragmentation",
+    "description": "When others would die, you shrink to half your size and lose two hearts. (Thrice per life)",
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "slimeorigin:size",
+        "comparison": "<",
+        "compare_to": 3
+    },
+    "type": "origins:prevent_death",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:heal",
+                "amount": 100
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale divide 2 @s"
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "slimeorigin:health_r",
+                "change": -4,
+                "operation": "add"
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "slimeorigin:size",
+                "change": 1,
+                "operation": "add"
+            }
+        ]
+    }
+}

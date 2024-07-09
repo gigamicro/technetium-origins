@@ -1,0 +1,29 @@
+{
+    "name": "Bouncy",
+    "description": "You bounce on most blocks as if they were a Slime Block.",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:fall_distance",
+                "comparison": ">=",
+                "compare_to": 0.57
+            },
+            {
+                "inverted": true,
+                "type": "origins:sneaking"
+            }
+        ]
+    },
+    "type": "eggolib:modify_bounciness",
+    "block_condition": {
+        "type": "origins:or",
+        "inverted": true,
+        "conditions": [
+            {
+                "type": "origins:in_tag",
+                "tag": "minecraft:mineable/hoe"
+            }
+        ]
+    }
+}

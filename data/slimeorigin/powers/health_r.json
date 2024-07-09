@@ -1,0 +1,14 @@
+{
+    "name": "health_r",
+    "hidden": true,
+    "type": "origins:resource",
+    "min": -16,
+    "max": 0,
+    "start_value": 0,
+    "min_action": {
+        "type": "origins:change_resource",
+        "resource": "slimeorigin:health_r",
+        "change": 0,
+        "operation": "set"
+    }
+}

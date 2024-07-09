@@ -1,0 +1,10 @@
+{
+    "name": "Improved Jump",
+    "description": "Your slime heritage gives you an improved leap at the cost of a reduced movement speed.",
+    "type": "origins:modify_jump",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.5,
+        "name": "Slime Better Jump"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Blue Agility",
+    "description": "You are faster and jump higher.",
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_base",
+            "value": 1.5
+        }
+    ],
+    "update_health": false
+}

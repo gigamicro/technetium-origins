@@ -1,0 +1,14 @@
+{
+    "name": "Nonsolid",
+    "description": "Due to being made of slime, you can squeeze past blocks that have gaps in them.",
+    "type": "origins:phasing",
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "slimeorigin:has_holes"
+    },
+    "render_type": "none",
+    "view_distance": 1,
+    "phase_down_condition": {
+        "type": "origins:sneaking"
+    }
+}
