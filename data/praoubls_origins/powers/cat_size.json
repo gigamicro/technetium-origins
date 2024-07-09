@@ -1,0 +1,69 @@
+{
+    "name": "Catlike",
+    "description": "You are the shape of a cat, so you are 1 block tall, step up a full block, and scare creepers.",
+    "type": "origins:action_on_callback",
+    "execute_chosen_when_orb": false,
+    "entity_action_lost": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale divide pehkui:motion 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply pehkui:step_height 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale persist true @s"
+            }
+        ]
+    },
+    "entity_action_added": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale divide 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply pehkui:motion 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply pehkui:step_height 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale persist @s"
+            }
+        ]
+    },
+    "entity_action_removed": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale divide pehkui:motion 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale divide pehkui:step_height 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale persist @s"
+            }
+        ]
+    }
+}

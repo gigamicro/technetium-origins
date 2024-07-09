@@ -1,0 +1,9 @@
+{
+    "name": "Cloud Body",
+    "description": "You are a cloud, so you look like one, have six hearts, projectiles go through you, and are immune to many things solid beings have to deal with.",
+    "type": "origins:model_color",
+    "red": 1,
+    "green": 1,
+    "blue": 1,
+    "alpha": 0.35
+}

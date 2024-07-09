@@ -1,0 +1,22 @@
+{
+    "name": "Calm Breeze",
+    "description": "You can press shift+primary to calm the wind, stopping you midair.",
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "x": 0,
+        "y": 0.02,
+        "z": 0,
+        "space": "world",
+        "client": true,
+        "server": true,
+        "set": true
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+    }
+}

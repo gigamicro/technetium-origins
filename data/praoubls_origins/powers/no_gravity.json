@@ -1,0 +1,35 @@
+{
+    "name": "No Gravity",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "inverted": true,
+                "type": "origins:biome",
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": "<",
+                    "compare_to": 0.2
+                }
+            },
+            {
+                "inverted": true,
+                "type": "origins:creative_flying"
+            },
+            {
+                "inverted": true,
+                "type": "origins:on_block"
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "y": 0.06,
+        "space": "world",
+        "client": true,
+        "server": true
+    }
+}

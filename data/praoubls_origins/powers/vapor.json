@@ -1,0 +1,12 @@
+{
+    "name": "Vapor",
+    "description": "Because you're a cloud, you are able to pass through blocks that have gaps.",
+    "type": "origins:phasing",
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "praoubls_origins:has_holes"
+    },
+    "blacklist": false,
+    "render_type": "none",
+    "view_distance": 1
+}

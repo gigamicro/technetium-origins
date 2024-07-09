@@ -1,6 +1,7 @@
 {
 	"allow_random":true,
 	"origins":[
-		"origins-plus-plus:automaton"
+		"origins-plus-plus:automaton",
+        "praoubls_origins:mistcat"
 	]
 }
