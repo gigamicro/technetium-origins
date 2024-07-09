@@ -1,6 +1,5 @@
 {
-    "name": "Scare Creepers",
-    "hidden": true,
+    "name": "Creepers Ignore You",
     "type": "apugli:mobs_ignore",
     "mob_condition": {
         "type": "origins:entity_type",

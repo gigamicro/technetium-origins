@@ -1,9 +1,25 @@
 {
     "name": "Cloud Body",
     "description": "You are a cloud, so you look like one, have six hearts, projectiles go through you, and are immune to many things solid beings have to deal with.",
-    "type": "origins:model_color",
-    "red": 1,
-    "green": 1,
-    "blue": 1,
-    "alpha": 0.35
+    "type":"origins:multiple",
+    "color":{
+        "type": "origins:model_color",
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "alpha": 0.35
+    },
+    "particles":{
+        "type": "origins:particle",
+        "particle": "minecraft:snowflake",
+        "frequency": 1,
+        "count": 2,
+        "speed": 0,
+        "spread": {
+            "x": 0.13,
+            "y": 0.4,
+            "z": 0.13
+        },
+        "offset_y": 0.3
+    },
 }

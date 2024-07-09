@@ -1,6 +1,6 @@
 {
     "name": "Floating",
-    "description": "You have creative flight and no gravity due to being a cloud. Sneak to fall gently.",
+    "description": "You have creative flight and no gravity. Sneak to fall gently.",
     "condition": {
         "inverted": true,
         "type": "origins:biome",

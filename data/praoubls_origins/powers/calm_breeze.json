@@ -1,6 +1,6 @@
 {
     "name": "Calm Breeze",
-    "description": "You can press shift+primary to calm the wind, stopping you midair.",
+    "description": "You can press sneak+primary to calm the wind, stopping you midair.",
     "condition": {
         "type": "origins:sneaking"
     },

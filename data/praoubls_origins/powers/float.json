@@ -1,9 +1,26 @@
 {
-    "name": "Float",
-    "hidden": true,
+    "name": "Floaty",
+    "description":"You slowly float upward in non-freezing air.",
     "condition": {
         "type": "origins:and",
         "conditions": [
+            {
+                "inverted": true,
+                "type": "origins:on_block"
+            },
+            {
+                "inverted": true,
+                "type": "origins:creative_flying"
+            },
+            {
+                "inverted": true,
+                "type": "origins:sneaking"
+            },
+            {
+                "inverted": true,
+                "type": "origins:power_active",
+                "power": "praoubls_origins:calm_breeze"
+            },
             {
                 "inverted": true,
                 "type": "origins:biome",
@@ -12,28 +29,6 @@
                     "comparison": "<",
                     "compare_to": 0.2
                 }
-            },
-            {
-                "inverted": true,
-                "type": "origins:creative_flying"
-            },
-            {
-                "inverted": true,
-                "type": "origins:on_block"
-            },
-            {
-                "type": "origins:and",
-                "conditions": [
-                    {
-                        "inverted": true,
-                        "type": "origins:sneaking"
-                    },
-                    {
-                        "inverted": true,
-                        "type": "origins:power_active",
-                        "power": "praoubls_origins:calm_breeze"
-                    }
-                ]
             }
         ]
     },

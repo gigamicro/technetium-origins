@@ -1,6 +1,6 @@
 {
-    "name": "Catlike",
-    "description": "You are the shape of a cat, so you are 1 block tall, step up a full block, and scare creepers.",
+    "name": "Catsized",
+    "description": "Your height and step size are halved and doubled, respectively.",
     "type": "origins:action_on_callback",
     "execute_chosen_when_orb": false,
     "entity_action_lost": {

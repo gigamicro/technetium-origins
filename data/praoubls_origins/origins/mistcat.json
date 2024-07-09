@@ -10,9 +10,8 @@
         "praoubls_origins:calm_breeze",
         "praoubls_origins:scare_creepers",
         "praoubls_origins:cat_size",
-        "praoubls_origins:vapor",
-        "praoubls_origins:cloud_body",
-        "praoubls_origins:particles"
+        "praoubls_origins:phase_holes",
+        "praoubls_origins:cloud_body"
     ],
     "icon": {
         "item": "minecraft:white_wool"

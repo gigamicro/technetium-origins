@@ -1,9 +1,17 @@
 {
     "name": "No Gravity",
-    "hidden": true,
+    "description":"You don't fall in non-freezing temperatures.",
     "condition": {
         "type": "origins:and",
         "conditions": [
+            {
+                "inverted": true,
+                "type": "origins:on_block"
+            },
+            {
+                "inverted": true,
+                "type": "origins:creative_flying"
+            },
             {
                 "inverted": true,
                 "type": "origins:biome",
@@ -12,14 +20,6 @@
                     "comparison": "<",
                     "compare_to": 0.2
                 }
-            },
-            {
-                "inverted": true,
-                "type": "origins:creative_flying"
-            },
-            {
-                "inverted": true,
-                "type": "origins:on_block"
             }
         ]
     },
