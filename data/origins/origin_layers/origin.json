@@ -1,7 +1,6 @@
 {
 	"allow_random":true,
 	"origins":[
-		"origins-plus-plus:automaton",
         "slimeorigin:slimecican"
 	]
 }
