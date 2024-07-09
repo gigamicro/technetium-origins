@@ -1,9 +1,6 @@
 {
     "name": "Calm Breeze",
-    "description": "You can press sneak+primary to calm the wind, stopping you midair.",
-    "condition": {
-        "type": "origins:sneaking"
-    },
+    "description": "Active: Calm the wind, stopping you midair.",
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:add_velocity",
