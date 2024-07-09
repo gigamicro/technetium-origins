@@ -519,10 +519,6 @@
 			"resource":"machine_spirit:body_material",
 			"operation":"set",
 			"change":0
-		},{
-			"type":"origins:modify_inventory",
-			"slot":"armor.head",
-			"item_action":{"type":"origins:consume"}
 		}]}
 	}
 }
