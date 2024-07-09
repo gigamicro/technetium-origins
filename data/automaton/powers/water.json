@@ -1,0 +1,101 @@
+{
+"name":"Water Supply",
+"description":"You can consume water with which to produce Steam.",
+"type":"origins:multiple",
+"bar":{
+	"type":"origins:resource",
+	"min":0,
+	"max":20000,
+	"start_value":10000,
+	"hud_render":{
+		"bar_index":1
+	}
+},
+"respawn":{
+	"type": "origins:action_on_callback",
+	"entity_action_respawned":{
+		"type": "origins:change_resource",
+		"resource": "automaton:water_bar",
+		"operation":"set",
+		"change": 10000
+	}
+},
+"small":{
+	"type": "origins:action_on_item_use",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:change_resource",
+				"resource": "automaton:water_bar",
+				"change": 1250,
+				"operation": "add"
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.bucket.empty",
+				"volume": 1.5,
+				"pitch": 0.75
+			}
+		]
+	},
+	"item_condition": {
+		"type": "origins:nbt",
+		"nbt": "{Potion:\"minecraft:water\"}"
+	},
+	"trigger": "finish",
+	"priority": 0
+},
+"large":{
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:water_bucket"
+					}
+				}
+			},
+			{
+				"type": "origins:sneaking"
+			}
+		]
+	},
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:change_resource",
+				"resource": "automaton:water_bar",
+				"change": 7500,
+				"operation": "add"
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.bucket.empty",
+				"volume": 1.5,
+				"pitch": 0.5
+			},
+			{
+				"type": "origins:equipped_item_action",
+				"equipment_slot": "mainhand",
+				"action": {
+					"type": "origins:consume",
+					"amount": 1
+				}
+			},
+			{
+				"type": "origins:execute_command",
+				"command":"give @s minecraft:bucket"
+			}
+		]
+	},
+	"cooldown": 5,
+	"key": "key.use"
+}
+}

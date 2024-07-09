@@ -1,0 +1,22 @@
+{
+	"loading_priority":1,
+	"name":"Automaton",
+	"powers":[
+		"automaton:unnatural",
+		"automaton:fire",
+		"automaton:water",
+		"automaton:steam",
+		"automaton:low",
+		"automaton:health",
+		"automaton:burn",
+		"automaton:immolate",
+		"automaton:cold",
+		"automaton:hot",
+		"automaton:humidity",
+		"automaton:drown",
+		"automaton:dense",
+		"automaton:attack"
+	],
+	"icon":"minecraft:weathered_copper",
+	"impact":3
+}

@@ -1,0 +1,47 @@
+{
+	"name":"Immolate",
+	"description":"Expend Fire to set yourself on fire.",
+	"type":"origins:active_self",
+	"entity_action":{
+		"type":"origins:and",
+		"actions":[
+			{
+				"type":"origins:set_on_fire",
+				"duration":5
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.firecharge.use",
+				"volume": 0.5,
+				"pitch": 1.0
+			},
+			{
+				"type":"origins:change_resource",
+				"resource": "automaton:fire_bar",
+				"operation": "add",
+				"change": -500
+			}
+		]
+	},
+	"condition":{"type":"origins:and","conditions":[
+		{
+			"type":"origins:resource",
+			"resource":"automaton:fire_bar",
+			"comparison":">=",
+			"compare_to":500
+		},
+		{
+			"type":"origins:in_block",
+			"block_condition": {
+				"type": "origins:fluid",
+				"fluid_condition": {
+					"type": "origins:in_tag",
+					"tag": "minecraft:water"
+				}
+			},
+			"inverted": true
+		}
+	]},
+	"key":"key.origins.primary_active",
+	"cooldown":20
+}
