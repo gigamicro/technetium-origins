@@ -16,11 +16,6 @@
 			}
 		}
 	},
-	"material":{
-		"type":"origins:resource",
-		"min":-1,
-		"max":7
-	},
 	"redstone_high_vis":{
 		"condition":{
 			"type":"origins:resource",
@@ -197,7 +192,13 @@
 			"value":7.0
 		}
 	},
-	"dispirit_init":{
+
+	"material":{
+		"type":"origins:resource",
+		"min":-1,
+		"max":7
+	},
+	"init":{
 		"type":"origins:action_on_callback",
 		"entity_action_added":{
 			"type":"origins:if_else",
