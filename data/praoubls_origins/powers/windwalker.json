@@ -1,6 +1,7 @@
 {
     "name": "Windwalker",
-    "description": "You move forward in the air when pressing primary.",
+    "description": "You move in your looking direction when moving in air.",
+    "type": "origins:active_self",
     "condition": {
         "type": "origins:and",
         "conditions": [
@@ -11,14 +12,9 @@
             {
                 "inverted": true,
                 "type": "origins:creative_flying"
-            },
-            {
-                "inverted": true,
-                "type": "origins:sneaking"
             }
         ]
     },
-    "type": "origins:active_self",
     "entity_action": {
         "type": "origins:add_velocity",
         "z": 0.12,
@@ -26,9 +22,8 @@
         "client": true,
         "server": true
     },
-    "cooldown": 1,
     "key": {
-        "key": "key.origins.primary_active",
+        "key": "key.forward",
         "continuous": true
     }
 }
