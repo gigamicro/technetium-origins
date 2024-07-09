@@ -22,7 +22,5 @@ graves don't interact with this as-is, is that needed? is there a way to store t
 
 invulnerable to magic damage in body, invulnerable to nonmagic damage outside?
 
-restriction: radius? timer? 
+powered rail, observer, piston, dropper, dispenser, detector rail
 
-torch in place of dust gives the stick back?
-what uses redstone in components?
