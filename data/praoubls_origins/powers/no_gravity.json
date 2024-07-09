@@ -27,9 +27,6 @@
     "interval": 1,
     "entity_action": {
         "type": "origins:add_velocity",
-        "y": 0.06,
-        "space": "world",
-        "client": true,
-        "server": true
+        "y": 0.06
     }
 }

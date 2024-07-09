@@ -6,7 +6,5 @@
         "type": "origins:in_tag",
         "tag": "praoubls_origins:has_holes"
     },
-    "blacklist": false,
-    "render_type": "none",
-    "view_distance": 1
+    "render_type": "none"
 }
