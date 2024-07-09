@@ -1,6 +1,6 @@
 {
 	"name":"Spirit Form",
-	"description":"You can barely affect the physical world, nor can it you.",
+	"description":"You can barely affect the physical world, or it you.",
 	"type":"origins:multiple",
 	"flight":{"type":"origins:creative_flight"},
 	"alpha":{"type":"origins:model_color","alpha":0.125},
@@ -138,7 +138,13 @@
 	"noattack":{"type":"origins:modify_damage_dealt","modifier":{"operation":"multiply_total","value":-1}},
 	"noburn":{"type":"origins:fire_immunity"},
 
-	"activity":{"type":"origins:cooldown","cooldown":100},
+	"activity":{
+		"type":"origins:cooldown","cooldown":280,
+		"hud_render":{
+			"sprite_location":"origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index":1
+		}
+	},
 	"noinventory":{
 		"type":"origins:action_over_time",
 		"entity_action":{"type":"origins:drop_inventory","throw_randomly":true},
@@ -158,21 +164,22 @@
 		"type":"origins:self_action_when_hit",
 		"entity_action":{"type":"origins:trigger_cooldown","power":"machine_spirit:spirit_activity"}
 	},
+	"activity_use":{
+		"type":"origins:action_on_being_used",
+		"bientity_action":{
+			"type":"origins:target_action",
+			"action":{"type":"origins:trigger_cooldown","power":"machine_spirit:spirit_activity"}
+		}
+	},
 	"activity_event":{
 		"type":"origins:prevent_game_event",
 		"events":[
 			"minecraft:block_place",
 			"minecraft:block_destroy",
 			"minecraft:entity_place",
-			"minecraft:elytra_free_fall",
-			"minecraft:ring_bell",
 			"minecraft:block_close",
-			"minecraft:block_unswitch",
-			"minecraft:block_unpress",
 			"minecraft:block_detach",
 			"minecraft:block_open",
-			"minecraft:block_switch",
-			"minecraft:block_press",
 			"minecraft:block_attach"
 		],
 		"entity_action":{"type":"origins:trigger_cooldown","power":"machine_spirit:spirit_activity"}
