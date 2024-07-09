@@ -1,12 +1,6 @@
 machine spirit origin
 
-exhaustion? different fuels?
-
-incorporeal
-ignores specific blocks? all non-metals? all organics? visibility in dirt?
-limited to range
-from redstone? variable range by block? powers redstone components? mod support 
-visibility - can't see outside range? can't see entities outside range?
+darkness or blindness outside range?
 
 bonuses? how many? health, vision, speed, jump?, ; tradeoffs? durability (health loss?)?
 log: "natural", swimming, maybe regen
@@ -24,3 +18,5 @@ invulnerable to magic damage in body, invulnerable to nonmagic damage outside?
 
 powered rail, observer, piston, dropper, dispenser, detector rail
 
+move the radius up one block
+also put the lower radii first for efficiency 
