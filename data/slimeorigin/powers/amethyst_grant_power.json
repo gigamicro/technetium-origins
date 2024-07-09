@@ -16,7 +16,7 @@
             },
             {
                 "type": "origins:grant_power",
-                "power": "slimeorigin:blue_slime_skin",
+                "power": "slimeorigin:blue/slime_skin",
                 "source": "slimeorigin:slimecican"
             },
             {
@@ -26,12 +26,12 @@
             },
             {
                 "type": "origins:grant_power",
-                "power": "slimeorigin:blue_agility",
+                "power": "slimeorigin:blue/agility",
                 "source": "slimeorigin:slimecican"
             },
             {
                 "type": "origins:grant_power",
-                "power": "slimeorigin:blue_jump",
+                "power": "slimeorigin:blue/jump",
                 "source": "slimeorigin:slimecican"
             }
         ]

@@ -17,13 +17,8 @@
     },
     "type": "eggolib:modify_bounciness",
     "block_condition": {
-        "type": "origins:or",
+        "type": "origins:in_tag",
         "inverted": true,
-        "conditions": [
-            {
-                "type": "origins:in_tag",
-                "tag": "minecraft:mineable/hoe"
-            }
-        ]
+        "tag": "minecraft:mineable/hoe"
     }
 }
