@@ -1,9 +1,0 @@
-{
-    "name": "Bad Swimmer",
-    "description": "You can't swim properly because you aren't solid.",
-    "condition": {
-        "type": "origins:submerged_in",
-        "fluid": "minecraft:water"
-    },
-    "type": "origins:prevent_sprinting"
-}

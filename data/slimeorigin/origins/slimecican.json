@@ -22,7 +22,7 @@
         "slimeorigin:sticky",
         "slimeorigin:no_slime_damage",
         "slimeorigin:slime",
-        "slimeorigin:bad_swimmer",
+        "technetium:bad_swimmer",
         "slimeorigin:slide"
     ],
     "icon": {
