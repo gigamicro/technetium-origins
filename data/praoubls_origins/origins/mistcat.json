@@ -9,7 +9,7 @@
         "praoubls_origins:scare_creepers",
         "praoubls_origins:cat_size",
         "origins:fall_immunity",
-        "praoubls_origins:phase_holes"
+        "technetium:phase_holes"
     ],
     "icon": {
         "item": "minecraft:white_stained_glass_pane"
