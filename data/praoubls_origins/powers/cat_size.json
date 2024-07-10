@@ -11,15 +11,15 @@
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale divide 2 @s"
+                "command": "scale divide 2"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale multiply pehkui:motion 2 @s"
+                "command": "scale multiply pehkui:motion 2"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale multiply pehkui:step_height 2 @s"
+                "command": "scale multiply pehkui:step_height 1.67"
             }
         ]
     },
@@ -32,15 +32,15 @@
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale divide 2 @s"
+                "command": "scale divide 2"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale multiply pehkui:motion 2 @s"
+                "command": "scale multiply pehkui:motion 2"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale multiply pehkui:step_height 2 @s"
+                "command": "scale multiply pehkui:step_height 1.67"
             }
         ]
     },
@@ -49,15 +49,15 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "scale multiply 2 @s"
+                "command": "scale multiply 2"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale divide pehkui:motion 2 @s"
+                "command": "scale divide pehkui:motion 2"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale divide pehkui:step_height 2 @s"
+                "command": "scale divide pehkui:step_height 1.67"
             }
         ]
     }
