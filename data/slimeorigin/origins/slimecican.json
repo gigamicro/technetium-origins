@@ -2,8 +2,10 @@
     "name": "Slimecican",
     "description": "A type of slime that has evolved to act as a player.",
     "powers": [
-        "slimeorigin:bouncy",
-        "slimeorigin:no_fall_damage_dummy",
+        "moborigins:bouncy",
+        "moborigins:dyeable",
+        "moborigins:slimy_color",
+        "origins:fall_immunity",
         "slimeorigin:better_jump",
         "slimeorigin:fragmentation",
         "slimeorigin:slime_skin",
