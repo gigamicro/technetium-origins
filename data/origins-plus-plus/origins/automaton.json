@@ -2,7 +2,7 @@
 	"loading_priority":1,
 	"name":"Automaton",
 	"powers":[
-		"automaton:unnatural",
+		"technetium:unnatural",
 		"automaton:fire",
 		"automaton:water",
 		"automaton:steam",
