@@ -1,0 +1,10 @@
+{
+	"name": "Formless, Shapeless, Like Water",
+	"description": "You are able to pass through blocks that have gaps.",
+	"type": "origins:phasing",
+	"block_condition": {
+		"type": "origins:in_tag",
+		"tag": "technetium:has_holes"
+	},
+	"render_type": "none"
+}
