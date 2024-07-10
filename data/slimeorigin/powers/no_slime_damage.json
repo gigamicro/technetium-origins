@@ -1,6 +1,5 @@
 {
     "name": "no slime damage",
-    "hidden": true,
     "type": "origins:invulnerability",
     "damage_condition": {
         "type": "origins:attacker",

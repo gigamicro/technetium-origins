@@ -1,7 +1,6 @@
 {
     "name": "Fragmentation",
     "description": "When others would die, you shrink to half your size and lose two hearts. (Thrice per life)",
-    "hidden": true,
     "condition": {
         "type": "origins:resource",
         "resource": "slimeorigin:size",

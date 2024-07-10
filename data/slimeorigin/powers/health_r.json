@@ -1,6 +1,5 @@
 {
     "name": "health_r",
-    "hidden": true,
     "type": "origins:resource",
     "min": -16,
     "max": 0,

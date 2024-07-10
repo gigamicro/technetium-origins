@@ -1,6 +1,5 @@
 {
     "name": "small boost",
-    "hidden": true,
     "type": "origins:multiple",
     "speed": {
         "condition": {

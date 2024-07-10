@@ -1,6 +1,5 @@
 {
     "name": "slide",
-    "hidden": true,
     "type": "origins:multiple",
     "slidet": {
         "condition": {
