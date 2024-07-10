@@ -1,13 +1,13 @@
 {
     "pack": {
-        "name": "Upgraded Automaton",
+        "name": "Technetium Origins",
         "pack_format": 15,
         "version": "1.0.13",
         "authors": [
             "gigamicro",
             "praoubl"
         ],
-        "description": "rework for automaton from origins++",
+        "description": "new origins: automaton (reworked from o++), machine spirit",
         "license": "MIT"
     }
 }

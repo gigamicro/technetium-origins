@@ -1,0 +1,22 @@
+machine spirit origin
+
+darkness or blindness outside range?
+
+bonuses? how many? health, vision, speed, jump?, ; tradeoffs? durability (health loss?)?
+log: "natural", swimming, maybe regen
+stone: slower
+iron: healthy, faster
+copper: same but lightning?
+gold: speed but -health
+diamond: ...shiny?
+netherite: no lava, no fire, maybe just entirely invincible
+modded stuff
+
+graves don't interact with this as-is, is that needed? is there a way to store the items in a chest?
+
+invulnerable to magic damage in body, invulnerable to nonmagic damage outside?
+
+powered rail, observer, piston, dropper, dispenser, detector rail
+
+move the radius up one block
+also put the lower radii first for efficiency 

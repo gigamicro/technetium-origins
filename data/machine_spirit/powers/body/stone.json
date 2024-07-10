@@ -1,0 +1,37 @@
+{
+	"type":"origins:multiple",
+	"nowater":{"type":"origins:ignore_water"},
+	"attr":{
+		"type":"origins:attribute",
+		"modifiers":[
+			{"attribute":"generic.armor","operation":"addition","value":14},
+			{"attribute":"generic.movement_speed","operation":"multiply_base","value":-0.125}
+		]
+	},
+	"lessfire":{
+		"type":"origins:modify_damage_taken",
+		"damage_condition":{"type":"origins:or","conditions":[
+			{"type":"origins:name","name":"onFire"},
+			{"type":"origins:name","name":"inFire"},
+			{"type":"origins:name","name":"lava"},
+			{"type":"origins:name","name":"hotFloor"},
+			{"type":"origins:name","name":"campfire"}
+		]},
+		"modifier":{
+			"operation":"multiply_total",
+			"value":-1
+		}
+	},
+	"madjycks":{
+		"type":"origins:modify_damage_taken",
+		"damage_condition":{"type":"origins:or","conditions":[
+			{"type":"origins:name","name":"magic"},
+			{"type":"origins:name","name":"indirectMagic"}
+		]},
+		"modifier":{
+			"operation":"multiply_total",
+			"value":-1
+		}
+	},
+	"nofire":{"type":"origins:fire_immunity"}
+}

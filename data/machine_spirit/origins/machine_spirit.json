@@ -1,0 +1,10 @@
+{
+	"name":"Machine Spirit",
+	"powers":[
+		"automaton:unnatural",
+		"machine_spirit:spirit",
+		"machine_spirit:body"
+	],
+	"icon":"minecraft:redstone_block",
+	"impact":3
+}

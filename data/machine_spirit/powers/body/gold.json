@@ -1,0 +1,22 @@
+{
+	"type":"origins:multiple",
+	"nowater":{"type":"origins:ignore_water"},
+	"attr":{
+		"type":"origins:attribute",
+		"modifiers":[
+			{"attribute":"generic.armor","operation":"addition","value":11},
+			{"attribute":"generic.movement_speed","operation":"multiply_base","value":0.5}
+		]
+	},
+	"madjycks":{
+		"type":"origins:modify_damage_taken",
+		"damage_condition":{"type":"origins:or","conditions":[
+			{"type":"origins:name","name":"magic"},
+			{"type":"origins:name","name":"indirectMagic"}
+		]},
+		"modifier":{
+			"value":-1,
+			"operation":"multiply_total"
+		}
+	}
+}
