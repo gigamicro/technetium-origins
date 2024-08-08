@@ -1,6 +1,6 @@
 {
 	"name":"Possessions",
-	"description":"You can possess your own bodies, created with redstone upon material blocks, stone, or logs.",
+	"description":"You can possess your own bodies, created with redstone upon material blocks, stone, or logs. Primary ability to possess, crouch + primary to dispossess.",
 	"type":"origins:multiple",
 	"redstone":{
 		"type":"origins:resource",
