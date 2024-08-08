@@ -1,0 +1,5 @@
+{
+	"name":"Redstone Made",
+	"description":"While possessing a body, crouch to consume redstone from your inventory, up to 14 total. This is in addition to the redstone originally used in the creation of the body. Your hunger bar refills at a rate proportional to your current redstone amount. Above 9 redstone, you emit particles and have 2/3rds of a Night Vision effect. You can always harvest redstone blocks, and do so very quickly.",
+	"type":"origins:simple"
+}
