@@ -1,0 +1,9 @@
+{
+	"name": "Bad Swimmer",
+	"description": "You can't swim properly.",
+	"condition": {
+		"type": "origins:submerged_in",
+		"fluid": "minecraft:water"
+	},
+	"type": "origins:prevent_sprinting"
+}

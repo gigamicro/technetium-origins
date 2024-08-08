@@ -1,7 +1,7 @@
 {
 	"name":"Machine Spirit",
 	"powers":[
-		"automaton:unnatural",
+		"technetium:unnatural",
 		"machine_spirit:spirit",
 		"machine_spirit:body",
 		"machine_spirit:desc1",
