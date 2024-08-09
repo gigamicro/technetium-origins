@@ -1,6 +1,6 @@
 {
 	"name":"Possessions",
-	"description":"You can possess your own bodies, created with redstone upon material blocks, stone, or logs. Primary ability to possess, crouch + primary to dispossess.",
+	"description":"You can possess your own bodies, created with redstone upon material blocks, stone, or logs. Primary ability to possess, crouch + primary to dispossess. Dying dispossesses with a 1 redstone cost.",
 	"type":"origins:multiple",
 	"redstone":{
 		"type":"origins:resource",
@@ -440,6 +440,12 @@
 		},
 		"entity_action":{"type":"origins:and","actions":[{
 			"type":"origins:clear_effect"
+		},{
+			"type":"origins:change_resource",
+			"resource":"machine_spirit:body_redstone",
+			"operation":"add",
+			"NOTE":"PENALTY FOR DEATH",
+			"change":-1
 		},{
 			"type":"origins:grant_power",
 			"power":"machine_spirit:spirit",
