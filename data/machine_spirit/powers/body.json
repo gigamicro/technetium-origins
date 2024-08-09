@@ -443,13 +443,13 @@
 			"compare_to":0
 		},
 		"entity_action":{"type":"origins:and","actions":[{
-			"type":"origins:clear_effect"
-		},{
 			"type":"origins:change_resource",
 			"resource":"machine_spirit:body_redstone",
 			"operation":"add",
 			"NOTE":"PENALTY FOR DEATH",
 			"change":-1
+		},{ "Note!":"Everything below here should be identical between death & respirit",
+			"type":"origins:clear_effect"
 		},{
 			"type":"origins:grant_power",
 			"power":"machine_spirit:spirit",
@@ -601,7 +601,12 @@
 					"change":-8
 				}]}
 			},{
-				"condition":{"type":"origins:constant","value":true},
+				"condition":{
+					"type":"origins:resource",
+					"resource":"machine_spirit:body_redstone",
+					"comparison":">=",
+					"compare_to":1
+				},
 				"action":{
 					"type":"origins:block_action_at",
 					"block_action":{"type":"origins:offset","y":1,"action":{
@@ -828,6 +833,7 @@
 			}
 		}]},
 		"entity_action":{"type":"origins:and","actions":[{
+		    "Note!":"Everything below here should be identical between death & respirit",
 			"type":"origins:clear_effect"
 		},{
 			"type":"origins:grant_power",
@@ -980,7 +986,12 @@
 					"change":-8
 				}]}
 			},{
-				"condition":{"type":"origins:constant","value":true},
+				"condition":{
+					"type":"origins:resource",
+					"resource":"machine_spirit:body_redstone",
+					"comparison":">=",
+					"compare_to":1
+				},
 				"action":{
 					"type":"origins:block_action_at",
 					"block_action":{"type":"origins:offset","y":1,"action":{
