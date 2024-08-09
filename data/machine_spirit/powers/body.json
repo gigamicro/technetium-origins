@@ -149,6 +149,10 @@
 			"comparison":"<",
 			"compare_to":14
 		},{
+			"type":"origins:power",
+			"power":"machine_spirit:spirit",
+			"inverted":true
+		},{
 			"type":"origins:sneaking"
 		}]},
 		"type":"origins:action_over_time",
