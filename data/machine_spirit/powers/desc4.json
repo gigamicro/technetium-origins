@@ -1,5 +1,5 @@
 {
 	"name":"Spirit Range",
-	"description":"You are greatly weakened in spirit form beyond a distance n from redstone blocks with approximately n power, but you also have a chance to become temporarily tangible (long enough to place a new body; resets when you affect the world).",
+	"description":"You are greatly weakened & exhausted in spirit form beyond a distance n from redstone blocks with approximately n power, but you also have a chance to become temporarily tangible (long enough to place a new body; resets when you affect the world).",
 	"type":"origins:simple"
 }

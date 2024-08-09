@@ -14,9 +14,4 @@ modded stuff
 
 graves don't interact with this as-is, is that needed? is there a way to store the items in a chest?
 
-invulnerable to magic damage in body, invulnerable to nonmagic damage outside?
-
 powered rail, observer, piston, dropper, dispenser, detector rail
-
-move the radius up one block
-also put the lower radii first for efficiency 
