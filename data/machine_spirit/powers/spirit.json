@@ -214,12 +214,31 @@
 					"amplifier":1
 				}
 			},{
+				"type":"origins:if_else",
+				"condition":{
+					"type":"origins:food_level",
+					"comparison":"==",
+					"compare_to":0
+				},
+				"if_action":{
+					"type":"origins:chance",
+					"action":{
+						"type":"origins:damage",
+						"amount":255,
+						"damage_type":"starve"
+					},
+					"chance":0.1
+				}
+			},{
+				"type":"origins:exhaust",
+				"amount":1
+			},{
 				"type":"origins:chance",
 				"action":{
 					"type":"origins:trigger_cooldown",
 					"power":"machine_spirit:spirit_activity"
 				},
-				"chance":0.05
+				"chance":0.02
 			}]}
 		}
 	},
