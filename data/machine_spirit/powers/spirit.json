@@ -90,10 +90,8 @@
 					"type":"origins:block",
 					"block":"minecraft:note_block"
 				}]}},
-				"radius":2,
-				"shape":"sphere",
-				"comparison":">",
-				"compare_to":0
+				"radius":1,
+				"shape":"star"
 			},{
 				"type":"origins:block_in_radius",
 				"block_condition":{"type":"origins:offset","y":1,"condition":{"type":"origins:or","conditions":[{
@@ -125,9 +123,7 @@
 					}]
 				}]}},
 				"radius":4,
-				"shape":"sphere",
-				"comparison":">",
-				"compare_to":0
+				"shape":"star"
 			},{
 				"type":"origins:block_in_radius",
 				"block_condition":{"type":"origins:offset","y":1,"condition":{"type":"origins:or","conditions":[{
@@ -156,9 +152,7 @@
 					}]
 				}]}},
 				"radius":8,
-				"shape":"sphere",
-				"comparison":">",
-				"compare_to":0
+				"shape":"star"
 			},{
 				"type":"origins:block_in_radius",
 				"block_condition":{"type":"origins:offset","y":1,"condition":{"type":"origins:or","conditions":[{
@@ -193,9 +187,7 @@
 					}]
 				}]}},
 				"radius":15,
-				"shape":"sphere",
-				"comparison":">",
-				"compare_to":0
+				"shape":"star"
 			}]},
 			"if_action":{
 				"type":"origins:change_resource",
@@ -310,11 +302,22 @@
 	"type":"origins:if_else_list","actions":[
 		{
 			"condition":{"type":"origins:block", "block":"minecraft:redstone_wire" },
-			"action":{"type":"origins:set_block","block":"minecraft:redstone_wire[power=15]" }
+			"action":{"type":"origins:modify_block_state","property":"power","operation":"add","change":1 }
+		},{
+			"condition":{"type":"origins:block", "block":"minecraft:target" },
+			"action":{"type":"origins:modify_block_state","property":"power","operation":"add","change":1 }
 		},
 		{
 			"condition":{"type":"origins:block", "block":"minecraft:redstone_lamp" },
-			"action":{"type":"origins:set_block","block":"minecraft:redstone_lamp[lit=true]" }
+			"action":{"type":"origins:modify_block_state","property":"lit","value":true }
+		},
+		{
+			"condition":{"type":"origins:block", "block":"minecraft:redstone_torch" },
+			"action":{"type":"origins:modify_block_state","property":"lit","value":true }
+		},
+		{
+			"condition":{"type":"origins:block", "block":"minecraft:redstone_wall_torch" },
+			"action":{"type":"origins:modify_block_state","property":"lit","value":true }
 		}
 	]
 	}
