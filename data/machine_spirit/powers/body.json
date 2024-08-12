@@ -41,6 +41,31 @@
 		"visible_in_first_person":true,
 		"frequency":18
 	},
+	"redstone_low":{
+		"condition":{"type":"origins:and","conditions":[{
+			"type":"origins:resource",
+			"resource":"machine_spirit:body_redstone",
+			"comparison":">",
+			"compare_to":0
+		},{
+			"type":"origins:resource",
+			"resource":"machine_spirit:body_redstone",
+			"comparison":"<",
+			"compare_to":4
+		}]},
+		"type":"origins:action_over_time",
+		"entity_action":{
+			"type":"origins:apply_effect",
+			"effect":{
+				"effect":"minecraft:blindness",
+				"duration":16,
+				"amplifier":0,
+				"show_particles":false,
+				"show_icon":true
+			}
+		},
+		"interval":1
+	},
 	"redstone_saturate":{
 		"type":"origins:action_over_time",
 		"entity_action":{"type":"origins:if_else_list","actions":[{

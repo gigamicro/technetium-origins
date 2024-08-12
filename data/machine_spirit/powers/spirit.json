@@ -1,6 +1,6 @@
 {
 	"name":"Spirit Form",
-	"description":"You can barely affect the physical world, or it you. Don't go far from redstone power.",
+	"description":"You can barely affect the physical world, or it you. Don't go far from redstone power. 50% chance of a free dust every five minutes.",
 	"type":"origins:multiple",
 	"flight":{"type":"origins:creative_flight"},
 	"alpha":{"type":"origins:model_color","alpha":0.125},
@@ -295,6 +295,21 @@
 		],
 		"entity_action":{"type":"origins:trigger_cooldown","power":"machine_spirit:spirit_activity"}
 	},
+
+	"dust":{
+		"type":"origins:action_over_time",
+		"interval":6000,
+		"entity_action":{
+			"type":"origins:chance",
+			"chance":0.5,
+			"action":{
+				"type":"origins:execute_command",
+				"command":"give @s redstone"
+			}
+		}
+	},
+
+	"waterwalk":{"type":"origins:walk_on_fluid","fluid":"minecraft:water"},
 
 	"redpower":{
 		"type":"origins:action_over_time",
