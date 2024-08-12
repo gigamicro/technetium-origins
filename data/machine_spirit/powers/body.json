@@ -429,6 +429,15 @@
 				]
 			}
 		},{
+			"type":"origins:play_sound",
+			"sound":"minecraft:block.metal.break",
+			"volume":15
+		},{
+			"type":"origins:play_sound",
+			"sound":"minecraft:block.lever.click",
+			"pitch":0.6,
+			"volume":8
+		},{
 			"type":"origins:revoke_power",
 			"power":"machine_spirit:spirit",
 			"source":"machine_spirit:machine_spirit"
@@ -616,6 +625,19 @@
 					}}
 				}
 			}]
+		},{
+			"type":"origins:play_sound",
+			"sound":"minecraft:block.lever.click",
+			"pitch":0.5,
+			"volume":8
+		},{
+			"type":"origins:delay",
+			"ticks":3,
+			"action":{
+				"type":"origins:play_sound",
+				"sound":"minecraft:block.metal.place",
+				"volume":15
+			}
 		},{
 			"type":"origins:change_resource",
 			"resource":"machine_spirit:body_redstone",
@@ -866,6 +888,19 @@
 					}}
 				}
 			}]
+		},{
+			"type":"origins:play_sound",
+			"sound":"minecraft:block.lever.click",
+			"pitch":0.5,
+			"volume":8
+		},{
+			"type":"origins:delay",
+			"ticks":3,
+			"action":{
+				"type":"origins:play_sound",
+				"sound":"minecraft:block.metal.place",
+				"volume":15
+			}
 		},{
 			"type":"origins:change_resource",
 			"resource":"machine_spirit:body_redstone",
