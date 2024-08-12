@@ -297,30 +297,17 @@
 	},
 
 	"redpower":{
-	"type":"origins:action_over_time","interval":2,"entity_action":{
-	"type":"origins:block_action_at","block_action":{
-	"type":"origins:if_else_list","actions":[
-		{
-			"condition":{"type":"origins:block", "block":"minecraft:redstone_wire" },
-			"action":{"type":"origins:modify_block_state","property":"power","operation":"add","change":1 }
-		},{
-			"condition":{"type":"origins:block", "block":"minecraft:target" },
-			"action":{"type":"origins:modify_block_state","property":"power","operation":"add","change":1 }
-		},
-		{
-			"condition":{"type":"origins:block", "block":"minecraft:redstone_lamp" },
-			"action":{"type":"origins:modify_block_state","property":"lit","value":true }
-		},
-		{
-			"condition":{"type":"origins:block", "block":"minecraft:redstone_torch" },
-			"action":{"type":"origins:modify_block_state","property":"lit","value":true }
-		},
-		{
-			"condition":{"type":"origins:block", "block":"minecraft:redstone_wall_torch" },
-			"action":{"type":"origins:modify_block_state","property":"lit","value":true }
+		"type":"origins:action_over_time","interval":2,"entity_action":{
+			"type":"origins:block_action_at","block_action":{
+				"type":"origins:modify_block_state","property":"power","operation":"add","change":1
+			}
 		}
-	]
-	}
-	}
+	},
+	"redlit":{
+		"type":"origins:action_over_time","interval":2,"entity_action":{
+			"type":"origins:block_action_at","block_action":{
+				"type":"origins:modify_block_state","property":"lit","value":true
+			}
+		}
 	}
 }
