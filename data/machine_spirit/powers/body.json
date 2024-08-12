@@ -501,7 +501,7 @@
 						"type":"origins:block_action_at",
 						"block_action":{"type":"origins:offset","y":1,"action":{
 							"type":"origins:set_block",
-							"block":"minecraft:redstone_lamp"
+							"block":"minecraft:redstone_lamp[lit=true]"
 						}}
 					},{
 						"type":"origins:change_resource",
@@ -886,7 +886,7 @@
 						"type":"origins:block_action_at",
 						"block_action":{"type":"origins:offset","y":1,"action":{
 							"type":"origins:set_block",
-							"block":"minecraft:redstone_lamp"
+							"block":"minecraft:redstone_lamp[lit=true]"
 						}}
 					},{
 						"type":"origins:change_resource",
