@@ -254,21 +254,22 @@
 						"type":"origins:in_tag",
 						"tag":"machine_spirit:possessable"
 					},
-					{"type":"origins:offset","y":1,"condition":{
-						"type":"origins:or",
-						"conditions":[
-							{"type":"origins:block","block":"minecraft:redstone_block","v":9},
-							{"type":"origins:block","block":"minecraft:redstone_wire","v":1},
-							{"type":"origins:block","block":"minecraft:redstone_torch","v":1},
-							{"type":"origins:block","block":"minecraft:note_block","v":1},
-							{"type":"origins:block","block":"minecraft:redstone_lamp","v":4},
-							{"type":"origins:block","block":"minecraft:target","v":4}
-						]
-					}}
+					{"type":"origins:offset","y":1,"condition":{"type":"origins:or","conditions":[
+						{"type":"origins:block","block":"minecraft:redstone_block","v":9},
+						{"type":"origins:block","block":"minecraft:redstone_wire","v":1},
+						{"type":"origins:block","block":"minecraft:redstone_torch","v":1},
+						{"type":"origins:block","block":"minecraft:note_block","v":1},
+						{"type":"origins:block","block":"minecraft:redstone_lamp","v":4},
+						{"type":"origins:block","block":"minecraft:target","v":4}
+					]}}
 				]
 			}
 		}]},
 		"entity_action":{"type":"origins:and","actions":[{
+			"type":"origins:drop_inventory",
+			"slot":"armor.head",
+			"throw_randomly":true
+		},{
 			"type":"origins:if_else_list","actions":[{
 				"condition":{
 					"type":"origins:in_block",
