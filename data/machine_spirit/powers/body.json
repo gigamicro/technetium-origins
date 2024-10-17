@@ -41,6 +41,31 @@
 		"visible_in_first_person":true,
 		"frequency":18
 	},
+	"redstone_low":{
+		"condition":{"type":"origins:and","conditions":[{
+			"type":"origins:resource",
+			"resource":"machine_spirit:body_redstone",
+			"comparison":">",
+			"compare_to":0
+		},{
+			"type":"origins:resource",
+			"resource":"machine_spirit:body_redstone",
+			"comparison":"<",
+			"compare_to":4
+		}]},
+		"type":"origins:action_over_time",
+		"entity_action":{
+			"type":"origins:apply_effect",
+			"effect":{
+				"effect":"minecraft:blindness",
+				"duration":16,
+				"amplifier":0,
+				"show_particles":false,
+				"show_icon":true
+			}
+		},
+		"interval":1
+	},
 	"redstone_saturate":{
 		"type":"origins:action_over_time",
 		"entity_action":{"type":"origins:if_else_list","actions":[{
@@ -179,18 +204,20 @@
 	},
 	"redblock_harvest":{
 		"type":"origins:modify_harvest",
-		"block_condition":{
-			"type":"origins:block",
-			"block":"minecraft:redstone_block"
-		},
+		"block_condition":{"type":"origins:or","conditions":[{
+			"type":"origins:block","block":"minecraft:redstone_block"
+		},{
+			"type":"origins:in_tag","tag":"minecraft:redstone_ores"
+		}]},
 		"allow":true
 	},
 	"redblock_break":{
 		"type":"origins:modify_break_speed",
-		"block_condition":{
-			"type":"origins:block",
-			"block":"minecraft:redstone_block"
-		},
+		"block_condition":{"type":"origins:or","conditions":[{
+			"type":"origins:block","block":"minecraft:redstone_block"
+		},{
+			"type":"origins:in_tag","tag":"minecraft:redstone_ores"
+		}]},
 		"modifier":{
 			"operation":"multiply_total",
 			"value":7.0
@@ -254,21 +281,22 @@
 						"type":"origins:in_tag",
 						"tag":"machine_spirit:possessable"
 					},
-					{"type":"origins:offset","y":1,"condition":{
-						"type":"origins:or",
-						"conditions":[
-							{"type":"origins:block","block":"minecraft:redstone_block","v":9},
-							{"type":"origins:block","block":"minecraft:redstone_wire","v":1},
-							{"type":"origins:block","block":"minecraft:redstone_torch","v":1},
-							{"type":"origins:block","block":"minecraft:note_block","v":1},
-							{"type":"origins:block","block":"minecraft:redstone_lamp","v":4},
-							{"type":"origins:block","block":"minecraft:target","v":4}
-						]
-					}}
+					{"type":"origins:offset","y":1,"condition":{"type":"origins:or","conditions":[
+						{"type":"origins:block","block":"minecraft:redstone_block","v":9},
+						{"type":"origins:block","block":"minecraft:redstone_wire","v":1},
+						{"type":"origins:block","block":"minecraft:redstone_torch","v":1},
+						{"type":"origins:block","block":"minecraft:note_block","v":1},
+						{"type":"origins:block","block":"minecraft:redstone_lamp","v":4},
+						{"type":"origins:block","block":"minecraft:target","v":4}
+					]}}
 				]
 			}
 		}]},
 		"entity_action":{"type":"origins:and","actions":[{
+			"type":"origins:drop_inventory",
+			"slot":"armor.head",
+			"throw_randomly":true
+		},{
 			"type":"origins:if_else_list","actions":[{
 				"condition":{
 					"type":"origins:in_block",
@@ -428,6 +456,15 @@
 				]
 			}
 		},{
+			"type":"origins:play_sound",
+			"sound":"minecraft:block.metal.break",
+			"volume":15
+		},{
+			"type":"origins:play_sound",
+			"sound":"minecraft:block.lever.click",
+			"pitch":0.6,
+			"volume":8
+		},{
 			"type":"origins:revoke_power",
 			"power":"machine_spirit:spirit",
 			"source":"machine_spirit:machine_spirit"
@@ -446,7 +483,7 @@
 			"type":"origins:change_resource",
 			"resource":"machine_spirit:body_redstone",
 			"operation":"add",
-			"NOTE":"PENALTY FOR DEATH",
+			"note":"penalty for death",
 			"change":-1
 		},{ "Note!":"Everything below here should be identical between death & respirit",
 			"type":"origins:clear_effect"
@@ -501,7 +538,7 @@
 						"type":"origins:block_action_at",
 						"block_action":{"type":"origins:offset","y":1,"action":{
 							"type":"origins:set_block",
-							"block":"minecraft:redstone_lamp"
+							"block":"minecraft:redstone_lamp[lit=true]"
 						}}
 					},{
 						"type":"origins:change_resource",
@@ -616,193 +653,71 @@
 				}
 			}]
 		},{
+			"type":"origins:play_sound",
+			"sound":"minecraft:block.lever.click",
+			"pitch":0.5,
+			"volume":8
+		},{
+			"type":"origins:delay",
+			"ticks":3,
+			"action":{
+				"type":"origins:play_sound",
+				"sound":"minecraft:block.metal.place",
+				"volume":15
+			}
+		},{
 			"type":"origins:change_resource",
 			"resource":"machine_spirit:body_redstone",
 			"operation":"add",
 			"change":-1
 		},{
-			"type":"origins:if_else_list","actions":[
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":14
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 14"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":13
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 13"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":12
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 12"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":11
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 11"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":10
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 10"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":9
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 9"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":8
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 8"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":7
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 7"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":6
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 6"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":5
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 5"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":5
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 5"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":4
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 4"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":3
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 3"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":2
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 2"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":1
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 1"
-					}
-				}
-			]
+			"note":"this just gives you as much redstone as is in the bar",
+			"type":"origins:if_else_list","actions":[{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":14},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 14"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":13},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 13"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":12},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 12"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":11},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 11"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":10},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 10"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":9},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 9"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":8},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 8"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":7},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 7"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":6},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 6"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":5},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 5"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":5},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 5"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":4},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 4"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":3},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 3"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":2},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 2"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":1},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 1"}
+			}]
 		},{
 			"type":"origins:change_resource",
 			"resource":"machine_spirit:body_redstone",
@@ -886,7 +801,7 @@
 						"type":"origins:block_action_at",
 						"block_action":{"type":"origins:offset","y":1,"action":{
 							"type":"origins:set_block",
-							"block":"minecraft:redstone_lamp"
+							"block":"minecraft:redstone_lamp[lit=true]"
 						}}
 					},{
 						"type":"origins:change_resource",
@@ -1001,193 +916,71 @@
 				}
 			}]
 		},{
+			"type":"origins:play_sound",
+			"sound":"minecraft:block.lever.click",
+			"pitch":0.5,
+			"volume":8
+		},{
+			"type":"origins:delay",
+			"ticks":3,
+			"action":{
+				"type":"origins:play_sound",
+				"sound":"minecraft:block.metal.place",
+				"volume":15
+			}
+		},{
 			"type":"origins:change_resource",
 			"resource":"machine_spirit:body_redstone",
 			"operation":"add",
 			"change":-1
 		},{
-			"type":"origins:if_else_list","actions":[
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":14
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 14"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":13
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 13"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":12
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 12"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":11
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 11"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":10
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 10"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":9
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 9"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":8
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 8"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":7
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 7"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":6
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 6"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":5
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 5"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":5
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 5"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":4
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 4"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":3
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 3"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":2
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 2"
-					}
-				},
-				{
-					"condition":{
-						"type":"origins:resource",
-						"resource":"machine_spirit:body_redstone",
-						"comparison":">=",
-						"compare_to":1
-					},
-					"action":{
-						"type":"origins:execute_command",
-						"command":"/give @s minecraft:redstone 1"
-					}
-				}
-			]
+			"note":"this just gives you as much redstone as is in the bar",
+			"type":"origins:if_else_list","actions":[{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":14},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 14"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":13},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 13"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":12},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 12"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":11},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 11"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":10},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 10"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":9},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 9"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":8},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 8"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":7},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 7"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":6},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 6"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":5},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 5"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":5},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 5"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":4},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 4"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":3},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 3"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":2},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 2"}
+			},{
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":1},
+				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 1"}
+			}]
 		},{
 			"type":"origins:change_resource",
 			"resource":"machine_spirit:body_redstone",

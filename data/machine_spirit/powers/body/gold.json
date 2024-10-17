@@ -8,6 +8,13 @@
 			{"attribute":"generic.movement_speed","operation":"multiply_base","value":0.5}
 		]
 	},
+	"piglins":{
+	  "type": "moborigins:remove_mob_hostility",
+	  "entity_condition": {
+	    "type": "origins:in_tag",
+	    "tag": "minecraft:piglins"
+	  }
+	},
 	"madjycks":{
 		"type":"origins:modify_damage_taken",
 		"damage_condition":{"type":"origins:or","conditions":[

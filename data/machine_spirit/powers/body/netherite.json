@@ -21,6 +21,13 @@
 			"operation":"multiply_total"
 		}
 	},
+	"tough":{
+		"type":"origins:modify_damage_taken",
+		"modifier":{
+			"value":-0.8,
+			"operation":"multiply_total"
+		}
+	},
 	"nofire":{"type":"origins:fire_immunity"},
 	"lavavis":{"type":"origins:lava_vision","s":0,"v":15}
 }
