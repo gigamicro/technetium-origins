@@ -1,0 +1,7 @@
+{
+    "name": "Sleepless Being",
+    "description": "You were not designed to sleep as living beings do. You are either awake, or shut down. ",
+    "type": "origins:prevent_sleep",
+    "message": "You cannot sleep. ",
+    "set_spawn_point": true
+}

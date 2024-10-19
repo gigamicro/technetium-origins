@@ -1,5 +1,6 @@
 {
 	"allow_random":true,
 	"origins":[
+		"focon:construct"
 	]
 }

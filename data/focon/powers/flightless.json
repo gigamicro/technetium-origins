@@ -1,0 +1,25 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "no_fly": {
+        "type": "origins:prevent_elytra_flight"
+    },
+    "no_elytra": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:elytra"
+            }
+        }
+    },
+    "no_shield": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:shield"
+            }
+        }
+    }
+}
