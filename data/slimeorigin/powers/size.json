@@ -1,27 +1,27 @@
 {
-    "name": "size",
-    "description": "resource",
-    "type": "origins:resource",
-    "min": 0,
-    "max": 4,
-    "start_value": 0,
-    "max_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:execute_command",
-                "command": "scale set 1.3 @s"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "scale persist true @s"
-            },
-            {
-                "type": "origins:change_resource",
-                "resource": "slimeorigin:size",
-                "change": 0,
-                "operation": "set"
-            }
-        ]
-    }
+	"name": "size",
+	"description": "resource",
+	"type": "origins:resource",
+	"min": 0,
+	"max": 4,
+	"start_value": 0,
+	"max_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale set 1.3 @s"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale persist true @s"
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "slimeorigin:size",
+				"change": 0,
+				"operation": "set"
+			}
+		]
+	}
 }

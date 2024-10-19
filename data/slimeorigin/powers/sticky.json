@@ -1,54 +1,54 @@
 {
-    "name": "Sticky",
-    "description": "When at your smallest size you can climb on the sides of blocks and when at your next-to-smallest size you can slide down the sides of blocks as if they were honey. (toggle with secondary)",
-    "condition": {
-        "type": "origins:and",
-        "conditions": [
-            {
-                "type": "origins:resource",
-                "resource": "slimeorigin:size",
-                "comparison": "==",
-                "compare_to": 3
-            }
-        ]
-    },
-    "type": "origins:climbing",
-    "allow_holding": true,
-    "hold_condition": {
-        "type": "origins:and",
-        "conditions": [
-            {
-                "type": "origins:sneaking"
-            },
-            {
-                "type": "origins:resource",
-                "resource": "slimeorigin:size",
-                "comparison": "==",
-                "compare_to": 3
-            },
-            {
-                "type": "origins:or",
-                "conditions": [
-                    {
-                        "type": "origins:block_collision",
-                        "block_condition": {
-                            "type": "origins:movement_blocking"
-                        },
-                        "offset_x": 0.01,
-                        "offset_y": 0,
-                        "offset_z": 0.01
-                    },
-                    {
-                        "type": "origins:block_collision",
-                        "block_condition": {
-                            "type": "origins:movement_blocking"
-                        },
-                        "offset_x": -0.01,
-                        "offset_y": 0,
-                        "offset_z": -0.01
-                    }
-                ]
-            }
-        ]
-    }
+	"name": "Sticky",
+	"description": "When at your smallest size you can climb on the sides of blocks and when at your next-to-smallest size you can slide down the sides of blocks as if they were honey. (toggle with secondary)",
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:resource",
+				"resource": "slimeorigin:size",
+				"comparison": "==",
+				"compare_to": 3
+			}
+		]
+	},
+	"type": "origins:climbing",
+	"allow_holding": true,
+	"hold_condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:sneaking"
+			},
+			{
+				"type": "origins:resource",
+				"resource": "slimeorigin:size",
+				"comparison": "==",
+				"compare_to": 3
+			},
+			{
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:block_collision",
+						"block_condition": {
+							"type": "origins:movement_blocking"
+						},
+						"offset_x": 0.01,
+						"offset_y": 0,
+						"offset_z": 0.01
+					},
+					{
+						"type": "origins:block_collision",
+						"block_condition": {
+							"type": "origins:movement_blocking"
+						},
+						"offset_x": -0.01,
+						"offset_y": 0,
+						"offset_z": -0.01
+					}
+				]
+			}
+		]
+	}
 }

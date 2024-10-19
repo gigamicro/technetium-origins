@@ -1,24 +1,24 @@
 {
-    "name": "Slime",
-    "description": "You drop a slime ball when you die.",
-    "condition": {
-        "type": "origins:resource",
-        "resource": "slimeorigin:size",
-        "comparison": ">=",
-        "compare_to": 3
-    },
-    "type": "origins:prevent_death",
-    "entity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:execute_command",
-                "command": "give @s minecraft:slime_ball 1"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "kill @s"
-            }
-        ]
-    }
+	"name": "Slime",
+	"description": "You drop a slime ball when you die.",
+	"condition": {
+		"type": "origins:resource",
+		"resource": "slimeorigin:size",
+		"comparison": ">=",
+		"compare_to": 3
+	},
+	"type": "origins:prevent_death",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "give @s minecraft:slime_ball 1"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "kill @s"
+			}
+		]
+	}
 }

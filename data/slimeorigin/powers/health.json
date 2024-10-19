@@ -1,13 +1,13 @@
 {
-    "name": "health",
-    "condition": {
-        "type": "origins:exists"
-    },
-    "type": "origins:modify_attribute",
-    "attribute": "minecraft:generic.max_health",
-    "modifier": {
-        "operation": "add_base_late",
-        "value": 0,
-        "resource": "slimeorigin:health_r"
-    }
+	"name": "health",
+	"condition": {
+		"type": "origins:exists"
+	},
+	"type": "origins:modify_attribute",
+	"attribute": "minecraft:generic.max_health",
+	"modifier": {
+		"operation": "add_base_late",
+		"value": 0,
+		"resource": "slimeorigin:health_r"
+	}
 }

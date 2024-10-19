@@ -1,11 +1,11 @@
 {
-    "name": "no slime damage",
-    "type": "origins:invulnerability",
-    "damage_condition": {
-        "type": "origins:attacker",
-        "entity_condition": {
-            "type": "origins:entity_type",
-            "entity_type": "minecraft:slime"
-        }
-    }
+	"name": "no slime damage",
+	"type": "origins:invulnerability",
+	"damage_condition": {
+		"type": "origins:attacker",
+		"entity_condition": {
+			"type": "origins:entity_type",
+			"entity_type": "minecraft:slime"
+		}
+	}
 }

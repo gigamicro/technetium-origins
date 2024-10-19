@@ -1,22 +1,22 @@
 {
-    "name": "Improved Jump",
-    "description": "Your slime heritage gives you an improved leap at the cost of a reduced movement speed.",
-    "type":"origins:multiple",
-    "jump":{
-        "type": "origins:modify_jump",
-        "modifier": {
-            "operation": "multiply_base",
-            "value": 0.5,
-            "name": "Slime Better Jump"
-        }
-    },
-    "":{
-        "type": "origins:attribute",
-        "modifier": {
-            "attribute": "minecraft:generic.movement_speed",
-            "operation": "multiply_base",
-            "value": -0.1,
-            "name": "Slime Weaker Run"
-        }
-    }
+	"name": "Improved Jump",
+	"description": "Your slime heritage gives you an improved leap at the cost of a reduced movement speed.",
+	"type":"origins:multiple",
+	"jump":{
+		"type": "origins:modify_jump",
+		"modifier": {
+			"operation": "multiply_base",
+			"value": 0.5,
+			"name": "Slime Better Jump"
+		}
+	},
+	"":{
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_base",
+			"value": -0.1,
+			"name": "Slime Weaker Run"
+		}
+	}
 }

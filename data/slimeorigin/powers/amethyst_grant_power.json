@@ -1,40 +1,40 @@
 {
-    "name": "Crystal Attunement",
-    "description": "Deep below, the secrets of your ancestral caves call to you. (it's a secret, go explore!)",
-    "type": "origins:action_on_block_use",
-    "block_condition": {
-        "type": "origins:block",
-        "block": "amethyst_block"
-    },
-    "entity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:revoke_power",
-                "power": "slimeorigin:slime_skin",
-                "source": "slimeorigin:slimecican"
-            },
-            {
-                "type": "origins:grant_power",
-                "power": "slimeorigin:blue/slime_skin",
-                "source": "slimeorigin:slimecican"
-            },
-            {
-                "type": "origins:revoke_power",
-                "power": "slimeorigin:better_jump_dummy",
-                "source": "slimeorigin:slimecican"
-            },
-            {
-                "type": "origins:grant_power",
-                "power": "slimeorigin:blue/agility",
-                "source": "slimeorigin:slimecican"
-            },
-            {
-                "type": "origins:grant_power",
-                "power": "slimeorigin:blue/jump",
-                "source": "slimeorigin:slimecican"
-            }
-        ]
-    },
-    "action_result": "success"
+	"name": "Crystal Attunement",
+	"description": "Deep below, the secrets of your ancestral caves call to you. (it's a secret, go explore!)",
+	"type": "origins:action_on_block_use",
+	"block_condition": {
+		"type": "origins:block",
+		"block": "amethyst_block"
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:revoke_power",
+				"power": "slimeorigin:slime_skin",
+				"source": "slimeorigin:slimecican"
+			},
+			{
+				"type": "origins:grant_power",
+				"power": "slimeorigin:blue/slime_skin",
+				"source": "slimeorigin:slimecican"
+			},
+			{
+				"type": "origins:revoke_power",
+				"power": "slimeorigin:better_jump_dummy",
+				"source": "slimeorigin:slimecican"
+			},
+			{
+				"type": "origins:grant_power",
+				"power": "slimeorigin:blue/agility",
+				"source": "slimeorigin:slimecican"
+			},
+			{
+				"type": "origins:grant_power",
+				"power": "slimeorigin:blue/jump",
+				"source": "slimeorigin:slimecican"
+			}
+		]
+	},
+	"action_result": "success"
 }

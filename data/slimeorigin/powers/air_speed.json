@@ -1,8 +1,8 @@
 {
-    "name": "air speed",
-    "type": "origins:modify_air_speed",
-    "modifier": {
-        "operation": "multiply_total_multiplicative",
-        "value": 0.2
-    }
+	"name": "air speed",
+	"type": "origins:modify_air_speed",
+	"modifier": {
+		"operation": "multiply_total_multiplicative",
+		"value": 0.2
+	}
 }

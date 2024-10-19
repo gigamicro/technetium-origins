@@ -1,33 +1,33 @@
 {
-    "name": "Slimecican",
-    "description": "A type of slime that has evolved to act as a player.",
-    "powers": [
-        "moborigins:bouncy",
-        "moborigins:dyeable",
-        "moborigins:slimy_color",
-        "origins:fall_immunity",
-        "slimeorigin:better_jump",
-        "slimeorigin:fragmentation",
-        "slimeorigin:slime_skin",
-        "slimeorigin:melting",
-        "slimeorigin:mitosis",
-        "slimeorigin:amethyst_grant_power",
-        "technetium:phase_holes",
-        "slimeorigin:start_size",
-        "slimeorigin:air_speed",
-        "slimeorigin:size",
-        "slimeorigin:health_r",
-        "slimeorigin:health",
-        "slimeorigin:slime_family",
-        "slimeorigin:sticky",
-        "slimeorigin:no_slime_damage",
-        "slimeorigin:slime",
-        "technetium:bad_swimmer",
-        "slimeorigin:slide"
-    ],
-    "icon": {
-        "item": "minecraft:slime_ball"
-    },
-    "order": 100,
-    "impact": 2
+	"name": "Slimecican",
+	"description": "A type of slime that has evolved to act as a player.",
+	"powers": [
+		"moborigins:bouncy",
+		"moborigins:dyeable",
+		"moborigins:slimy_color",
+		"origins:fall_immunity",
+		"slimeorigin:better_jump",
+		"slimeorigin:fragmentation",
+		"slimeorigin:slime_skin",
+		"slimeorigin:melting",
+		"slimeorigin:mitosis",
+		"slimeorigin:amethyst_grant_power",
+		"technetium:phase_holes",
+		"slimeorigin:start_size",
+		"slimeorigin:air_speed",
+		"slimeorigin:size",
+		"slimeorigin:health_r",
+		"slimeorigin:health",
+		"slimeorigin:slime_family",
+		"slimeorigin:sticky",
+		"slimeorigin:no_slime_damage",
+		"slimeorigin:slime",
+		"technetium:bad_swimmer",
+		"slimeorigin:slide"
+	],
+	"icon": {
+		"item": "minecraft:slime_ball"
+	},
+	"order": 100,
+	"impact": 2
 }
