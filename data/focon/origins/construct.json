@@ -1,0 +1,35 @@
+{
+    "name": "Forgotten Construct",
+    "description": "The forgotten construct was built long ago and abandoned. After being reawakened it is left to wander the land and find it's new directive. The construct is a very durable machine, only needed to maintain it's source of energy to survive. ",
+    "powers": [
+        "focon:deathless",
+        "focon:immunities",
+        "focon:sink",
+        "focon:armourless",
+        "focon:flightless",
+        "focon:hide",
+        "focon:no_food",
+        "focon:energy_resource",
+        "focon:charge",
+        "focon:redstone_eat",
+        "focon:block_eat",
+        "focon:battery_eat",
+        "focon:power_saving",
+        "focon:powerdown",
+        "focon:supercharge",
+        "focon:conductor",
+        "focon:overheat",
+        "focon:sleepless",
+        "focon:no_insomnia",
+        "focon:dash",
+        "focon:cloak",
+        "focon:ignore",
+        "focon:sound"
+    ],
+    "icon": {
+        "item": "minecraft:wild_armor_trim_smithing_template"
+    },
+    "order": 16,
+    "impact": 3,
+    "loading_priority": 16
+}

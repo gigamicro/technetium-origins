@@ -2,6 +2,7 @@
 	"allow_random":true,
 	"origins":[
 		"origins-plus-plus:automaton",
-		"machine_spirit:machine_spirit"
+		"machine_spirit:machine_spirit",
+		"focon:construct"
 	]
 }

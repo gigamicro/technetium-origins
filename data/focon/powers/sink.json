@@ -1,0 +1,5 @@
+{
+    "name": "Heavy",
+    "description": "You are built from rather heavy materials and were not designed to swim. You sink in water.",
+    "type": "origins:ignore_water"
+}
