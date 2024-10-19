@@ -14,7 +14,7 @@
 		"automaton:hot",
 		"automaton:humidity",
 		"automaton:drown",
-		"automaton:dense",
+		"technetium:dense",
 		"automaton:attack"
 	],
 	"icon":"minecraft:weathered_copper",
