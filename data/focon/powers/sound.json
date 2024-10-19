@@ -1,38 +1,38 @@
 {
-    "name":"Ancient Sound",
-    "description":"You make Guardian noises occasionally.",
-    "type": "origins:multiple",
-    "idle": {
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "inverted": true,
-                    "type": "origins:sneaking"
-                },
-                {
-                    "inverted": true,
-                    "type": "origins:gamemode",
-                    "gamemode": "spectator"
-                },
-                {
-                    "inverted": true,
-                    "type": "origins:status_effect",
-                    "effect": "minecraft:invisibility"
-                }
-            ]
-        },
-        "type": "origins:action_over_time",
-        "interval": 100,
-        "entity_action": {
-            "type": "origins:chance",
-            "chance": 0.05,
-            "action": {
-                "type": "origins:play_sound",
-                "sound": "entity.elder_guardian.ambient",
-                "volume": 1,
-                "pitch": 1.2
-            }
-        }
-    }
+	"name":"Ancient Sound",
+	"description":"You make Guardian noises occasionally.",
+	"type": "origins:multiple",
+	"idle": {
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"inverted": true,
+					"type": "origins:sneaking"
+				},
+				{
+					"inverted": true,
+					"type": "origins:gamemode",
+					"gamemode": "spectator"
+				},
+				{
+					"inverted": true,
+					"type": "origins:status_effect",
+					"effect": "minecraft:invisibility"
+				}
+			]
+		},
+		"type": "origins:action_over_time",
+		"interval": 100,
+		"entity_action": {
+			"type": "origins:chance",
+			"chance": 0.05,
+			"action": {
+				"type": "origins:play_sound",
+				"sound": "entity.elder_guardian.ambient",
+				"volume": 1,
+				"pitch": 1.2
+			}
+		}
+	}
 }

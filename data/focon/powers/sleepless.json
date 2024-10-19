@@ -1,17 +1,17 @@
 {
-    "name": "Sleepless Being",
-    "description": "You were not designed to sleep as living beings do. You are either awake, or shut down. ",
-    "type":"origins:multiple",
-    "bed":{
-        "type": "origins:prevent_sleep",
-        "message": "You cannot sleep.",
-        "set_spawn_point": true
-    },
-    "phantom":{
-        "type": "origins:modify_insomnia_ticks",
-        "modifier": {
-            "operation": "set_total",
-            "value": 0
-        }
-    }
+	"name": "Sleepless Being",
+	"description": "You were not designed to sleep as living beings do. You are either awake, or shut down. ",
+	"type":"origins:multiple",
+	"bed":{
+		"type": "origins:prevent_sleep",
+		"message": "You cannot sleep.",
+		"set_spawn_point": true
+	},
+	"phantom":{
+		"type": "origins:modify_insomnia_ticks",
+		"modifier": {
+			"operation": "set_total",
+			"value": 0
+		}
+	}
 }

@@ -1,115 +1,115 @@
 {
-    "name": "Powerdown",
-    "description": "If you run out of energy, you will deactivate. Someone will have to charge you. Hold [Sneak] for three seconds to self-destruct and respawn.",
-    "type": "apoli:multiple",
-    "effects": {
-        "type": "origins:action_over_time",
-        "interval": 1,
-        "entity_action": {
-            "type": "apoli:apply_effect",
-            "effects": [
-                {
-                    "effect": "blindness",
-                    "duration": 25,
-                    "show_icon": false,
-                    "show_particles": false
-                },
-                {
-                    "effect": "slowness",
-                    "amplifier": 14,
-                    "duration": 3,
-                    "show_icon": false,
-                    "show_particles": false
-                },
-                {
-                    "effect": "jump_boost",
-                    "amplifier": -7,
-                    "duration": 3,
-                    "show_icon": false,
-                    "show_particles": false
-                },
-                {
-                    "effect": "weakness",
-                    "amplifier": 14,
-                    "duration": 3,
-                    "show_icon": false,
-                    "show_particles": false
-                }
-            ]
-        },
-        "condition": {
-            "type": "origins:resource",
-            "resource": "focon:energy_resource",
-            "comparison": "==",
-            "compare_to": 0
-        }
-    },
-    "selfdestruct": {
-        "type": "origins:active_self",
-        "key": {
-            "key": "key.sneak",
-            "continuous": true
-        },
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "focon:powerdown_selfdestructresource",
-            "change": 1
-        },
-        "condition": {
-            "type": "origins:resource",
-            "resource": "focon:energy_resource",
-            "comparison": "==",
-            "compare_to": 0
-        }
-    },
-    "selfdestructresource": {
-        "type": "apoli:resource",
-        "min": 0,
-        "max": 60,
-        "max_action": {
-            "type": "origins:execute_command",
-            "command": "kill"
-        },
-        "hud_render": {
-            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
-            "bar_index": 17,
-            "condition": {
-                "type": "origins:resource",
-                "resource": "focon:energy_resource",
-                "comparison": "==",
-                "compare_to": 0
-            }
-        }
-    },
-    "resourceunwind": {
-        "type": "origins:action_over_time",
-        "interval": 1,
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "focon:powerdown_selfdestructresource",
-            "change": -1
-        },
-        "condition": {
-            "type": "origins:sneaking",
-            "inverted": true
-        }
-    },
-    "ignore":{
-        "condition": {
-            "type": "origins:resource",
-            "resource": "focon:energy_resource",
-            "comparison": "==",
-            "compare_to": 0
-        },
-        "type": "apugli:mobs_ignore"
-    },
-    "noblocks":{
-        "condition": {
-            "type": "origins:resource",
-            "resource": "focon:energy_resource",
-            "comparison": "==",
-            "compare_to": 0
-        },
-        "type":"origins:prevent_block_selection"
-    }
+	"name": "Powerdown",
+	"description": "If you run out of energy, you will deactivate. Someone will have to charge you. Hold [Sneak] for three seconds to self-destruct and respawn.",
+	"type": "apoli:multiple",
+	"effects": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "apoli:apply_effect",
+			"effects": [
+				{
+					"effect": "blindness",
+					"duration": 25,
+					"show_icon": false,
+					"show_particles": false
+				},
+				{
+					"effect": "slowness",
+					"amplifier": 14,
+					"duration": 3,
+					"show_icon": false,
+					"show_particles": false
+				},
+				{
+					"effect": "jump_boost",
+					"amplifier": -7,
+					"duration": 3,
+					"show_icon": false,
+					"show_particles": false
+				},
+				{
+					"effect": "weakness",
+					"amplifier": 14,
+					"duration": 3,
+					"show_icon": false,
+					"show_particles": false
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "focon:energy_resource",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"selfdestruct": {
+		"type": "origins:active_self",
+		"key": {
+			"key": "key.sneak",
+			"continuous": true
+		},
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "focon:powerdown_selfdestructresource",
+			"change": 1
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "focon:energy_resource",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"selfdestructresource": {
+		"type": "apoli:resource",
+		"min": 0,
+		"max": 60,
+		"max_action": {
+			"type": "origins:execute_command",
+			"command": "kill"
+		},
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"bar_index": 17,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "focon:energy_resource",
+				"comparison": "==",
+				"compare_to": 0
+			}
+		}
+	},
+	"resourceunwind": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "focon:powerdown_selfdestructresource",
+			"change": -1
+		},
+		"condition": {
+			"type": "origins:sneaking",
+			"inverted": true
+		}
+	},
+	"ignore":{
+		"condition": {
+			"type": "origins:resource",
+			"resource": "focon:energy_resource",
+			"comparison": "==",
+			"compare_to": 0
+		},
+		"type": "apugli:mobs_ignore"
+	},
+	"noblocks":{
+		"condition": {
+			"type": "origins:resource",
+			"resource": "focon:energy_resource",
+			"comparison": "==",
+			"compare_to": 0
+		},
+		"type":"origins:prevent_block_selection"
+	}
 }

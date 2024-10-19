@@ -1,37 +1,37 @@
 {
-    "name": "Unnatural Body",
-    "description": "Afflictions and ailments that affect natural creatures do not do anything to you.",
-    "type": "origins:multiple",
-    "ills": {
-        "type": "origins:effect_immunity",
-        "effects": [
-            "minecraft:poison",
-            "minecraft:hunger",
-            "minecraft:nausea",
-            "minecraft:wither"
-        ]
-    },
-    "damage": {
-        "type": "origins:invulnerability",
-        "damage_condition": {
-            "type":"origins:or","conditions":[
-                { "type": "origins:name", "name": "inWall" },
-                { "type": "origins:name", "name": "drown" },
-                { "type": "origins:name", "name": "freeze" },
-                { "type": "origins:name", "name": "ad_astra:oxygen" }
-            ]
-        }
-    },
-    "air": {
-        "condition": {
-            "type": "origins:submerged_in",
-            "fluid": "water"
-        },
-        "type": "origins:action_over_time",
-        "interval": 5,
-        "entity_action": {
-            "type": "origins:gain_air",
-            "value": 20
-        }
-    }
+	"name": "Unnatural Body",
+	"description": "Afflictions and ailments that affect natural creatures do not do anything to you.",
+	"type": "origins:multiple",
+	"ills": {
+		"type": "origins:effect_immunity",
+		"effects": [
+			"minecraft:poison",
+			"minecraft:hunger",
+			"minecraft:nausea",
+			"minecraft:wither"
+		]
+	},
+	"damage": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type":"origins:or","conditions":[
+				{ "type": "origins:name", "name": "inWall" },
+				{ "type": "origins:name", "name": "drown" },
+				{ "type": "origins:name", "name": "freeze" },
+				{ "type": "origins:name", "name": "ad_astra:oxygen" }
+			]
+		}
+	},
+	"air": {
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "water"
+		},
+		"type": "origins:action_over_time",
+		"interval": 5,
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 20
+		}
+	}
 }
