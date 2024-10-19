@@ -1,7 +1,6 @@
 {
     "name": "Conductor",
     "description": "While in thunderstorms, you're much more likely to get struck by lightning.",
-    "hidden": true,
     "condition": {
         "type": "origins:and",
         "conditions": [

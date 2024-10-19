@@ -1,5 +1,4 @@
 {
-    "hidden": true,
     "type": "origins:multiple",
     "nofood": {
         "type": "origins:prevent_item_use",

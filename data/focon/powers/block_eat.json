@@ -1,7 +1,6 @@
 {
     "name": "Recharge",
     "description": "You can use redstone dust to recharge your energy. Other players can do so too by right-clicking you with it. You are also able to slowly pull energy from nearby powered redstone.",
-    "hidden": true,
     "type": "origins:multiple",
     "usedustonself": {
         "condition": {

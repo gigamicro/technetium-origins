@@ -1,5 +1,4 @@
 {
-    "hidden": true,
     "condition": {
         "type": "origins:resource",
         "resource": "focon:energy_resource",
