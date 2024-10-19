@@ -1,0 +1,41 @@
+{
+    "name": "Cloud Body",
+    "description": "You're translucent, emit snowflakes, have six hearts, don't collide with projectiles, and generally are immune to many things solid beings have to deal with.",
+    "type":"origins:multiple",
+    "color":{
+        "type": "origins:model_color",
+        "alpha": 0.35
+    },
+    "particles":{
+        "type": "origins:particle",
+        "particle": "minecraft:snowflake",
+        "frequency": 1,
+        "count": 2,
+        "speed": 0,
+        "spread": {
+            "x": 0.13,
+            "y": 0.4,
+            "z": 0.13
+        },
+        "offset_y": 0.3
+    },
+    "health":{
+        "type": "origins:attribute",
+        "modifier": {
+            "name": "Mistcat",
+            "attribute": "minecraft:generic.max_health",
+            "value": -0.4,
+            "operation": "multiply_base"
+        }
+    },
+    "projectiles":{
+        "type": "origins:prevent_entity_collision",
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:in_tag",
+                "tag": "minecraft:impact_projectiles"
+            }
+        }
+    }
+}
