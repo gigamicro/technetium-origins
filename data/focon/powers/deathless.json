@@ -23,5 +23,9 @@
     },
     "no_regen": {
         "type": "origins:disable_regen"
+    },
+    "no_hearts": {
+        "type": "origins:status_bar_texture",
+        "texture": "origins-plus-plus:textures/gui/hide_hearts.png"
     }
 }

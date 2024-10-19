@@ -1,8 +1,6 @@
 {
     "name": "Electrically Powered",
     "description": "You are unable to eat and instead charge from redstone power.",
-    "type": "origins:multiple",
-    "range": {
         "type": "origins:action_over_time",
         "interval": 200,
         "entity_action": {
@@ -249,26 +247,5 @@
                 "operation": "add"
             }
         }
-    },
-    "death": {
-        "type": "origins:self_action_when_hit",
-        "entity_action": {
-            "type": "origins:if_else",
-            "condition": {
-                "type": "origins:health",
-                "comparison": ">",
-                "compare_to": 0
-            },
-            "if_action": {
-                "type": "origins:nothing"
-            },
-            "else_action": {
-                "type": "origins:change_resource",
-                "resource": "focon:energy_resource",
-                "change": 200,
-                "operation": "set"
-            }
-        },
-        "cooldown": 1
-    }
+    
 }

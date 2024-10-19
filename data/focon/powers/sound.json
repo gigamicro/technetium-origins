@@ -1,4 +1,6 @@
 {
+    "name":"Ancient Sound",
+    "description":"You make Guardian noises.",
     "type": "origins:multiple",
     "idle": {
         "condition": {
