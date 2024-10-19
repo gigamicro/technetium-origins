@@ -1,29 +1,29 @@
 {
-    "name": "No Gravity",
-    "description":"You only fall in freezing temperatures or when sneaking.",
-    "condition": {
-        "type": "origins:or",
-        "inverted": true,
-        "conditions": [
-            { "type":"origins:on_block" },
-            { "type":"origins:creative_flying" },
-            { "type":"origins:sneaking" },
-            { "type":"origins:submerged_in", "fluid":"minecraft:water" },
-            { "type":"origins:status_effect", "effect":"minecraft:slow_falling" },
-            {
-                "type": "origins:biome",
-                "condition": {
-                    "type": "origins:temperature",
-                    "comparison": "<",
-                    "compare_to": 0.2
-                }
-            }
-        ]
-    },
-    "type": "origins:action_over_time",
-    "interval": 1,
-    "entity_action": {
-        "type": "origins:add_velocity",
-        "y": 0.08
-    }
+	"name": "No Gravity",
+	"description":"You only fall in freezing temperatures or when sneaking.",
+	"condition": {
+		"type": "origins:or",
+		"inverted": true,
+		"conditions": [
+			{ "type":"origins:on_block" },
+			{ "type":"origins:creative_flying" },
+			{ "type":"origins:sneaking" },
+			{ "type":"origins:submerged_in", "fluid":"minecraft:water" },
+			{ "type":"origins:status_effect", "effect":"minecraft:slow_falling" },
+			{
+				"type": "origins:biome",
+				"condition": {
+					"type": "origins:temperature",
+					"comparison": "<",
+					"compare_to": 0.2
+				}
+			}
+		]
+	},
+	"type": "origins:action_over_time",
+	"interval": 1,
+	"entity_action": {
+		"type": "origins:add_velocity",
+		"y": 0.08
+	}
 }

@@ -1,64 +1,64 @@
 {
-    "name": "Catsized",
-    "description": "Your height and step size are halved and doubled, respectively.",
-    "type": "origins:action_on_callback",
-    "entity_action_gained": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:execute_command",
-                "command": "scale easing set pehkui:base pehkui:elastic_out"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "scale divide 2"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "scale multiply pehkui:motion 2"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "scale multiply pehkui:step_height 1.67"
-            }
-        ]
-    },
-    "entity_action_respawned": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:execute_command",
-                "command": "scale easing set pehkui:base pehkui:elastic_out"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "scale divide 2"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "scale multiply pehkui:motion 2"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "scale multiply pehkui:step_height 1.67"
-            }
-        ]
-    },
-    "entity_action_removed": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:execute_command",
-                "command": "scale multiply 2"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "scale divide pehkui:motion 2"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "scale divide pehkui:step_height 1.67"
-            }
-        ]
-    }
+	"name": "Catsized",
+	"description": "Your height and step size are halved and doubled, respectively.",
+	"type": "origins:action_on_callback",
+	"entity_action_gained": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale easing set pehkui:base pehkui:elastic_out"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale divide 2"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale multiply pehkui:motion 2"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale multiply pehkui:step_height 1.67"
+			}
+		]
+	},
+	"entity_action_respawned": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale easing set pehkui:base pehkui:elastic_out"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale divide 2"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale multiply pehkui:motion 2"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale multiply pehkui:step_height 1.67"
+			}
+		]
+	},
+	"entity_action_removed": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "scale multiply 2"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale divide pehkui:motion 2"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale divide pehkui:step_height 1.67"
+			}
+		]
+	}
 }

@@ -1,29 +1,29 @@
 {
-    "name": "Windwalker",
-    "description": "You move in your looking direction when moving in air.",
-    "type": "origins:active_self",
-    "condition": {
-        "type": "origins:and",
-        "conditions": [
-            {
-                "inverted": true,
-                "type": "origins:on_block"
-            },
-            {
-                "inverted": true,
-                "type": "origins:creative_flying"
-            }
-        ]
-    },
-    "entity_action": {
-        "type": "origins:add_velocity",
-        "z": 0.12,
-        "space": "local",
-        "client": true,
-        "server": true
-    },
-    "key": {
-        "key": "key.forward",
-        "continuous": true
-    }
+	"name": "Windwalker",
+	"description": "You move in your looking direction when moving in air.",
+	"type": "origins:active_self",
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"inverted": true,
+				"type": "origins:on_block"
+			},
+			{
+				"inverted": true,
+				"type": "origins:creative_flying"
+			}
+		]
+	},
+	"entity_action": {
+		"type": "origins:add_velocity",
+		"z": 0.12,
+		"space": "local",
+		"client": true,
+		"server": true
+	},
+	"key": {
+		"key": "key.forward",
+		"continuous": true
+	}
 }
