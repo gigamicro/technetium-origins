@@ -1,6 +1,6 @@
 {
     "name": "Recharge",
-    "description": "You can use redstone to recharge your energy. Other players can do so too by right-clicking you with it. You are also able to slowly pull energy from nearby powered redstone.",
+    "description": "You can use redstone to recharge your energy. Other players can do so too by right-clicking you with it.",
     "type": "origins:multiple",
     "self_battery": {
         "condition": {

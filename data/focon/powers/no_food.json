@@ -21,6 +21,7 @@
         "type": "origins:action_when_damage_taken",
         "entity_action": {
             "type": "origins:feed",
+            "food": 20,
             "saturation": 20
         },
         "cooldown": 1

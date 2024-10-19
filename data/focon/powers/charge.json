@@ -1,6 +1,6 @@
 {
     "name": "Electrically Powered",
-    "description": "You are unable to eat and instead charge from redstone power.",
+    "description": "You slowly regain energy near powered redstone.",
         "type": "origins:action_over_time",
         "interval": 200,
         "entity_action": {
