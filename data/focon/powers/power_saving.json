@@ -1,12 +1,12 @@
 {
-    "name": "Power Saving",
-    "description": "When you lose enough power you will go into power saving mode before shutting down.",
-    "hidden": true,
-    "condition": {
-        "type": "origins:resource",
-        "resource": "focon:energy_resource",
-        "comparison": "<",
-        "compare_to": 40
-    },
-    "type": "origins:prevent_sprinting"
+	"name": "Power Saving",
+	"description": "When you lose enough power you will go into power saving mode before shutting down.",
+	"hidden": true,
+	"condition": {
+		"type": "origins:resource",
+		"resource": "focon:energy_resource",
+		"comparison": "<",
+		"compare_to": 40
+	},
+	"type": "origins:prevent_sprinting"
 }

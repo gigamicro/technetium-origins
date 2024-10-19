@@ -1,43 +1,43 @@
 {
-    "name": "Conductor",
-    "description": "While in thunderstorms, you're much more likely to get struck by lightning.",
-    "hidden": true,
-    "condition": {
-        "type": "origins:and",
-        "conditions": [
-            {
-                "type": "origins:in_rain"
-            },
-            {
-                "type": "origins:predicate",
-                "predicate": "focon:thundering"
-            }
-        ]
-    },
-    "type": "origins:action_over_time",
-    "interval": 200,
-    "entity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:chance",
-                "chance": 0.2,
-                "action": {
-                    "type": "origins:spawn_entity",
-                    "entity_type": "lightning_bolt"
-                }
-            },
-            {
-                "type": "origins:spawn_particles",
-                "particle": "electric_spark",
-                "count": 2,
-                "spread": {
-                    "x": 1,
-                    "y": 1,
-                    "z": 1
-                },
-                "offset_y": 0.5
-            }
-        ]
-    }
+	"name": "Conductor",
+	"description": "While in thunderstorms, you're much more likely to get struck by lightning.",
+	"hidden": true,
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:in_rain"
+			},
+			{
+				"type": "origins:predicate",
+				"predicate": "focon:thundering"
+			}
+		]
+	},
+	"type": "origins:action_over_time",
+	"interval": 200,
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:chance",
+				"chance": 0.2,
+				"action": {
+					"type": "origins:spawn_entity",
+					"entity_type": "lightning_bolt"
+				}
+			},
+			{
+				"type": "origins:spawn_particles",
+				"particle": "electric_spark",
+				"count": 2,
+				"spread": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				},
+				"offset_y": 0.5
+			}
+		]
+	}
 }

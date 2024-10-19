@@ -1,88 +1,88 @@
 {
-    "name": "Scald",
-    "description": "When you hit someone while at high steam, they're knocked back and scalded.",
-    "loading_priority": 15,
-    "condition": {
-        "type": "origins:food_level",
-        "comparison": ">",
-        "compare_to": 15
-    },
-    "type": "origins:action_on_hit",
-    "bientity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:add_velocity",
-                "x": 0,
-                "y": 0,
-                "z": 1.5,
-                "client": true,
-                "server": true
-            },
-            {
-                "type": "origins:target_action",
-                "action": {
-                    "type": "origins:spawn_particles",
-                    "particle": "minecraft:poof",
-                    "count": 40,
-                    "speed": 0.8,
-                    "force": true,
-                    "spread": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0
-                    },
-                    "offset_y": 0
-                }
-            },
-            {
-                "type": "origins:actor_action",
-                "action": {
-                    "type": "origins:raycast",
-                    "distance": 7,
-                    "block": false,
-                    "entity": true,
-                    "shape_type": "outline",
-                    "fluid_handling": "none",
-                    "command_along_ray": "particle minecraft:cloud",
-                    "command_step": 0.1,
-                    "command_along_ray_only_on_hit": true
-                }
-            },
-            {
-                "type": "origins:actor_action",
-                "action": {
-                    "type": "origins:play_sound",
-                    "sound": "block.lava.extinguish",
-                    "volume": 1.5,
-                    "pitch": 2
-                }
-            },
-            {
-                "type": "origins:target_action",
-                "action": {
-                    "type": "origins:damage",
-                    "amount": 4,
-                    "damage_type": "minecraft:on_fire"
-                }
-            },
-            {
-                "type": "origins:target_action",
-                "action": {
-                    "type": "origins:spawn_particles",
-                    "particle": "minecraft:poof",
-                    "count": 30,
-                    "speed": 0.4,
-                    "force": true,
-                    "spread": {
-                        "x": 0,
-                        "y": 0,
-                        "z": 0
-                    },
-                    "offset_y": 0
-                }
-            }
-        ]
-    },
-    "cooldown": 5
+	"name": "Scald",
+	"description": "When you hit someone while at high steam, they're knocked back and scalded.",
+	"loading_priority": 15,
+	"condition": {
+		"type": "origins:food_level",
+		"comparison": ">",
+		"compare_to": 15
+	},
+	"type": "origins:action_on_hit",
+	"bientity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:add_velocity",
+				"x": 0,
+				"y": 0,
+				"z": 1.5,
+				"client": true,
+				"server": true
+			},
+			{
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:spawn_particles",
+					"particle": "minecraft:poof",
+					"count": 40,
+					"speed": 0.8,
+					"force": true,
+					"spread": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"offset_y": 0
+				}
+			},
+			{
+				"type": "origins:actor_action",
+				"action": {
+					"type": "origins:raycast",
+					"distance": 7,
+					"block": false,
+					"entity": true,
+					"shape_type": "outline",
+					"fluid_handling": "none",
+					"command_along_ray": "particle minecraft:cloud",
+					"command_step": 0.1,
+					"command_along_ray_only_on_hit": true
+				}
+			},
+			{
+				"type": "origins:actor_action",
+				"action": {
+					"type": "origins:play_sound",
+					"sound": "block.lava.extinguish",
+					"volume": 1.5,
+					"pitch": 2
+				}
+			},
+			{
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:damage",
+					"amount": 4,
+					"damage_type": "minecraft:on_fire"
+				}
+			},
+			{
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:spawn_particles",
+					"particle": "minecraft:poof",
+					"count": 30,
+					"speed": 0.4,
+					"force": true,
+					"spread": {
+						"x": 0,
+						"y": 0,
+						"z": 0
+					},
+					"offset_y": 0
+				}
+			}
+		]
+	},
+	"cooldown": 5
 }

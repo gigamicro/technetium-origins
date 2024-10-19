@@ -1,10 +1,10 @@
 {
-    "hidden": true,
-    "condition": {
-        "type": "origins:resource",
-        "resource": "focon:energy_resource",
-        "comparison": "==",
-        "compare_to": 0
-    },
-    "type": "apugli:mobs_ignore"
+	"hidden": true,
+	"condition": {
+		"type": "origins:resource",
+		"resource": "focon:energy_resource",
+		"comparison": "==",
+		"compare_to": 0
+	},
+	"type": "apugli:mobs_ignore"
 }
