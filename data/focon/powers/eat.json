@@ -142,7 +142,7 @@
                 {
                     "type": "origins:change_resource",
                     "resource": "focon:energy_resource",
-                    "change": 50,
+                    "change": 45,
                     "operation": "add"
                 },
                 {
@@ -168,7 +168,7 @@
                     {
                         "type": "origins:change_resource",
                         "resource": "focon:energy_resource",
-                        "change": 50,
+                        "change": 45,
                         "operation": "add"
                     },
                     {

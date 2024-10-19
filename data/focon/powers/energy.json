@@ -1,10 +1,12 @@
 {
+    "name":"Energetic",
+    "description":"You only have one resource: your Energy.",
     "type":"origins:multiple",
     "resource":{
         "type": "origins:resource",
         "min": 0,
-        "max": 400,
-        "start_value": 400,
+        "max": 71,
+        "start_value": 999,
         "hud_render": {
             "should_render": true,
             "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
@@ -12,21 +14,50 @@
         }
     },
     "death": {
-        "type": "origins:self_action_when_hit",
-        "entity_action": {
-            "type": "origins:if_else",
-            "condition": {
-                "type": "origins:health",
-                "comparison": "==",
-                "compare_to": 0
-            },
-            "if_action": {
-                "type": "origins:change_resource",
-                "resource": "focon:energy_resource",
-                "change": 200,
-                "operation": "set"
-            }
+        "type":"origins:action_on_callback",
+        "entity_action_respawned":{
+            "type":"origins:change_resource",
+            "resource":"focon:energy_resource",
+            "change":999
+        }
+    },
+    "hunger": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type":"origins:food_level",
+            "comparison": "<",
+            "compare_to": 20
         },
-        "cooldown": 1
+        "entity_action": {"type":"origins:and","actions":[{
+            "type": "origins:change_resource",
+            "resource": "focon:energy_resource",
+            "change": -1,
+            "operation": "add"
+        },{
+            "type": "origins:feed",
+            "food": 1,
+            "saturation": 0
+        }]},
+        "interval": 1
+    },
+    "health": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type":"origins:health",
+            "comparison": "<",
+            "compare_to": 20
+        },
+        "entity_action": {"type":"origins:and","actions":[{
+            "type":"origins:chance","chance":0.25,"action":{
+            "type": "origins:change_resource",
+            "resource": "focon:energy_resource",
+            "change": -1,
+            "operation": "add"
+        }
+        },{
+            "type": "origins:heal",
+            "amount": 2
+        }]},
+        "interval": 1
     }
 }

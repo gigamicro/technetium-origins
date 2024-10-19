@@ -4,7 +4,7 @@
     "type":"origins:multiple",
     "bed":{
         "type": "origins:prevent_sleep",
-        "message": "You cannot sleep. ",
+        "message": "You cannot sleep.",
         "set_spawn_point": true
     },
     "phantom":{

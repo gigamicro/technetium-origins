@@ -1,6 +1,6 @@
 {
     "name":"Ancient Sound",
-    "description":"You make Guardian noises occasionally or when hit.",
+    "description":"You make Guardian noises occasionally.",
     "type": "origins:multiple",
     "idle": {
         "condition": {
@@ -34,29 +34,5 @@
                 "pitch": 1.2
             }
         }
-    },
-    "hurt_death": {
-        "type": "origins:self_action_when_hit",
-        "entity_action": {
-            "type": "origins:if_else",
-            "condition": {
-                "type": "origins:health",
-                "comparison": ">",
-                "compare_to": 0
-            },
-            "if_action": {
-                "type": "origins:play_sound",
-                "sound": "entity.elder_guardian.hurt",
-                "volume": 1,
-                "pitch": 1.2
-            },
-            "else_action": {
-                "type": "origins:play_sound",
-                "sound": "entity.elder_guardian.death",
-                "volume": 1,
-                "pitch": 1.2
-            }
-        },
-        "cooldown": 1
     }
 }

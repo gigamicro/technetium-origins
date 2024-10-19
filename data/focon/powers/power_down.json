@@ -102,5 +102,14 @@
             "compare_to": 0
         },
         "type": "apugli:mobs_ignore"
+    },
+    "noblocks":{
+        "condition": {
+            "type": "origins:resource",
+            "resource": "focon:energy_resource",
+            "comparison": "==",
+            "compare_to": 0
+        },
+        "type":"origins:prevent_block_selection"
     }
 }

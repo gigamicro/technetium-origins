@@ -4,10 +4,10 @@
     "powers": [
         "focon:deathless",
         "focon:immunities",
+        "technetium:unnatural",
+        "focon:energy",
         "technetium:dense",
         "focon:armourless",
-        "focon:no_food",
-        "focon:energy",
         "focon:charge",
         "focon:eat",
         "focon:power_saving",
