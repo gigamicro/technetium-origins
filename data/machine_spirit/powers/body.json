@@ -748,7 +748,7 @@
 			}
 		}]},
 		"entity_action":{"type":"origins:and","actions":[{
-		    "Note!":"Everything below here should be identical between death & respirit",
+			"Note!":"Everything below here should be identical between death & respirit",
 			"type":"origins:clear_effect"
 		},{
 			"type":"origins:grant_power",
