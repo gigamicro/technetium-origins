@@ -8,8 +8,5 @@
 			"inverted": true,
 			"type": "origins:out_of_world"
 		}
-	},
-	"no_regen": {
-		"type": "origins:disable_regen"
 	}
 }

@@ -59,5 +59,8 @@
 			"amount": 2
 		}]},
 		"interval": 1
+	},
+	"no_regen": {
+		"type": "origins:disable_regen"
 	}
 }
