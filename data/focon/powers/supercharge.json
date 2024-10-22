@@ -38,8 +38,8 @@
 			{
 				"type": "origins:change_resource",
 				"resource": "focon:energy_resource",
-				"change": 400,
-				"operation": "set"
+				"change": 999,
+				"operation": "add"
 			},
 			{
 				"type": "origins:spawn_particles",

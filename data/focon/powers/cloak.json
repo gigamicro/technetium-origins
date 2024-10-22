@@ -46,11 +46,11 @@
 				}
 			]
 		},
-		"interval": 40,
+		"interval": 10,
 		"entity_action": {
 			"type": "origins:change_resource",
 			"resource": "focon:energy_resource",
-			"change": -4,
+			"change": -1,
 			"operation": "add"
 		}
 	},
