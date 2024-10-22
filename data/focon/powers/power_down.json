@@ -52,7 +52,7 @@
 		},
 		"entity_action": {
 			"type": "origins:change_resource",
-			"resource": "focon:powerdown_selfdestructresource",
+			"resource": "focon:power_down_selfdestructresource",
 			"change": 1
 		},
 		"condition": {
@@ -86,7 +86,7 @@
 		"interval": 1,
 		"entity_action": {
 			"type": "origins:change_resource",
-			"resource": "focon:powerdown_selfdestructresource",
+			"resource": "focon:power_down_selfdestructresource",
 			"change": -1
 		},
 		"condition": {
