@@ -24,8 +24,9 @@
 	},
 	"air": {
 		"condition": {
-			"type": "origins:submerged_in",
-			"fluid": "water"
+			"type": "origins:air",
+			"comparison": "<",
+			"compare_to": 300
 		},
 		"type": "origins:action_over_time",
 		"interval": 5,
