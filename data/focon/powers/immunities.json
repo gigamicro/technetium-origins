@@ -23,16 +23,17 @@
 		}
 	},
 	"air": {
-		"condition": {
-			"type": "origins:air",
-			"comparison": "<",
-			"compare_to": 300
-		},
 		"type": "origins:action_over_time",
 		"interval": 5,
 		"entity_action": {
+			"type":"origins:and",
+			"actions":[{
 			"type": "origins:gain_air",
 			"value": 20
+		},{
+			"type":"origins:gain_air",
+			"value": -1
+		}]
 		}
 	}
 }

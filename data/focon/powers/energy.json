@@ -62,5 +62,9 @@
 	},
 	"no_regen": {
 		"type": "origins:disable_regen"
+	},
+	"gui": {
+		"type":"origins:status_bar_texture",
+		"texture":"technetium:textures/gui/hide_hearts_shanks_bubbles.png"
 	}
 }
