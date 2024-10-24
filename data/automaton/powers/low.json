@@ -1,6 +1,6 @@
 {
 	"name":"Low Power Mode",
-	"description":"When you are exhausted you become blind and nearly immobile.",
+	"description":"When you are exhausted (last two ampules) you become blind and nearly immobile.",
 	"type":"origins:multiple",
 	"slowness":{
 		"type":"origins:conditioned_attribute",
@@ -31,8 +31,13 @@
 		"type":"origins:action_over_time",
 		"interval":1,
 		"entity_action":{
-			"type":"origins:execute_command",
-			"command":"effect give @s minecraft:blindness 2 1 true"
+			"type":"origins:apply_effect",
+			"effect":{
+				"effect":"minecraft:blindness",
+				"duration":25,
+				"amplifier":1,
+				"show_particles":false
+			}
 		},
 		"condition":{
 			"type": "origins:food_level",

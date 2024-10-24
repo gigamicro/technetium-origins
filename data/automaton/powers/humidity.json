@@ -2,7 +2,7 @@
 	"name":"Humidity Collection",
 	"description":"You slowly gain water from humid climates.",
 	"type":"origins:action_over_time",
-	"interval":5,
+	"interval":1,
 	"entity_action":{"type":"origins:and","actions":[
 		{
 			"type": "origins:change_resource",
@@ -14,7 +14,7 @@
 			"type": "origins:change_resource",
 			"resource": "automaton:water_bar",
 			"operation":"add",
-			"change": 5
+			"change": 4
 		}
 	]},
 	"condition":{"type":"origins:or","conditions":[

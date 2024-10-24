@@ -2,7 +2,7 @@
 	"name":"Evaporation",
 	"description":"Hot climates slowly drain your water.",
 	"type":"origins:action_over_time",
-	"interval":5,
+	"interval":1,
 	"entity_action":{
 		"type": "origins:change_resource",
 		"resource": "automaton:water_bar",

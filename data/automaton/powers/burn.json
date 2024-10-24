@@ -1,6 +1,6 @@
 {
 	"name":"Burn Utility",
-	"description":"Fire damage boils water and patches your Vessel (if it's not pressurized).",
+	"description":"Fire damage boils water and patches your Vessel (if it's not pressurized; >8🩶|≤6💨|≤4💨).",
 "type":"origins:multiple","sparse":{
 	"type":"origins:modify_damage_taken",
 	"damage_condition":{"type":"origins:or","conditions":[

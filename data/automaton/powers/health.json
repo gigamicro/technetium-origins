@@ -11,6 +11,10 @@
 	"no_regen":{
 		"type":"origins:disable_regen"
 	},
+	"texture":{
+		"type":"origins:status_bar_texture",
+		"texture":"automaton:textures/gui/icons.png"
+	},
 	"damage":{
 		"type":"origins:modify_damage_taken",
 		"modifier":{
