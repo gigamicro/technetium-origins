@@ -10,6 +10,11 @@
 				"duration":5
 			},
 			{
+				"type":"origins:damage",
+				"amount":1,
+				"damage_type":"minecraft:on_fire"
+			},
+			{
 				"type": "origins:play_sound",
 				"sound": "minecraft:item.firecharge.use",
 				"volume": 0.5,
