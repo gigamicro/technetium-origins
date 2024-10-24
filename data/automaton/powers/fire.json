@@ -8,7 +8,14 @@
 	"max":10000,
 	"start_value":5000,
 	"hud_render":{
-		"bar_index":7
+		"bar_index":7,
+		"condition":{
+			"inverted":true,
+			"type":"origins:or","conditions":[
+				{"type":"origins:gamemode","gamemode":"creative"},
+				{"type":"origins:gamemode","gamemode":"spectator"}
+			]
+		}
 	}
 },
 "respawn":{
