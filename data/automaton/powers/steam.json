@@ -34,6 +34,21 @@
 			"operation":"multiply_total"
 		}
 	},
+	"respawn":{
+		"type": "origins:action_on_callback",
+		"entity_action_respawned":{ "type":"origins:and", "actions": [
+			{
+				"type": "origins:feed",
+				"food": -1,
+				"saturation": 99
+			},
+			{
+				"type": "origins:feed",
+				"food": 1,
+				"saturation": 0
+			}
+		]}
+	},
 	"effects":{
 		"type": "origins:effect_immunity",
 		"effects": [
