@@ -1,0 +1,14 @@
+{
+	"name": "Infallible",
+	"description":"You don't take fall or elytra damage.",
+	"type": "origins:modify_damage_taken",
+	"damage_condition": {"type":"origins:or","conditions":[
+		{"type":"origins:name","name":"flyIntoWall"},
+		{"type":"origins:name","name":"fall"}
+	]},
+	"modifier": {
+		"name": "Infallible",
+		"operation": "set_total",
+		"value": 0
+	}
+}
