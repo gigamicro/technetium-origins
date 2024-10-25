@@ -3,68 +3,55 @@
 	"description":"You can become smaller to use different abilities.",
 	"type":"origins:multiple",
 	"toggle":{"loading_priority":1,"type":"origins:toggle","active_by_default":false,"key":"key.origins.secondary_active"},
-"tell":{
-"condition":{"type":"origins:power_active","power":"technetium_custom:small_toggle"},
-    "type": "origins:overlay",
-    "texture": "minecraft:textures/block/ice.png",
-    "strength": 0.1,
-    "red": 1.0,
-    "green": 1.0,
-    "blue": 1.0,
-    "draw_mode": "texture",
-    "draw_phase": "below_hud",
-    "visible_in_third_person": false
-},
-
 	"size_sync":{"loading_priority":1,
-	    "type": "origins:active_self",
-	    "key":"key.origins.secondary_active",
-	    "entity_action": {
-	    	"type":"origins:if_else",
+		"type": "origins:active_self",
+		"key":"key.origins.secondary_active",
+		"entity_action": {
+			"type":"origins:if_else",
 			"condition":{"type":"origins:power_active","power":"technetium_custom:small_toggle"},
 			"if_action":{
-			    "type": "origins:grant_power",
-			    "power": "technetium_custom:small_size",
-			    "source": "technetium_custom:asher-combat-android"
+				"type": "origins:grant_power",
+				"power": "technetium_custom:small_size",
+				"source": "technetium_custom:asher-combat-android"
 			},
 			"else_action":{
-			    "type": "origins:revoke_power",
-			    "power": "technetium_custom:small_size",
-			    "source": "technetium_custom:asher-combat-android"
+				"type": "origins:revoke_power",
+				"power": "technetium_custom:small_size",
+				"source": "technetium_custom:asher-combat-android"
 			}
-	    }
+		}
 	},
 	"size_init":{
 		"type":"origins:action_on_callback",
-	    "entity_action_added": {
-	    	"type":"origins:delay",
-	    	"ticks":1,
-	    	"action":{
-		    	"type":"origins:if_else",
+		"entity_action_added": {
+			"type":"origins:delay",
+			"ticks":1,
+			"action":{
+				"type":"origins:if_else",
 				"condition":{"type":"origins:power_active","power":"technetium_custom:small_toggle"},
 				"if_action":{
-				    "type": "origins:grant_power",
-				    "power": "technetium_custom:small_size",
-				    "source": "technetium_custom:asher-combat-android"
+					"type": "origins:grant_power",
+					"power": "technetium_custom:small_size",
+					"source": "technetium_custom:asher-combat-android"
 				},
 				"else_action":{
-				    "type": "origins:revoke_power",
-				    "power": "technetium_custom:small_size",
-				    "source": "technetium_custom:asher-combat-android"
+					"type": "origins:revoke_power",
+					"power": "technetium_custom:small_size",
+					"source": "technetium_custom:asher-combat-android"
 				}
-		    }
+			}
 		},
-	    "entity_action_respawned": {
-	    	"type":"origins:delay",
-	    	"ticks":1,
-	    	"action":{
-		    	"type":"origins:if_else",
+		"entity_action_respawned": {
+			"type":"origins:delay",
+			"ticks":1,
+			"action":{
+				"type":"origins:if_else",
 				"condition":{"type":"origins:power_active","power":"technetium_custom:small_toggle","inverted":true},
 				"if_action":{
 					"type": "origins:execute_command",
 					"command": "scale multiply 2"
 				}
-		    }
+			}
 		}
 	}
 }
