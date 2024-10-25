@@ -1,8 +1,12 @@
 {
 	"name":"Vanish",
-	"description":"While large, you can disappear for thirty seconds every sixty seconds.",
+	"description":"While large, you can disappear for thirty seconds every sixty seconds. (Sneak)",
 	"type":"origins:active_self",
-	"key":"key.origins.secondary_active",
+	"key":"key.origins.primary_active",
+    "condition":{"type":"origins:and","conditions":[
+        {"type":"origins:sneaking"},
+        {"type":"origins:power_active","power":"technetium_custom:small_toggle","inverted":true}
+    ]},
 	"cooldown":1200,
 	"hud_render":{
 		"sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_01.png",

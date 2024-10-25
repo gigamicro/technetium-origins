@@ -3,7 +3,9 @@
 	"powers":[
 		"technetium_custom:vanish",
 		"technetium_custom:grappling_hook",
-		"origins-plus-plus:fallen-angel/elytra",
-		"technetium_custom:nofall"
+		"technetium_custom:small",
+		"technetium_custom:elytra",
+		"technetium_custom:nofall",
+		"technetium_custom:small_size"
 	]
 }

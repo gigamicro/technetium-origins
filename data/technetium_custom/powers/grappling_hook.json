@@ -3,6 +3,10 @@
     "description": "While large, you can fire a grappling hook to pull yourself to blocks, or entities to you.",
     "type": "origins:active_self",
     "key":"key.origins.primary_active",
+    "condition":{"type":"origins:and","conditions":[
+        {"type":"origins:sneaking","inverted":true},
+        {"type":"origins:power_active","power":"technetium_custom:small_toggle","inverted":true}
+    ]},
     "cooldown": 60,
     "hud_render": {
         "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
@@ -154,8 +158,19 @@
                                     {
                                         "type": "origins:target_action",
                                         "action": {
-                                            "type": "origins:execute_command",
-                                            "command": "particle minecraft:dust_color_transition 0 0 0.2 1.5 0.6 0.6 1 ~ ~1 ~ 0.5 0.5 0.5 4 5"
+                                            "type": "origins:and",
+                                            "actions": [
+                                                {
+                                                    "type": "origins:execute_command",
+                                                    "command": "particle minecraft:dust_color_transition 0 0 0.2 1.5 0.6 0.6 1 ~ ~1 ~ 0.5 0.5 0.5 4 5"
+                                                },
+                                                {
+                                                    "type": "origins:play_sound",
+                                                    "sound": "minecraft:entity.iron_golem.death",
+                                                    "volume": 0.45,
+                                                    "pitch": 0.9
+                                                }
+                                            ]
                                         }
                                     },
                                     {
@@ -168,12 +183,6 @@
                                                     "sound": "minecraft:entity.iron_golem.damage",
                                                     "volume": 0.45,
                                                     "pitch": 0.5
-                                                },
-                                                {
-                                                    "type": "origins:play_sound",
-                                                    "sound": "minecraft:entity.iron_golem.death",
-                                                    "volume": 0.45,
-                                                    "pitch": 0.9
                                                 }
                                             ]
                                         }
@@ -212,8 +221,8 @@
                             {
                                 "type": "origins:add_velocity",
                                 "x": 0,
-                                "y": 0.1,
-                                "z": 2.5,
+                                "y": 0,
+                                "z": 25,
                                 "space": "local"
                             }
                         ]
