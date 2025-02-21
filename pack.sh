@@ -13,4 +13,4 @@ rm     ./"$self".jar || true
 zip -r ./"$self".jar -- assets data fabric.mod.json
 printf =======%s=======\\n  FORGE
 rm     ./"$self"-forge.jar || true
-zip -r ./"$self"-forge.jar -- assets data META-INF com
+zip -r ./"$self"-forge.jar -- assets data pack.mcmeta META-INF com
