@@ -8,6 +8,13 @@
         "gigamicro",
         "praoubl"
     ],
+  "contact": {
+    "homepage": "https://discord.gg/sDdMUJetQ2",
+    "sources": "https://github.com/gigamicro/technetium-origins",
+    "issues": "https://github.com/gigamicro/technetium-origins/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/technetium/icon.png",
     "schemaVersion": 1,
     "environment": "*",
     "depends": {
