@@ -1,14 +1,14 @@
 {
     "pack": {
-        "name": "Technetium Origins",
         "id": "technetium_origins",
-        "pack_format": 15,
+        "name": "Technetium Origins",
         "version": "1.0.13",
+        "description": "several heavy modifications or original origins for the Beep Boop/Technetium server/modpack ",
+        "pack_format": 15,
         "authors": [
             "gigamicro",
             "praoubl"
         ],
-        "description": "new origins: automaton (reworked from o++), machine spirit",
         "license": "MIT"
     }
 }

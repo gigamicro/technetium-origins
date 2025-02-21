@@ -1,0 +1,19 @@
+{
+    "id": "technetium_origins",
+    "name": "Technetium Origins",
+    "version": "1.0.13",
+    "description": "several heavy modifications or original origins for the Beep Boop/Technetium server/modpack ",
+    "license": "MIT",
+    "authors": [
+        "gigamicro",
+        "praoubl"
+    ],
+    "schemaVersion": 1,
+    "environment": "*",
+    "depends": {
+        "fabric-api-base": "*",
+        "fabric": "*",
+        "minecraft": ">=1.20.0 <=1.20.1",
+        "origins": ">=1.10.0"
+    }
+}
