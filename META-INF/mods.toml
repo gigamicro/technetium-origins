@@ -7,7 +7,7 @@ modId="technetium_origins"
 displayName="Technetium Origins"
 version="1.0.13"
 description='''
-rework for automaton from origins++
+several heavy modifications or original origins for the Beep Boop/Technetium server/modpack 
 '''
 [[dependencies.technetium_origins]]
     modId="minecraft"
