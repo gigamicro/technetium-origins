@@ -1,2 +1,2 @@
 #!/bin/sh
-jq -r '.name' data/*/origins/*
+exec grep -e '"name":' -- data/*/origins/* | sed 's|^data/||;s|/origins/|:|;s|\.json:\s*"name":\s*| = |;s|,$||'
