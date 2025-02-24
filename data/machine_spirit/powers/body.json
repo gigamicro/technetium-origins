@@ -233,6 +233,12 @@
 			"value":7.0
 		}
 	},
+	"init_equip":{
+		"type": "origins:starting_equipment",
+		"stack": {
+			"item": "minecraft:redstone_block"
+		}
+	},
 
 	"material":{
 		"type":"origins:resource",
