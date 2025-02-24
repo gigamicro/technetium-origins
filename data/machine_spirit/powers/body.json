@@ -66,6 +66,16 @@
 		},
 		"interval":1
 	},
+	"gui":{
+		"type":"origins:status_bar_texture",
+		"texture":"machine_spirit:textures/gui/icons.png",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "technetium:no_ui",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
 	"redstone_saturate":{
 		"type":"origins:action_over_time",
 		"entity_action":{"type":"origins:if_else_list","actions":[{

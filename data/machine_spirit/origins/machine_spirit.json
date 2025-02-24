@@ -1,14 +1,16 @@
 {
 	"name":"Machine Spirit",
+	"description": "Don't go far from redstone power. ",
 	"powers":[
 		"technetium:unnatural",
 		"machine_spirit:spirit",
+		"machine_spirit:desc4",
 		"machine_spirit:body",
 		"machine_spirit:desc1",
 		"machine_spirit:desc2",
 		"machine_spirit:desc3",
-		"machine_spirit:desc4",
-		"machine_spirit:dustdupe"
+		"machine_spirit:dustdupe",
+		"technetium:no_ui"
 	],
 	"icon":"minecraft:redstone_block",
 	"impact":3
