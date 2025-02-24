@@ -1,6 +1,6 @@
 {
 	"name": "Supercharged",
-	"description": "Being struck by lightning will give you speed, haste, and strangth for a short time. Being struck by lightning also refils all energy.",
+	"description": "Being struck by lightning will fill your energy and give you speed, haste, and strangth for two minutes.",
 	"type": "origins:modify_damage_taken",
 	"damage_condition": {
 		"type": "origins:name",
@@ -38,8 +38,8 @@
 			{
 				"type": "origins:change_resource",
 				"resource": "focon:energy_resource",
-				"change": 400,
-				"operation": "set"
+				"change": 999,
+				"operation": "add"
 			},
 			{
 				"type": "origins:spawn_particles",

@@ -2,26 +2,11 @@
 	"name": "Lifeless",
 	"description": "You are not alive, and cannot die. You can only be shut down from a lack of power. ",
 	"type": "origins:multiple",
-	"damageless": {
-		"type": "origins:action_when_damage_taken",
-		"damage_condition": {
-			"inverted": true,
-			"type": "origins:out_of_world"
-		},
-		"entity_action": {
-			"type": "origins:heal",
-			"amount": 30
-		},
-		"cooldown": 1
-	},
 	"no_death": {
 		"type": "origins:prevent_death",
 		"damage_condition": {
 			"inverted": true,
 			"type": "origins:out_of_world"
 		}
-	},
-	"no_regen": {
-		"type": "origins:disable_regen"
 	}
 }

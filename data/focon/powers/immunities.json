@@ -11,44 +11,29 @@
 			"minecraft:wither"
 		]
 	},
-	"buried": {
+	"damage": {
 		"type": "origins:invulnerability",
 		"damage_condition": {
-			"type": "origins:name",
-			"name": "inWall"
+			"type":"origins:or","conditions":[
+				{ "type": "origins:name", "name": "inWall" },
+				{ "type": "origins:name", "name": "drown" },
+				{ "type": "origins:name", "name": "freeze" },
+				{ "type": "origins:name", "name": "ad_astra:oxygen" }
+			]
 		}
 	},
-	"drowned": {
-		"type": "origins:invulnerability",
-		"damage_condition": {
-			"type": "origins:name",
-			"name": "drown"
-		}
-	},
-	"prevent_drowning": {
-		"condition": {
-			"type": "origins:submerged_in",
-			"fluid": "water"
-		},
+	"air": {
 		"type": "origins:action_over_time",
 		"interval": 5,
 		"entity_action": {
+			"type":"origins:and",
+			"actions":[{
 			"type": "origins:gain_air",
 			"value": 20
-		}
-	},
-	"freezing": {
-		"type": "origins:invulnerability",
-		"damage_condition": {
-			"type": "origins:name",
-			"name": "freeze"
-		}
-	},
-	"oxygen": {
-		"type": "origins:invulnerability",
-		"damage_condition": {
-			"type": "origins:name",
-			"name": "ad_astra:oxygen"
+		},{
+			"type":"origins:gain_air",
+			"value": -1
+		}]
 		}
 	}
 }

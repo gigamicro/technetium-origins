@@ -51,8 +51,9 @@
 			"continuous": true
 		},
 		"entity_action": {
-			"type": "origins:execute_command",
-			"command": "resource change @s focon:powerdown_selfdestructresource 1"
+			"type": "origins:change_resource",
+			"resource": "focon:power_down_selfdestructresource",
+			"change": 1
 		},
 		"condition": {
 			"type": "origins:resource",
@@ -84,12 +85,31 @@
 		"type": "origins:action_over_time",
 		"interval": 1,
 		"entity_action": {
-			"type": "origins:execute_command",
-			"command": "resource set @s focon:powerdown_selfdestructresource 0"
+			"type": "origins:change_resource",
+			"resource": "focon:power_down_selfdestructresource",
+			"change": -1
 		},
 		"condition": {
 			"type": "origins:sneaking",
 			"inverted": true
 		}
+	},
+	"ignore":{
+		"condition": {
+			"type": "origins:resource",
+			"resource": "focon:energy_resource",
+			"comparison": "==",
+			"compare_to": 0
+		},
+		"type": "apugli:mobs_ignore"
+	},
+	"noblocks":{
+		"condition": {
+			"type": "origins:resource",
+			"resource": "focon:energy_resource",
+			"comparison": "==",
+			"compare_to": 0
+		},
+		"type":"origins:prevent_block_selection"
 	}
 }
