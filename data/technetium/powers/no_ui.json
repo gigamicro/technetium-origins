@@ -1,0 +1,7 @@
+{
+	"name":"Disableable UI",
+	"description":"You can disable this origin's custom UI with /resource set @p technetium:no_ui 1",
+	"type":"origins:resource",
+	"min":0,
+	"max":1
+}
