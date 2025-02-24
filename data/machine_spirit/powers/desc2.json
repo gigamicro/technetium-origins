@@ -1,5 +1,5 @@
 {
 	"name":"Body Types",
-	"description":"Your possessable bodies are made of redstone and either: dirts, logs, stones; iron, gold, diamond, or netherite blocks.",
+	"description":"Your possessable bodies are made of redstone and either: dirts/sands, logs, stones; iron, gold, diamond, or netherite blocks.",
 	"type":"origins:simple"
 }
