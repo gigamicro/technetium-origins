@@ -454,7 +454,9 @@
 		"type":"origins:if_else_list","actions":[
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:in_tag","tag":"minecraft:logs"}},
 				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":1}},
-				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:in_tag","tag":"minecraft:base_stone_overworld"}},
+				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:crafting_table"}},
+				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":1}},
+				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:in_tag","tag":"origins:natural_stone"}},
 				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":2}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:cobblestone"}},
 				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":2}},
@@ -553,7 +555,16 @@
 				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":1},
 				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:cherry_log"}}},
 				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":2},
-				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:stone"}}},
+				"action":{"type":"origins:if_else_list","actions":[
+					{"condition":{"type":"origins:dimension","dimension":"minecraft:the_nether"},
+					"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:netherrack"}}},
+					{"condition":{"type":"origins:dimension","dimension":"minecraft:the_end"},
+					"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:end_stone"}}},
+					{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:height","comparison":"<=","compare_to":0}},
+					"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:deepslate"}}},
+					{"condition":{"type":"origins:constant","value":true},
+					"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:stone"}}}
+				]}},
 				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":3},
 				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:iron_block"}}},
 				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":4},
@@ -824,7 +835,7 @@
 			{
 				"type":"origins:damage",
 				"amount": 20,
-				"damage_type": "minecraft:in_wall"
+				"damage_type":"minecraft:in_wall"
 			}
 		]}
 	}

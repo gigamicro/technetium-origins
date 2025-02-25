@@ -9,8 +9,9 @@
 		"minecraft:gravel",
 
 		"#minecraft:logs",
+		"minecraft:crafting_table",
 
-		"#minecraft:base_stone_overworld",
+		"#origins:natural_stone",
 		"minecraft:cobblestone",
 
 		"minecraft:iron_block",
