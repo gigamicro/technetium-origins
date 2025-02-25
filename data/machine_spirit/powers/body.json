@@ -534,7 +534,7 @@
 			"operation":"add",
 			"note":"penalty for death",
 			"change":-1
-		},{ "Note!":"Everything below here should be identical between death & respirit",
+		},{
 			"type":"origins:clear_effect"
 		},{
 			"type":"origins:grant_power",
@@ -801,250 +801,31 @@
 				"tag":"minecraft:replaceable"
 			}
 		}]},
-		"entity_action":{"type":"origins:and","actions":[{
-			"Note!":"Everything below here should be identical between death & respirit",
-			"type":"origins:clear_effect"
-		},{
-			"type":"origins:grant_power",
-			"power":"machine_spirit:spirit",
-			"source":"machine_spirit:machine_spirit"
-		},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/wood"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/stone"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/iron"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/gold"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/diamond"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/netherite"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/other"}
-		,{
-		"type":"origins:if_else_list","actions":[
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":1},
-				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:cherry_log"}}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":2},
-				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:stone"}}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":3},
-				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:iron_block"}}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":4},
-				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:gold_block"}}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":5},
-				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:diamond_block"}}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":6},
-				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:netherite_block"}}},
-				{"condition":{"type":"origins:constant","value":true},
-				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:red_sand"}}}
-			]
-		},{
-			"type":"origins:if_else_list",
-			"actions":[{
-				"condition":{"type":"origins:and","conditions":[{
-					"type":"origins:resource",
-					"resource":"machine_spirit:body_redstone",
-					"comparison":">=",
-					"compare_to":4
-				},{
-					"type":"origins:inventory",
-					"slots":["armor.head","weapon.mainhand","weapon.offhand"],
-					"item_condition":{"type":"origins:ingredient","ingredient":{"item":"minecraft:glowstone"}}
-				}]},
-				"action":{
-					"type":"origins:modify_inventory",
-					"limit":1,
-					"slots":["armor.head","weapon.mainhand","weapon.offhand"],
-					"item_condition":{"type":"origins:ingredient","ingredient":{"item":"minecraft:glowstone"}},
-					"entity_action":{"type":"origins:and","actions":[{
-						"type":"origins:block_action_at",
-						"block_action":{"type":"origins:offset","y":1,"action":{
-							"type":"origins:set_block",
-							"block":"minecraft:redstone_lamp[lit=true]"
-						}}
-					},{
-						"type":"origins:change_resource",
-						"resource":"machine_spirit:body_redstone",
-						"operation":"add",
-						"change":-3
-					}]},
-					"item_action":{"type":"origins:consume"}
-				}
-			},{
-				"condition":{"type":"origins:and","conditions":[{
-					"type":"origins:resource",
-					"resource":"machine_spirit:body_redstone",
-					"comparison":">=",
-					"compare_to":4
-				},{
-					"type":"origins:inventory",
-					"slots":["armor.head","weapon.mainhand","weapon.offhand"],
-					"item_condition":{"type":"origins:ingredient","ingredient":{"item":"minecraft:hay_block"}}
-				}]},
-				"action":{
-					"type":"origins:modify_inventory",
-					"limit":1,
-					"slots":["armor.head","weapon.mainhand","weapon.offhand"],
-					"item_condition":{"type":"origins:ingredient","ingredient":{"item":"minecraft:hay_block"}},
-					"entity_action":{"type":"origins:and","actions":[{
-						"type":"origins:block_action_at",
-						"block_action":{"type":"origins:offset","y":1,"action":{
-							"type":"origins:set_block",
-							"block":"minecraft:target"
-						}}
-					},{
-						"type":"origins:change_resource",
-						"resource":"machine_spirit:body_redstone",
-						"operation":"add",
-						"change":-3
-					}]},
-					"item_action":{"type":"origins:consume"}
-				}
-			},{
-				"condition":{
-					"type":"origins:inventory",
-					"slots":["armor.head","weapon.mainhand","weapon.offhand"],
-					"item_condition":{"type":"origins:ingredient","ingredient":{"item":"minecraft:stick"}}
-				},
-				"action":{
-					"type":"origins:modify_inventory",
-					"limit":1,
-					"slots":["armor.head","weapon.mainhand","weapon.offhand"],
-					"item_condition":{"type":"origins:ingredient","ingredient":{"item":"minecraft:stick"}},
-					"entity_action":{
-						"type":"origins:block_action_at",
-						"block_action":{"type":"origins:offset","y":1,"action":{
-							"type":"origins:set_block",
-							"block":"minecraft:redstone_torch"
-						}}
-					},
-					"item_action":{"type":"origins:consume"}
-				}
-			},{
-				"condition":{
-					"type":"origins:inventory",
-					"slots":["armor.head","weapon.mainhand","weapon.offhand"],
-					"item_condition":{"type":"origins:ingredient","ingredient":{"item":"minecraft:chest"}}
-				},
-				"action":{
-					"type":"origins:modify_inventory",
-					"limit":1,
-					"slots":["armor.head","weapon.mainhand","weapon.offhand"],
-					"item_condition":{"type":"origins:ingredient","ingredient":{"item":"minecraft:chest"}},
-					"entity_action":{
-						"type":"origins:block_action_at",
-						"block_action":{"type":"origins:offset","y":1,"action":{
-							"type":"origins:set_block",
-							"block":"minecraft:note_block"
-						}}
-					},
-					"item_action":{"type":"origins:consume"}
-				}
-			},{
+		"entity_action":{"type":"origins:and","actions":[
+			{
+				"type":"origins:if_else",
 				"condition":{
 					"type":"origins:resource",
 					"resource":"machine_spirit:body_redstone",
 					"comparison":">=",
-					"compare_to":9
+					"compare_to":14
 				},
-				"action":{"type":"origins:and","actions":[{
-					"type":"origins:block_action_at",
-					"block_action":{"type":"origins:offset","y":1,"action":{
-						"type":"origins:set_block",
-						"block":"minecraft:redstone_block"
-					}}
-				},{
+				"if_action":{
+					"type":"origins:execute_command",
+					"command":"/give @s minecraft:redstone 1"
+				},
+				"else_action":{
 					"type":"origins:change_resource",
 					"resource":"machine_spirit:body_redstone",
 					"operation":"add",
-					"change":-8
-				}]}
-			},{
-				"condition":{
-					"type":"origins:resource",
-					"resource":"machine_spirit:body_redstone",
-					"comparison":">=",
-					"compare_to":1
-				},
-				"action":{
-					"type":"origins:block_action_at",
-					"block_action":{"type":"origins:offset","y":1,"action":{
-						"type":"origins:set_block",
-						"block":"minecraft:redstone_wire"
-					}}
+					"change":1
 				}
-			}]
-		},{
-			"type":"origins:play_sound",
-			"sound":"minecraft:block.lever.click",
-			"pitch":0.5,
-			"volume":8
-		},{
-			"type":"origins:delay",
-			"ticks":3,
-			"action":{
-				"type":"origins:play_sound",
-				"sound":"minecraft:block.metal.place",
-				"volume":15
+			},
+			{
+				"type":"origins:damage",
+				"amount": 20,
+				"damage_type": "minecraft:in_wall"
 			}
-		},{
-			"type":"origins:change_resource",
-			"resource":"machine_spirit:body_redstone",
-			"operation":"add",
-			"change":-1
-		},{
-			"note":"this just gives you as much redstone as is in the bar",
-			"type":"origins:if_else_list","actions":[{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":14},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 14"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":13},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 13"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":12},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 12"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":11},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 11"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":10},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 10"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":9},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 9"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":8},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 8"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":7},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 7"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":6},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 6"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":5},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 5"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":5},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 5"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":4},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 4"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":3},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 3"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":2},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 2"}
-			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":1},
-				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 1"}
-			}]
-		},{
-			"type":"origins:change_resource",
-			"resource":"machine_spirit:body_redstone",
-			"operation":"set",
-			"change":0
-		},{
-			"type":"origins:change_resource",
-			"resource":"machine_spirit:body_material",
-			"operation":"set",
-			"change":0
-		}]}
+		]}
 	}
 }

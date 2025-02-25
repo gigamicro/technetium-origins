@@ -5,4 +5,5 @@
  - lowest tier now becomes smooth red sandstone
  - high redstone will now decay radioactively
  - nerfed stone
+ - releasing your own bindings now acts as self damage with refund
  - 
