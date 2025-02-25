@@ -40,14 +40,26 @@
 	},
 	"respawn":{
 		"type":"origins:action_on_callback",
-		"entity_action_respawned":{"type":"origins:and","actions":[{
-			"type":"origins:execute_command",
-			"command":"give @s redstone"
-		},{
-			"type":"origins:change_resource",
-			"resource":"machine_spirit:spirit_range_time",
-			"change":999
-		}]}
+		"entity_action_respawned":{
+			"type":"origins:if_else",
+			"condition":{
+				"type":"origins:resource",
+				"resource":"machine_spirit:body_redstone",
+				"comparison":"<=",
+				"compare_to":0
+			},
+			"if_action":{"type":"origins:and","actions":[{
+				"type":"origins:execute_command",
+				"command":"give @s redstone"
+			},{
+				"type":"origins:change_resource",
+				"resource":"machine_spirit:spirit_range_time",
+				"change":999
+			},{
+				"type":"origins:trigger_cooldown",
+				"power":"machine_spirit:spirit_activity"
+			}]}
+		}
 	},
 	"range_time":{
 		"type":"origins:resource",
