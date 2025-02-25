@@ -1,6 +1,6 @@
 {
 	"name":"Machine Spirit",
-	"description": "Don't go far from redstone power. ",
+	"description": "Power at material cost. Dissipates without redstone exposure.",
 	"powers":[
 		"technetium:unnatural",
 		"machine_spirit:spirit",

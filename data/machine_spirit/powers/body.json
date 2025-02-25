@@ -268,7 +268,7 @@
 			"value":7.0
 		}
 	},
-	"init_equip":{
+	"redblock_starter":{
 		"type":"origins:starting_equipment",
 		"stack":{"item":"minecraft:redstone_block"}
 	},
@@ -452,6 +452,8 @@
 			}]
 		},{
 		"type":"origins:if_else_list","actions":[
+				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:smooth_red_sandstone"}},
+				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":-1}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:in_tag","tag":"minecraft:logs"}},
 				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":1}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:crafting_table"}},
@@ -834,7 +836,7 @@
 			},
 			{
 				"type":"origins:damage",
-				"amount": 20,
+				"amount": 99999,
 				"damage_type":"minecraft:in_wall"
 			}
 		]}

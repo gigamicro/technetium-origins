@@ -35,3 +35,5 @@ if dirt’s standing on grass maybe it has a chance to turn it into grass and th
  they're stored as an integer
 quartz could have electric thorns damage because when quartz is compressed it makes a bit of electricity
 prismarine could have water breathing, if the others don’t
+
+secondary ability: burnout your circuits for a boost based on body type
