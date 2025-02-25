@@ -7,4 +7,5 @@
  - nerfed stone
  - releasing your own bindings now acts as self damage with refund
  - released stone now follows the dimension default
+ - new graphics for spirit redstone withdrawal bar & body redstone counter
  - 

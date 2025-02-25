@@ -7,8 +7,8 @@
 		"min":0,
 		"max":14,
 		"hud_render":{
-			"sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_02.png",
-			"bar_index":14,
+			"sprite_location":"machine_spirit:textures/gui/red.png",
+			"bar_index":0,
 			"condition":{
 				"type":"origins:power_active",
 				"power":"machine_spirit:spirit",
@@ -553,7 +553,7 @@
 		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/netherite"},
 		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/other"}
 		,{
-		"type":"origins:if_else_list","actions":[
+			"type":"origins:if_else_list","actions":[
 				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":1},
 				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:cherry_log"}}},
 				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":2},
