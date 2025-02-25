@@ -41,6 +41,41 @@
 		"visible_in_first_person":true,
 		"frequency":18
 	},
+	"redstone_high_decay":{
+		"condition":{
+			"type":"origins:resource",
+			"resource":"machine_spirit:body_redstone",
+			"comparison":">",
+			"compare_to":9
+		},
+		"type":"origins:action_over_time",
+		"entity_action":{ "type":"origins:and", "actions":[{"type":"origins:if_else",
+				"condition":{"type":"origins:constant","value":true},
+				"if_action":{"type":"origins:chance","chance":0.000041667534759,
+					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+			},{"type":"origins:if_else",
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":10},
+				"if_action":{"type":"origins:chance","chance":0.000041667534759,
+					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+			},{"type":"origins:if_else",
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":11},
+				"if_action":{"type":"origins:chance","chance":0.000041667534759,
+					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+			},{"type":"origins:if_else",
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":12},
+				"if_action":{"type":"origins:chance","chance":0.000041667534759,
+					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+			},{"type":"origins:if_else",
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":13},
+				"if_action":{"type":"origins:chance","chance":0.000041667534759,
+					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+			},{"type":"origins:if_else",
+				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":14},
+				"if_action":{"type":"origins:chance","chance":0.000041667534759,
+					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+			}]},"dc":"1r/1r-v1r-n[]pn", "hl":24000,
+		"interval":2
+	},
 	"redstone_low":{
 		"condition":{"type":"origins:and","conditions":[{
 			"type":"origins:resource",
@@ -69,11 +104,11 @@
 	"gui":{
 		"type":"origins:status_bar_texture",
 		"texture":"machine_spirit:textures/gui/icons.png",
-		"condition": {
-			"type": "origins:resource",
-			"resource": "technetium:no_ui",
-			"comparison": "==",
-			"compare_to": 0
+		"condition":{
+			"type":"origins:resource",
+			"resource":"technetium:no_ui",
+			"comparison":"==",
+			"compare_to":0
 		}
 	},
 	"redstone_saturate":{
@@ -234,10 +269,8 @@
 		}
 	},
 	"init_equip":{
-		"type": "origins:starting_equipment",
-		"stack": {
-			"item": "minecraft:redstone_block"
-		}
+		"type":"origins:starting_equipment",
+		"stack":{"item":"minecraft:redstone_block"}
 	},
 
 	"material":{
