@@ -1,3 +1,5 @@
 *.sublime-*
 *.zip
 *.jar
+/profile
+/jars
