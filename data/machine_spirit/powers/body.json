@@ -784,6 +784,11 @@
 		"condition":{"type":"origins:and","conditions":[{
 			"type":"origins:sneaking"
 		},{
+			"type":"origins:resource",
+			"resource":"machine_spirit:body_redstone",
+			"comparison":">",
+			"compare_to":0
+		},{
 			"type":"origins:in_block",
 			"block_condition":{"type":"origins:offset","y":1,"condition":{
 				"type":"origins:in_tag",
