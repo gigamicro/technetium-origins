@@ -252,10 +252,10 @@
 
 	"dust":{
 		"type":"origins:action_over_time",
-		"interval":6000,
+		"interval":1,
 		"entity_action":{
 			"type":"origins:chance",
-			"chance":0.5,
+			"chance":0.000083336805845,
 			"action":{
 				"type":"origins:execute_command",
 				"command":"give @s redstone"

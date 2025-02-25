@@ -73,7 +73,7 @@
 				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":14},
 				"if_action":{"type":"origins:chance","chance":0.000041667534759,
 					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
-			}]},"dc":"1r/1r-v1r-n[]pn", "hl":24000,
+			}]},"dc":"1r/1r-v1r- n[]pn", "hl":24000,
 		"interval":2
 	},
 	"redstone_low":{
