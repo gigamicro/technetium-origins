@@ -2,10 +2,10 @@
 	"type":"origins:multiple",
 	"particles":{
 		"type":"origins:particle",
-		"frequency":1,
+		"frequency":5,
 		"particle":{
 			"type":"minecraft:block",
-			"params":"minecraft:sponge"
+			"params":"minecraft:red_sand"
 		}
 	},
 	"health":{

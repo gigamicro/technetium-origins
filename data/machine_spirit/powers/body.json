@@ -563,7 +563,7 @@
 				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":6},
 				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:netherite_block"}}},
 				{"condition":{"type":"origins:constant","value":true},
-				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:red_sand"}}}
+				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:smooth_red_sandstone"}}}
 			]
 		},{
 			"type":"origins:if_else_list",
