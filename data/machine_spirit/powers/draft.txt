@@ -1,39 +1,23 @@
-machine spirit origin
 
-darkness or blindness outside range?
+log: regen?
 
-bonuses? how many? health, vision, speed, jump?, ; tradeoffs? durability (health loss?)?
-log: "natural", swimming, maybe regen
-stone: slower
-iron: healthy, faster
-copper: same but lightning?
-gold: speed but -health
-diamond: ...shiny?
-netherite: no lava, no fire, maybe just entirely invincible
 modded stuff
 
-graves don't interact with this as-is, is that needed? is there a way to store the items in a chest?
+jump boost?
 
 powered rail, observer, piston, dropper, dispenser, detector rail
 
-from praoubl:
-gold could pacify piglins
-stone could camouflage underground and drop cobble when damaged
- the redstone's the bit that gets damaged, but i could modify it for cobble on death
-snow could freeze things it punches, and soul sand could be neutral with undead mobs
-and copper could act like a lightning rod (and be immune to lightning damage) to damage nearby enemies
- can't make it act like a lightning bolt, but could make it randomly summon lightning in thunderstorms
-it could oxidize like the copper golem origin
- meh
-and maybe be resistant to negative effects because copper is antimicrobial
- only microbial condition would be the poisons
-soul sand would resist wither tho
-invert instant health and instant damage too \n if possible
- pretty sure negative damage is clamped to 0
-wood could take more damage from axes but be faster because it’s lighter
-if dirt’s standing on grass maybe it has a chance to turn it into grass and then when you shift click with bonemeal you get a random flower
- they're stored as an integer
-quartz could have electric thorns damage because when quartz is compressed it makes a bit of electricity
-prismarine could have water breathing, if the others don’t
+change block placed based on death damage type? (eg cobble)
+
+add more lore and justification to descriptions?
+
+more body types?
+copper: iron, but weaker, maybe oxidizes?, immune to lightning, and summons lightning (seems kinda pointless?), immunity to microbes
+snow block: freeze damage, cold immunity
+soul sand: allied to undead, resist wither, swapped heal/harm potions
+quartz block: piezo electric retaliation damage?
+prismarine: water breathing, aqua affinity, 
+
+why can you drown? should health be a different color?
 
 secondary ability: burnout your circuits for a boost based on body type
