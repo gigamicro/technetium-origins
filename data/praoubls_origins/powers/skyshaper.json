@@ -1,0 +1,32 @@
+{
+    "name": "Skyshaper",
+    "description": "You can make a temporary block of solid air to place blocks against midair",
+    "condition": {
+        "type": "origins:block_in_radius",
+        "block_condition": {
+            "inverted": true,
+            "type": "origins:replacable"
+        },
+        "radius": 2,
+        "shape": "cube",
+        "comparison": "<",
+        "compare_to": 1
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "execute as @s at @s run setblock ~ ~-1 ~ minecraft:barrier"
+            }
+        ]
+    },
+    "cooldown": 20,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}
