@@ -1,32 +1,43 @@
 {
     "name": "Skyshaper",
     "description": "You can make a temporary block of solid air to place blocks against midair",
+"type":"origins:multiple",
+"active":{
     "condition": {
         "type": "origins:block_in_radius",
         "block_condition": {
-            "inverted": true,
-            "type": "origins:replacable"
+            "type": "origins:block",
+            "block": "minecraft:structure_void"
         },
         "radius": 2,
         "shape": "cube",
-        "comparison": "<",
-        "compare_to": 1
+        "comparison": "==",
+        "compare_to": 0
     },
     "type": "origins:active_self",
     "entity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:execute_command",
-                "command": "execute as @s at @s run setblock ~ ~-1 ~ minecraft:barrier"
-            }
-        ]
+        "type": "origins:block_action_at",
+        "block_action": {"type":"origins:and","actions":[{
+            "type": "origins:set_block",
+            "block": "minecraft:structure_void"
+        },{
+            "type": "origins:execute_command",
+            "command": "particle minecraft:campfire_signal_smoke ~ ~ ~ 0 0 0 0 8"
+        },{
+            "type": "origins:execute_command",
+            "command": "summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[\"sky_shaper\"],Age:-250}"
+        }]}
     },
     "cooldown": 20,
-    "hud_render": {
-        "should_render": false
-    },
-    "key": {
-        "key": "key.origins.secondary_active"
+    "hud_render": { "should_render": true },
+    "key": { "key": "key.origins.secondary_active" }
+},
+"delete":{
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type":"origins:execute_command",
+        "command": "execute at @e[type=area_effect_cloud,tag=sky_shaper,nbt={Age:-1}] if block ~ ~ ~ minecraft:structure_void run setblock ~ ~ ~ air replace"
     }
+}
 }
