@@ -1,6 +1,6 @@
 {
 	"name":"Spirit Form",
-	"description":"You can barely affect the physical world, or it you. Don't go far from redstone power. 50% chance of a free dust every five minutes.",
+	"description":"You can barely affect the physical world, or it you. 50% chance of a free dust every five minutes.",
 	"type":"origins:multiple",
 	"flight":{"type":"origins:creative_flight"},
 	"alpha":{"type":"origins:model_color","alpha":0.125},
@@ -40,31 +40,42 @@
 	},
 	"respawn":{
 		"type":"origins:action_on_callback",
-		"entity_action_respawned":{"type":"origins:and","actions":[{
-			"type":"origins:execute_command",
-			"command":"give @s redstone"
-		},{
-			"type":"origins:change_resource",
-			"resource":"machine_spirit:spirit_range_time",
-			"change":999
-		}]}
+		"entity_action_respawned":{
+			"type":"origins:if_else",
+			"condition":{
+				"type":"origins:resource",
+				"resource":"machine_spirit:body_redstone",
+				"comparison":"<=",
+				"compare_to":0
+			},
+			"if_action":{"type":"origins:and","actions":[{
+				"type":"origins:execute_command",
+				"command":"give @s redstone"
+			},{
+				"type":"origins:change_resource",
+				"resource":"machine_spirit:spirit_range_time",
+				"change":999
+			},{
+				"type":"origins:trigger_cooldown",
+				"power":"machine_spirit:spirit_activity"
+			}]}
+		}
 	},
 	"range_time":{
 		"type":"origins:resource",
 		"min":0,
 		"max":70,
-		"start_value":70,
 		"hud_render":{
-			"sprite_location":"origins:textures/gui/community/spiderkolo/resource_bar_02.png",
-			"bar_index":14,
+			"sprite_location":"machine_spirit:textures/gui/red_invert.png",
+			"bar_index":0,
 			"condition":{
 				"type":"origins:resource",
 				"resource":"machine_spirit:spirit_range_time",
-				"comparison":"<",
-				"compare_to":70
+				"comparison":">",
+				"compare_to":0
 			}
 		},
-		"min_action":{
+		"max_action":{
 			"type":"origins:damage",
 			"amount":255,
 			"damage_type":"starve"
@@ -192,17 +203,18 @@
 			"if_action":{
 				"type":"origins:change_resource",
 				"resource":"machine_spirit:spirit_range_time",
-				"change":1
+				"change":-1
 			},
 			"else_action":{"type":"origins:and","actions":[{
 				"type":"origins:change_resource",
 				"resource":"machine_spirit:spirit_range_time",
-				"change":-1
+				"change":1
 			},{
 				"type":"origins:apply_effect",
 				"effect":{
 					"effect":"minecraft:nausea",
 					"duration":90,
+					"show_particles":false,
 					"amplifier":1
 				}
 			},{
@@ -248,6 +260,34 @@
 	"entitycollision":{"type":"origins:prevent_entity_collision"},
 	"noattack":{"type":"origins:modify_damage_dealt","modifier":{"operation":"multiply_total","value":-1}},
 	"noburn":{"type":"origins:fire_immunity"},
+	"waterwalk":{"type":"origins:walk_on_fluid","fluid":"minecraft:water"},
+
+	"dust":{
+		"type":"origins:action_over_time",
+		"interval":1,
+		"entity_action":{
+			"type":"origins:chance",
+			"chance":0.000083336805845,
+			"action":{
+				"type":"origins:execute_command",
+				"command":"give @s redstone"
+			}
+		}
+	},
+
+	"redpower":{
+		"type":"origins:action_over_time",
+		"interval":2,
+		"entity_action":{
+			"type":"origins:block_action_at","block_action":{"type":"origins:if_else_list","actions":[{
+				"condition":{"type":"origins:block_state","property":"power"},
+				"action":{"type":"origins:modify_block_state","property":"power","operation":"add","change":1}
+			},{
+				"condition":{"type":"origins:block_state","property":"lit"},
+				"action":{"type":"origins:modify_block_state","property":"lit","value":true}
+			}]}
+		}
+	},
 
 	"activity":{
 		"type":"origins:cooldown","cooldown":280,
@@ -294,34 +334,5 @@
 			"minecraft:block_attach"
 		],
 		"entity_action":{"type":"origins:trigger_cooldown","power":"machine_spirit:spirit_activity"}
-	},
-
-	"dust":{
-		"type":"origins:action_over_time",
-		"interval":6000,
-		"entity_action":{
-			"type":"origins:chance",
-			"chance":0.5,
-			"action":{
-				"type":"origins:execute_command",
-				"command":"give @s redstone"
-			}
-		}
-	},
-
-	"waterwalk":{"type":"origins:walk_on_fluid","fluid":"minecraft:water"},
-
-	"redpower":{
-		"type":"origins:action_over_time",
-		"interval":2,
-		"entity_action":{
-			"type":"origins:block_action_at","block_action":{"type":"origins:if_else_list","actions":[{
-				"condition":{"type":"origins:block_state","property":"power"},
-				"action":{"type":"origins:modify_block_state","property":"power","operation":"add","change":1}
-			},{
-				"condition":{"type":"origins:block_state","property":"lit"},
-				"action":{"type":"origins:modify_block_state","property":"lit","value":true}
-			}]}
-		}
 	}
 }

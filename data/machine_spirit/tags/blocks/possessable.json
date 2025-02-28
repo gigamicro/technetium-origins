@@ -1,9 +1,14 @@
 {
 	"values": [
 		"#minecraft:dirt",
-		"#minecraft:logs",
+		"#minecraft:sand",
+		"minecraft:smooth_red_sandstone",
+		"minecraft:gravel",
 
-		"#minecraft:base_stone_overworld",
+		"#minecraft:logs",
+		"minecraft:crafting_table",
+
+		"#origins:natural_stone",
 		"minecraft:cobblestone",
 
 		"minecraft:iron_block",

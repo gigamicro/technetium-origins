@@ -1,5 +1,5 @@
 {
 	"name":"Redstone blocks",
-	"description":"You can use redstone wire/dust, torches, blocks, lamps; targets, or noteblocks. All but pure redstone wire/dust/blocks will place an equivalent item (sticks, glowstone, hay, chests) on your head, and may be recreated with that same block either on your head or in your mainhand.",
+	"description":"You can use redstone wire/dust, torches, blocks, lamps, targets, or noteblocks. All but pure redstone wire/dust/blocks will place an equivalent item (sticks, glowstone, hay, chests) on your head, and may be recreated with that same item on your head or in your hand.",
 	"type":"origins:simple"
 }
