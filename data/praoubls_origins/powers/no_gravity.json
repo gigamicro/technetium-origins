@@ -24,6 +24,6 @@
 	"interval": 1,
 	"entity_action": {
 		"type": "origins:add_velocity",
-		"y": 0.080211
+		"y": 0.08
 	}
 }
