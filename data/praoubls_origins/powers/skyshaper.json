@@ -25,7 +25,7 @@
             "command": "particle minecraft:campfire_signal_smoke ~ ~ ~ 0 0 0 0 8"
         },{
             "type": "origins:execute_command",
-            "command": "summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[\"sky_shaper\"],Age:-250}"
+            "command": "summon minecraft:area_effect_cloud ~ ~.2 ~ {Tags:[\"sky_shaper\"],Age:-250,Particle:\"minecraft:ash\"}"
         }]}
     },
     "cooldown": 20,
