@@ -1,5 +1,5 @@
 {
-	"name": "Formless, Shapeless, Like Water",
+	"name": "Formless, Shapeless",
 	"description": "You are able to pass through blocks that have gaps.",
 	"type": "origins:phasing",
 	"block_condition": {
