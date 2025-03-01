@@ -13,7 +13,7 @@ git commit -m "v$NEW_VERSION"
 git tag "v$NEW_VERSION"
 grep -v '^ *-' release.md >release~.md
 mv -f release~.md release.md
-printf ' - \n' >>release.md
+printf '- \n' >>release.md
 git add release.md
 git commit -m 'reset New & Changed'
 git stash list --max-age=$(date -d '5 seconds ago' +%s) | grep -q '' && git stash pop
