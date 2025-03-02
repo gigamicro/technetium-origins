@@ -1,7 +1,9 @@
 {
   "values": [
-    "#create:valve_handles",
+    "#create:fan_transparent",
     "#create:toolboxes",
+    "#create:tracks",
+    "#create:valve_handles",
     "create:andesite_bars",
     "create:andesite_encased_cogwheel",
     "create:black_nixie_tube",
@@ -47,7 +49,6 @@
     "create:steam_engine",
     "create:steam_whistle",
     "create:steam_whistle_extension",
-    "#create:tracks",
     "create:white_nixie_tube",
     "create:wooden_bracket",
     "create:yellow_nixie_tube"

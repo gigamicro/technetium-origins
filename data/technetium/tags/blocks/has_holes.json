@@ -1,6 +1,6 @@
 {
 	"values": [
-		"#technetium:has_holes_origins",
+		{"id":"#technetium:has_holes_create","required":false},
 		"minecraft:anvil",
 		"minecraft:chipped_anvil",
 		"minecraft:damaged_anvil",
