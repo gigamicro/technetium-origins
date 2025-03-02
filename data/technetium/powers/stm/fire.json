@@ -107,7 +107,7 @@
 				"process_mode": "stacks",
 				"item_condition":{"type":"origins:ingredient","ingredient":[
 					{"item":"minecraft:lava_bucket"},
-					{"tag":"technetium:stm/fuel_large"}
+					{"tag":"technetium:burn_large"}
 				]},
 				"comparison": "==",
 				"compare_to": 0
@@ -127,7 +127,7 @@
 	{"condition":{
 		"type":"origins:ingredient",
 		"ingredient":{
-			"tag":"technetium:stm/fuel_small"
+			"tag":"technetium:burn_small"
 		}
 	},"action":{
 		"type":"origins:and",
@@ -159,7 +159,7 @@
 	{"condition":{
 		"type":"origins:ingredient",
 		"ingredient":{
-			"tag":"technetium:stm/fuel_medium"
+			"tag":"technetium:burn_medium"
 		}
 	},"action":{
 		"type":"origins:and",
@@ -191,7 +191,7 @@
 	{"condition":{
 		"type":"origins:ingredient",
 		"ingredient":{
-			"tag":"technetium:stm/fuel_large"
+			"tag":"technetium:burn_large"
 		}
 	},"action":{
 		"type":"origins:and",
