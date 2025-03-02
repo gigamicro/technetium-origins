@@ -54,7 +54,7 @@
 			},{
 				"type":"origins:change_resource",
 				"resource":"technetium:xmc/spirit_range_time",
-				"change":999
+				"change":0
 			},{
 				"type":"origins:trigger_cooldown",
 				"power":"technetium:xmc/spirit_activity"
