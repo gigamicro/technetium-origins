@@ -3,7 +3,7 @@
 	"origins":[
 		"origins-plus-plus:automaton",
 		"technetium:machine_spirit",
-		"technetium:mst/mistcat",
-		"technetium:con/construct"
+		"technetium:mistcat",
+		"technetium:construct"
 	]
 }

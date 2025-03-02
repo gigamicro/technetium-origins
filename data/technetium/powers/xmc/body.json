@@ -7,7 +7,7 @@
 		"min":0,
 		"max":14,
 		"hud_render":{
-			"sprite_location":"technetium:xmc/textures/gui/red.png",
+			"sprite_location":"technetium:textures/gui/bars/red_pips.png",
 			"bar_index":0,
 			"condition":{
 				"type":"origins:power_active",
@@ -103,7 +103,7 @@
 	},
 	"gui":{
 		"type":"origins:status_bar_texture",
-		"texture":"technetium:xmc/textures/gui/icons.png",
+		"texture":"technetium:textures/gui/icons/xmc.png",
 		"condition":{
 			"type":"origins:resource",
 			"resource":"technetium:no_ui",

@@ -13,7 +13,7 @@
 	},
 	"texture":{
 		"type":"origins:status_bar_texture",
-		"texture":"technetium:stm/textures/gui/icons.png",
+		"texture":"technetium:textures/gui/icons/stm.png",
 		"condition": {
 			"type": "origins:resource",
 			"resource": "technetium:no_ui",
