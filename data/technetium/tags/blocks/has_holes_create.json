@@ -1,5 +1,31 @@
 {
   "values": [
-    
+    "create:acorn_nixie_tube",
+    "create:acorn_toolbox",
+    "#create:valve_handles",
+    "#create:toolboxes",
+    "create:acorn_valve_handle",
+    "create:amber_nixie_tube",
+    "create:amber_toolbox",
+    "create:amber_valve_handle",
+    "create:andesite_bars",
+    "create:andesite_encased_cogwheel",
+    "create:artichoke_nixie_tube",
+    "create:artichoke_toolbox",
+    "create:artichoke_valve_handle",
+    "create:banana_nixie_tube",
+    "create:banana_toolbox",
+    "create:banana_valve_handle",
+    "create:black_nixie_tube",
+    "create:blue_nixie_tube",
+    "create:brass_bars",
+    "create:brass_encased_cogwheel",
+    "create:brown_nixie_tube",
+    "create:cart_assembler",
+    "create:cerulean_valve_handle",
+    "create:cerulean_nixie_tube",
+    "create:cerulean_toolbox",
+    "create:chute",
+    "create:",
   ]
 }
