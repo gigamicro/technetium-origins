@@ -1,4 +1,4 @@
-*.sublime-*
+*.sublime-workspace
 *.zip
 *.jar
 /profile

@@ -5,7 +5,7 @@
 	"interval":1,
 	"entity_action":{
 		"type": "origins:change_resource",
-		"resource": "automaton:water_bar",
+		"resource": "technetium:stm/water_bar",
 		"operation":"add",
 		"change": -1
 	},

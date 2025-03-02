@@ -22,7 +22,7 @@
 			},
 			{
 				"type":"origins:change_resource",
-				"resource": "automaton:fire_bar",
+				"resource": "technetium:stm/fire_bar",
 				"operation": "add",
 				"change": -500
 			}
@@ -31,7 +31,7 @@
 	"condition":{"type":"origins:and","conditions":[
 		{
 			"type":"origins:resource",
-			"resource":"automaton:fire_bar",
+			"resource":"technetium:stm/fire_bar",
 			"comparison":">=",
 			"compare_to":500
 		},

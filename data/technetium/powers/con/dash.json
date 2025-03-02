@@ -3,7 +3,7 @@
 	"description": "You have increased agility and can manipulate your body's momentum to give you a boost whenever you please, at the cost of your energy.",
 	"condition": {
 		"type": "origins:resource",
-		"resource": "focon:energy_resource",
+		"resource": "technetium:con/energy_resource",
 		"comparison": ">",
 		"compare_to": 40
 	},
@@ -38,7 +38,7 @@
 			},
 			{
 				"type": "origins:change_resource",
-				"resource": "focon:energy_resource",
+				"resource": "technetium:con/energy_resource",
 				"change": -10,
 				"operation": "add"
 			}

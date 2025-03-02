@@ -18,7 +18,7 @@
 				},
 				{
 					"type": "origins:resource",
-					"resource": "focon:energy_resource",
+					"resource": "technetium:con/energy_resource",
 					"comparison": "<",
 					"compare_to": 400
 				},
@@ -42,7 +42,7 @@
 				},
 				{
 					"type": "origins:change_resource",
-					"resource": "focon:energy_resource",
+					"resource": "technetium:con/energy_resource",
 					"change": 400,
 					"operation": "add"
 				},
@@ -68,7 +68,7 @@
 				"actions": [
 					{
 						"type": "origins:change_resource",
-						"resource": "focon:energy_resource",
+						"resource": "technetium:con/energy_resource",
 						"change": 400,
 						"operation": "add"
 					},
@@ -85,7 +85,7 @@
 			"type": "origins:target_condition",
 			"condition": {
 				"type": "origins:resource",
-				"resource": "focon:energy_resource",
+				"resource": "technetium:con/energy_resource",
 				"comparison": "<",
 				"compare_to": 300
 			}
@@ -117,7 +117,7 @@
 				},
 				{
 					"type": "origins:resource",
-					"resource": "focon:energy_resource",
+					"resource": "technetium:con/energy_resource",
 					"comparison": "<",
 					"compare_to": 400
 				},
@@ -141,7 +141,7 @@
 				},
 				{
 					"type": "origins:change_resource",
-					"resource": "focon:energy_resource",
+					"resource": "technetium:con/energy_resource",
 					"change": 45,
 					"operation": "add"
 				},
@@ -167,7 +167,7 @@
 				"actions": [
 					{
 						"type": "origins:change_resource",
-						"resource": "focon:energy_resource",
+						"resource": "technetium:con/energy_resource",
 						"change": 45,
 						"operation": "add"
 					},
@@ -187,7 +187,7 @@
 					"type": "origins:target_condition",
 					"condition": {
 						"type": "origins:resource",
-						"resource": "focon:energy_resource",
+						"resource": "technetium:con/energy_resource",
 						"comparison": "<",
 						"compare_to": 380
 					}
@@ -233,7 +233,7 @@
 				},
 				{
 					"type": "origins:resource",
-					"resource": "focon:energy_resource",
+					"resource": "technetium:con/energy_resource",
 					"comparison": "<",
 					"compare_to": 400
 				},
@@ -257,7 +257,7 @@
 				},
 				{
 					"type": "origins:change_resource",
-					"resource": "focon:energy_resource",
+					"resource": "technetium:con/energy_resource",
 					"change": 5,
 					"operation": "add"
 				},
@@ -283,7 +283,7 @@
 				"actions": [
 					{
 						"type": "origins:change_resource",
-						"resource": "focon:energy_resource",
+						"resource": "technetium:con/energy_resource",
 						"change": 5,
 						"operation": "add"
 					},
@@ -303,7 +303,7 @@
 					"type": "origins:target_condition",
 					"condition": {
 						"type": "origins:resource",
-						"resource": "focon:energy_resource",
+						"resource": "technetium:con/energy_resource",
 						"comparison": "<",
 						"compare_to": 400
 					}

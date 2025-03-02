@@ -9,7 +9,7 @@
 			},
 			{
 				"type": "origins:predicate",
-				"predicate": "focon:thundering"
+				"predicate": "technetium:con/thundering"
 			}
 		]
 	},

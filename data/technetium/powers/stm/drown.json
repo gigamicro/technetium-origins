@@ -13,20 +13,20 @@
 			"type":"origins:if_else",
 			"condition":{
 				"type":"origins:resource",
-				"resource":"automaton:water_bar",
+				"resource":"technetium:stm/water_bar",
 				"comparison":">=",
 				"compare_to":19900
 			},
 			"if_action":{
 				"type": "origins:change_resource",
-				"resource": "automaton:fire_bar",
+				"resource": "technetium:stm/fire_bar",
 				"operation":"add",
 				"change": -20
 			}
 		},
 		{
 			"type": "origins:change_resource",
-			"resource": "automaton:water_bar",
+			"resource": "technetium:stm/water_bar",
 			"operation":"add",
 			"change": 200
 		}

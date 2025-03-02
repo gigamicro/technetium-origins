@@ -9,7 +9,7 @@
 			"conditions": [
 				{
 					"type": "origins:resource",
-					"resource": "focon:energy_resource",
+					"resource": "technetium:con/energy_resource",
 					"comparison": ">",
 					"compare_to": 40
 				},
@@ -26,7 +26,7 @@
 	"invis": {
 		"condition": {
 			"type": "origins:power_active",
-			"power": "focon:cloak_toggle"
+			"power": "technetium:con/cloak_toggle"
 		},
 		"type": "origins:invisibility",
 		"render_armor": false,
@@ -39,7 +39,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "focon:cloak_toggle"
+					"power": "technetium:con/cloak_toggle"
 				},
 				{
 					"type": "origins:moving"
@@ -49,7 +49,7 @@
 		"interval": 10,
 		"entity_action": {
 			"type": "origins:change_resource",
-			"resource": "focon:energy_resource",
+			"resource": "technetium:con/energy_resource",
 			"change": -1,
 			"operation": "add"
 		}
@@ -57,7 +57,7 @@
 	"overlay": {
 		"condition": {
 			"type": "origins:power_active",
-			"power": "focon:cloak_toggle"
+			"power": "technetium:con/cloak_toggle"
 		},
 		"type": "origins:overlay",
 		"texture": "minecraft:textures/misc/nausea.png",
@@ -76,7 +76,7 @@
 			"conditions": [
 				{
 					"type": "origins:resource",
-					"resource": "focon:energy_resource",
+					"resource": "technetium:con/energy_resource",
 					"comparison": ">",
 					"compare_to": 40
 				},

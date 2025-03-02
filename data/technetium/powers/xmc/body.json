@@ -7,11 +7,11 @@
 		"min":0,
 		"max":14,
 		"hud_render":{
-			"sprite_location":"machine_spirit:textures/gui/red.png",
+			"sprite_location":"technetium:xmc/textures/gui/red.png",
 			"bar_index":0,
 			"condition":{
 				"type":"origins:power_active",
-				"power":"machine_spirit:spirit",
+				"power":"technetium:xmc/spirit",
 				"inverted":true
 			}
 		}
@@ -19,7 +19,7 @@
 	"redstone_high_vis":{
 		"condition":{
 			"type":"origins:resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"comparison":">",
 			"compare_to":9
 		},
@@ -29,7 +29,7 @@
 	"redstone_high_particle":{
 		"condition":{
 			"type":"origins:resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"comparison":">",
 			"compare_to":9
 		},
@@ -44,7 +44,7 @@
 	"redstone_high_decay":{
 		"condition":{
 			"type":"origins:resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"comparison":">",
 			"compare_to":9
 		},
@@ -52,39 +52,39 @@
 		"entity_action":{ "type":"origins:and", "actions":[{"type":"origins:if_else",
 				"condition":{"type":"origins:constant","value":true},
 				"if_action":{"type":"origins:chance","chance":0.000041667534759,
-					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+					"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_redstone","operation":"add","change":-1}}
 			},{"type":"origins:if_else",
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":10},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">","compare_to":10},
 				"if_action":{"type":"origins:chance","chance":0.000041667534759,
-					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+					"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_redstone","operation":"add","change":-1}}
 			},{"type":"origins:if_else",
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":11},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">","compare_to":11},
 				"if_action":{"type":"origins:chance","chance":0.000041667534759,
-					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+					"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_redstone","operation":"add","change":-1}}
 			},{"type":"origins:if_else",
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":12},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">","compare_to":12},
 				"if_action":{"type":"origins:chance","chance":0.000041667534759,
-					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+					"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_redstone","operation":"add","change":-1}}
 			},{"type":"origins:if_else",
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":13},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">","compare_to":13},
 				"if_action":{"type":"origins:chance","chance":0.000041667534759,
-					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+					"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_redstone","operation":"add","change":-1}}
 			},{"type":"origins:if_else",
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">","compare_to":14},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">","compare_to":14},
 				"if_action":{"type":"origins:chance","chance":0.000041667534759,
-					"action":{"type":"origins:change_resource","resource":"machine_spirit:body_redstone","operation":"add","change":-1}}
+					"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_redstone","operation":"add","change":-1}}
 			}]},"dc":"1r/1r-v1r- n[]pn", "hl":24000,
 		"interval":2
 	},
 	"redstone_low":{
 		"condition":{"type":"origins:and","conditions":[{
 			"type":"origins:resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"comparison":">",
 			"compare_to":0
 		},{
 			"type":"origins:resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"comparison":"<",
 			"compare_to":4
 		}]},
@@ -103,7 +103,7 @@
 	},
 	"gui":{
 		"type":"origins:status_bar_texture",
-		"texture":"machine_spirit:textures/gui/icons.png",
+		"texture":"technetium:xmc/textures/gui/icons.png",
 		"condition":{
 			"type":"origins:resource",
 			"resource":"technetium:no_ui",
@@ -116,7 +116,7 @@
 		"entity_action":{"type":"origins:if_else_list","actions":[{
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"comparison":">=",
 				"compare_to":14
 			},
@@ -128,7 +128,7 @@
 		},{
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"comparison":">",
 				"compare_to":12
 			},
@@ -140,7 +140,7 @@
 		},{
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"comparison":">",
 				"compare_to":10
 			},
@@ -152,7 +152,7 @@
 		},{
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"comparison":">",
 				"compare_to":8
 			},
@@ -164,7 +164,7 @@
 		},{
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"comparison":">",
 				"compare_to":6
 			},
@@ -176,7 +176,7 @@
 		},{
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"comparison":">",
 				"compare_to":4
 			},
@@ -188,7 +188,7 @@
 		},{
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"comparison":">",
 				"compare_to":2
 			},
@@ -200,7 +200,7 @@
 		},{
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"comparison":">",
 				"compare_to":1
 			},
@@ -215,12 +215,12 @@
 	"redstone_consume":{
 		"condition":{"type":"origins:and","conditions":[{
 			"type":"origins:resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"comparison":"<",
 			"compare_to":14
 		},{
 			"type":"origins:power",
-			"power":"machine_spirit:spirit",
+			"power":"technetium:xmc/spirit",
 			"inverted":true
 		},{
 			"type":"origins:sneaking"
@@ -237,7 +237,7 @@
 			"limit":1,
 			"entity_action":{
 				"type":"origins:change_resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"operation":"add",
 				"change":1
 			},
@@ -284,7 +284,7 @@
 			"type":"origins:if_else",
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"comparison":">",
 				"compare_to":0
 			},
@@ -293,24 +293,24 @@
 				"ticks":1,
 				"action":{"type":"origins:and","actions":[{
 					"type":"origins:revoke_power",
-					"power":"machine_spirit:spirit",
-					"source":"machine_spirit:machine_spirit"
+					"power":"technetium:xmc/spirit",
+					"source":"technetium:xmc/machine_spirit"
 				},{
 					"type":"origins:if_else_list","actions":[
-						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":1},
-						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/wood"}},
-						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":2},
-						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/stone"}},
-						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":3},
-						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/iron"}},
-						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":4},
-						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/gold"}},
-						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":5},
-						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/diamond"}},
-						{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":6},
-						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/netherite"}},
+						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":1},
+						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/wood"}},
+						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":2},
+						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/stone"}},
+						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":3},
+						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/iron"}},
+						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":4},
+						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/gold"}},
+						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":5},
+						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/diamond"}},
+						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":6},
+						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/netherite"}},
 						{"condition":{"type":"origins:constant","value":true},
-						"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/other"}}
+						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/other"}}
 					]
 				}]}
 			}
@@ -328,7 +328,7 @@
 				"conditions":[
 					{
 						"type":"origins:in_tag",
-						"tag":"machine_spirit:possessable"
+						"tag":"technetium:xmc/possessable"
 					},
 					{"type":"origins:offset","y":1,"condition":{"type":"origins:or","conditions":[
 						{"type":"origins:block","block":"minecraft:redstone_block","v":9},
@@ -356,7 +356,7 @@
 				},
 				"action":{
 					"type":"origins:change_resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"operation":"add",
 					"change":9
 				}
@@ -370,7 +370,7 @@
 				},
 				"action":{
 					"type":"origins:change_resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"operation":"add",
 					"change":1
 				}
@@ -384,7 +384,7 @@
 				},
 				"action":{"type":"origins:and","actions":[{
 					"type":"origins:change_resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"operation":"add",
 					"change":1
 				},{
@@ -402,7 +402,7 @@
 				},
 				"action":{"type":"origins:and","actions":[{
 					"type":"origins:change_resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"operation":"add",
 					"change":1
 				},{
@@ -420,7 +420,7 @@
 				},
 				"action":{"type":"origins:and","actions":[{
 					"type":"origins:change_resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"operation":"add",
 					"change":4
 				},{
@@ -438,7 +438,7 @@
 				},
 				"action":{"type":"origins:and","actions":[{
 					"type":"origins:change_resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"operation":"add",
 					"change":4
 				},{
@@ -453,42 +453,42 @@
 		},{
 		"type":"origins:if_else_list","actions":[
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:smooth_red_sandstone"}},
-				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":-1}},
+				"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_material","operation":"set","change":-1}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:in_tag","tag":"minecraft:logs"}},
-				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":1}},
+				"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_material","operation":"set","change":1}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:crafting_table"}},
-				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":1}},
+				"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_material","operation":"set","change":1}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:in_tag","tag":"origins:natural_stone"}},
-				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":2}},
+				"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_material","operation":"set","change":2}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:cobblestone"}},
-				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":2}},
+				"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_material","operation":"set","change":2}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:iron_block"}},
-				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":3}},
+				"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_material","operation":"set","change":3}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:gold_block"}},
-				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":4}},
+				"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_material","operation":"set","change":4}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:diamond_block"}},
-				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":5}},
+				"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_material","operation":"set","change":5}},
 				{"condition":{"type":"origins:in_block","block_condition":{"type":"origins:block","block":"minecraft:netherite_block"}},
-				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":6}},
+				"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_material","operation":"set","change":6}},
 				{"condition":{"type":"origins:constant","value":true},
-				"action":{"type":"origins:change_resource","resource":"machine_spirit:body_material","operation":"set","change":-1}}
+				"action":{"type":"origins:change_resource","resource":"technetium:xmc/body_material","operation":"set","change":-1}}
 			]
 		},{
 		"type":"origins:if_else_list","actions":[
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":1},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/wood"}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":2},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/stone"}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":3},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/iron"}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":4},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/gold"}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":5},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/diamond"}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":6},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/netherite"}},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":1},
+				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/wood"}},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":2},
+				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/stone"}},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":3},
+				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/iron"}},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":4},
+				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/gold"}},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":5},
+				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/diamond"}},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":6},
+				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/netherite"}},
 				{"condition":{"type":"origins:constant","value":true},
-				"action":{"type":"origins:grant_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/other"}}
+				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/other"}}
 			]
 		},{
 			"type":"origins:block_action_at",
@@ -519,8 +519,8 @@
 			"volume":8
 		},{
 			"type":"origins:revoke_power",
-			"power":"machine_spirit:spirit",
-			"source":"machine_spirit:machine_spirit"
+			"power":"technetium:xmc/spirit",
+			"source":"technetium:xmc/machine_spirit"
 		}]},
 		"cooldown":200
 	},
@@ -528,13 +528,13 @@
 		"type":"origins:prevent_death",
 		"condition":{
 			"type":"origins:resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"comparison":">",
 			"compare_to":0
 		},
 		"entity_action":{"type":"origins:and","actions":[{
 			"type":"origins:change_resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"operation":"add",
 			"note":"penalty for death",
 			"change":-1
@@ -542,21 +542,21 @@
 			"type":"origins:clear_effect"
 		},{
 			"type":"origins:grant_power",
-			"power":"machine_spirit:spirit",
-			"source":"machine_spirit:machine_spirit"
+			"power":"technetium:xmc/spirit",
+			"source":"technetium:xmc/machine_spirit"
 		},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/wood"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/stone"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/iron"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/gold"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/diamond"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/netherite"},
-		{"type":"origins:revoke_power","source":"machine_spirit:machine_spirit","power":"machine_spirit:body/other"}
+		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/wood"},
+		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/stone"},
+		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/iron"},
+		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/gold"},
+		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/diamond"},
+		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/netherite"},
+		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/other"}
 		,{
 			"type":"origins:if_else_list","actions":[
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":1},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":1},
 				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:cherry_log"}}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":2},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":2},
 				"action":{"type":"origins:if_else_list","actions":[
 					{"condition":{"type":"origins:dimension","dimension":"minecraft:the_nether"},
 					"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:netherrack"}}},
@@ -567,13 +567,13 @@
 					{"condition":{"type":"origins:constant","value":true},
 					"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:stone"}}}
 				]}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":3},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":3},
 				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:iron_block"}}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":4},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":4},
 				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:gold_block"}}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":5},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":5},
 				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:diamond_block"}}},
-				{"condition":{"type":"origins:resource","resource":"machine_spirit:body_material","comparison":"==","compare_to":6},
+				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":6},
 				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:netherite_block"}}},
 				{"condition":{"type":"origins:constant","value":true},
 				"action":{"type":"origins:block_action_at","block_action":{"type":"origins:set_block","block":"minecraft:smooth_red_sandstone"}}}
@@ -583,7 +583,7 @@
 			"actions":[{
 				"condition":{"type":"origins:and","conditions":[{
 					"type":"origins:resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"comparison":">=",
 					"compare_to":4
 				},{
@@ -604,7 +604,7 @@
 						}}
 					},{
 						"type":"origins:change_resource",
-						"resource":"machine_spirit:body_redstone",
+						"resource":"technetium:xmc/body_redstone",
 						"operation":"add",
 						"change":-3
 					}]},
@@ -613,7 +613,7 @@
 			},{
 				"condition":{"type":"origins:and","conditions":[{
 					"type":"origins:resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"comparison":">=",
 					"compare_to":4
 				},{
@@ -634,7 +634,7 @@
 						}}
 					},{
 						"type":"origins:change_resource",
-						"resource":"machine_spirit:body_redstone",
+						"resource":"technetium:xmc/body_redstone",
 						"operation":"add",
 						"change":-3
 					}]},
@@ -683,7 +683,7 @@
 			},{
 				"condition":{
 					"type":"origins:resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"comparison":">=",
 					"compare_to":9
 				},
@@ -695,14 +695,14 @@
 					}}
 				},{
 					"type":"origins:change_resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"operation":"add",
 					"change":-8
 				}]}
 			},{
 				"condition":{
 					"type":"origins:resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"comparison":">=",
 					"compare_to":1
 				},
@@ -729,65 +729,65 @@
 			}
 		},{
 			"type":"origins:change_resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"operation":"add",
 			"change":-1
 		},{
 			"note":"this just gives you as much redstone as is in the bar",
 			"type":"origins:if_else_list","actions":[{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":14},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":14},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 14"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":13},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":13},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 13"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":12},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":12},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 12"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":11},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":11},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 11"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":10},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":10},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 10"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":9},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":9},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 9"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":8},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":8},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 8"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":7},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":7},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 7"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":6},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":6},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 6"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":5},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":5},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 5"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":5},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":5},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 5"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":4},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":4},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 4"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":3},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":3},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 3"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":2},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":2},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 2"}
 			},{
-				"condition":{"type":"origins:resource","resource":"machine_spirit:body_redstone","comparison":">=","compare_to":1},
+				"condition":{"type":"origins:resource","resource":"technetium:xmc/body_redstone","comparison":">=","compare_to":1},
 				"action":{"type":"origins:execute_command",                              "command":"/give @s minecraft:redstone 1"}
 			}]
 		},{
 			"type":"origins:change_resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"operation":"set",
 			"change":0
 		},{
 			"type":"origins:change_resource",
-			"resource":"machine_spirit:body_material",
+			"resource":"technetium:xmc/body_material",
 			"operation":"set",
 			"change":0
 		}]}
@@ -798,7 +798,7 @@
 			"type":"origins:sneaking"
 		},{
 			"type":"origins:resource",
-			"resource":"machine_spirit:body_redstone",
+			"resource":"technetium:xmc/body_redstone",
 			"comparison":">",
 			"compare_to":0
 		},{
@@ -819,7 +819,7 @@
 				"type":"origins:if_else",
 				"condition":{
 					"type":"origins:resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"comparison":">=",
 					"compare_to":14
 				},
@@ -829,7 +829,7 @@
 				},
 				"else_action":{
 					"type":"origins:change_resource",
-					"resource":"machine_spirit:body_redstone",
+					"resource":"technetium:xmc/body_redstone",
 					"operation":"add",
 					"change":1
 				}

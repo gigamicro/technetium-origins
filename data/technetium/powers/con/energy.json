@@ -17,7 +17,7 @@
 		"type":"origins:action_on_callback",
 		"entity_action_respawned":{
 			"type":"origins:change_resource",
-			"resource":"focon:energy_resource",
+			"resource":"technetium:con/energy_resource",
 			"change":999
 		}
 	},
@@ -30,7 +30,7 @@
 		},
 		"entity_action": {"type":"origins:and","actions":[{
 			"type": "origins:change_resource",
-			"resource": "focon:energy_resource",
+			"resource": "technetium:con/energy_resource",
 			"change": -1,
 			"operation": "add"
 		},{
@@ -50,7 +50,7 @@
 		"entity_action": {"type":"origins:and","actions":[{
 			"type":"origins:chance","chance":0.25,"action":{
 			"type": "origins:change_resource",
-			"resource": "focon:energy_resource",
+			"resource": "technetium:con/energy_resource",
 			"change": -1,
 			"operation": "add"
 		}

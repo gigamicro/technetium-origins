@@ -27,7 +27,7 @@
 			},
 			{
 				"type":"origins:change_resource",
-				"resource": "automaton:water_bar",
+				"resource": "technetium:stm/water_bar",
 				"operation": "add",
 				"change": -5000
 			}
@@ -36,7 +36,7 @@
 	"condition":{"type":"origins:and","conditions":[
 		{
 			"type":"origins:resource",
-			"resource":"automaton:water_bar",
+			"resource":"technetium:stm/water_bar",
 			"comparison":">=",
 			"compare_to":4000
 		},

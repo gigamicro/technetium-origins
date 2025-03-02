@@ -6,7 +6,7 @@
 	"alpha":{"type":"origins:model_color","alpha":0.125},
 	"invisible":{
 		"type":"origins:invisibility",
-		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"==","compare_to":0}
+		"condition":{"type":"origins:resource","resource":"technetium:xmc/spirit_activity","comparison":"==","compare_to":0}
 	},
 	"phase":{
 		"type":"origins:phasing",
@@ -44,7 +44,7 @@
 			"type":"origins:if_else",
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:body_redstone",
+				"resource":"technetium:xmc/body_redstone",
 				"comparison":"<=",
 				"compare_to":0
 			},
@@ -53,11 +53,11 @@
 				"command":"give @s redstone"
 			},{
 				"type":"origins:change_resource",
-				"resource":"machine_spirit:spirit_range_time",
+				"resource":"technetium:xmc/spirit_range_time",
 				"change":999
 			},{
 				"type":"origins:trigger_cooldown",
-				"power":"machine_spirit:spirit_activity"
+				"power":"technetium:xmc/spirit_activity"
 			}]}
 		}
 	},
@@ -66,11 +66,11 @@
 		"min":0,
 		"max":70,
 		"hud_render":{
-			"sprite_location":"machine_spirit:textures/gui/red_invert.png",
+			"sprite_location":"technetium:xmc/textures/gui/red_invert.png",
 			"bar_index":0,
 			"condition":{
 				"type":"origins:resource",
-				"resource":"machine_spirit:spirit_range_time",
+				"resource":"technetium:xmc/spirit_range_time",
 				"comparison":">",
 				"compare_to":0
 			}
@@ -202,12 +202,12 @@
 			}]},
 			"if_action":{
 				"type":"origins:change_resource",
-				"resource":"machine_spirit:spirit_range_time",
+				"resource":"technetium:xmc/spirit_range_time",
 				"change":-1
 			},
 			"else_action":{"type":"origins:and","actions":[{
 				"type":"origins:change_resource",
-				"resource":"machine_spirit:spirit_range_time",
+				"resource":"technetium:xmc/spirit_range_time",
 				"change":1
 			},{
 				"type":"origins:apply_effect",
@@ -240,7 +240,7 @@
 				"type":"origins:chance",
 				"action":{
 					"type":"origins:trigger_cooldown",
-					"power":"machine_spirit:spirit_activity"
+					"power":"technetium:xmc/spirit_activity"
 				},
 				"chance":0.02
 			}]}
@@ -300,26 +300,26 @@
 		"type":"origins:action_over_time",
 		"entity_action":{"type":"origins:drop_inventory","throw_randomly":true},
 		"interval":1,
-		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"==","compare_to":0}
+		"condition":{"type":"origins:resource","resource":"technetium:xmc/spirit_activity","comparison":"==","compare_to":0}
 	},
 	"noblocks":{
 		"type":"origins:prevent_block_selection",
-		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"==","compare_to":0}
+		"condition":{"type":"origins:resource","resource":"technetium:xmc/spirit_activity","comparison":"==","compare_to":0}
 	},
 	"noentityuse":{
 		"type":"origins:prevent_entity_use",
-		"condition":{"type":"origins:resource","resource":"machine_spirit:spirit_activity","comparison":"==","compare_to":0}
+		"condition":{"type":"origins:resource","resource":"technetium:xmc/spirit_activity","comparison":"==","compare_to":0}
 	},
 
 	"activity_hit":{
 		"type":"origins:self_action_when_hit",
-		"entity_action":{"type":"origins:trigger_cooldown","power":"machine_spirit:spirit_activity"}
+		"entity_action":{"type":"origins:trigger_cooldown","power":"technetium:xmc/spirit_activity"}
 	},
 	"activity_use":{
 		"type":"origins:action_on_being_used",
 		"bientity_action":{
 			"type":"origins:target_action",
-			"action":{"type":"origins:trigger_cooldown","power":"machine_spirit:spirit_activity"}
+			"action":{"type":"origins:trigger_cooldown","power":"technetium:xmc/spirit_activity"}
 		}
 	},
 	"activity_event":{
@@ -333,6 +333,6 @@
 			"minecraft:block_open",
 			"minecraft:block_attach"
 		],
-		"entity_action":{"type":"origins:trigger_cooldown","power":"machine_spirit:spirit_activity"}
+		"entity_action":{"type":"origins:trigger_cooldown","power":"technetium:xmc/spirit_activity"}
 	}
 }

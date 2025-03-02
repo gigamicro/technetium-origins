@@ -39,7 +39,7 @@
 		},
 		"condition": {
 			"type": "origins:resource",
-			"resource": "focon:energy_resource",
+			"resource": "technetium:con/energy_resource",
 			"comparison": "==",
 			"compare_to": 0
 		}
@@ -52,12 +52,12 @@
 		},
 		"entity_action": {
 			"type": "origins:change_resource",
-			"resource": "focon:power_down_selfdestructresource",
+			"resource": "technetium:con/power_down_selfdestructresource",
 			"change": 1
 		},
 		"condition": {
 			"type": "origins:resource",
-			"resource": "focon:energy_resource",
+			"resource": "technetium:con/energy_resource",
 			"comparison": "==",
 			"compare_to": 0
 		}
@@ -75,7 +75,7 @@
 			"bar_index": 17,
 			"condition": {
 				"type": "origins:resource",
-				"resource": "focon:energy_resource",
+				"resource": "technetium:con/energy_resource",
 				"comparison": "==",
 				"compare_to": 0
 			}
@@ -86,7 +86,7 @@
 		"interval": 1,
 		"entity_action": {
 			"type": "origins:change_resource",
-			"resource": "focon:power_down_selfdestructresource",
+			"resource": "technetium:con/power_down_selfdestructresource",
 			"change": -1
 		},
 		"condition": {
@@ -97,7 +97,7 @@
 	"ignore":{
 		"condition": {
 			"type": "origins:resource",
-			"resource": "focon:energy_resource",
+			"resource": "technetium:con/energy_resource",
 			"comparison": "==",
 			"compare_to": 0
 		},
@@ -106,7 +106,7 @@
 	"noblocks":{
 		"condition": {
 			"type": "origins:resource",
-			"resource": "focon:energy_resource",
+			"resource": "technetium:con/energy_resource",
 			"comparison": "==",
 			"compare_to": 0
 		},

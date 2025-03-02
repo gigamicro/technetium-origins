@@ -19,7 +19,7 @@
 			{
 				"inverted": true,
 				"type": "origins:power_active",
-				"power": "praoubls_origins:calm_breeze"
+				"power": "technetium:mst/calm_breeze"
 			},
 			{
 				"inverted": true,

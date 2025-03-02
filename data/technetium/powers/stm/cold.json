@@ -7,7 +7,7 @@
 	"interval":5,
 	"entity_action":{
 		"type": "origins:change_resource",
-		"resource": "automaton:fire_bar",
+		"resource": "technetium:stm/fire_bar",
 		"operation":"add",
 		"change": -1
 	},
@@ -36,14 +36,14 @@
 			},
 			"if_action":{
 				"type":"origins:change_resource",
-				"resource": "automaton:water_bar",
+				"resource": "technetium:stm/water_bar",
 				"operation": "add",
 				"change": 50
 			}
 		},
 		{
 			"type":"origins:change_resource",
-			"resource": "automaton:fire_bar",
+			"resource": "technetium:stm/fire_bar",
 			"operation": "add",
 			"change": -50
 		},

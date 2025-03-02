@@ -236,7 +236,7 @@
 		},
 		"if_action": {
 			"type": "origins:change_resource",
-			"resource": "focon:energy_resource",
+			"resource": "technetium:con/energy_resource",
 			"change": 1,
 			"operation": "add"
 		}
