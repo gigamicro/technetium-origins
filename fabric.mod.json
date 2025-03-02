@@ -1,26 +1,23 @@
 {
-    "id": "technetium_origins",
-    "name": "Technetium Origins",
-    "version": "1.0.14",
-    "description": "several heavy modifications or original origins for the Beep Boop/Technetium server/modpack ",
-    "license": "MIT",
-    "authors": [
-        "gigamicro",
-        "praoubl"
-    ],
+  "id": "technetium_origins",
+  "name": "Technetium Origins",
+  "version": "1.0.14",
+  "description": "several heavy modifications or original origins for the Beep Boop/Technetium server/modpack ",
+  "license": "MIT",
+  "authors": [
+    "gigamicro",
+    "praoubl"
+  ],
   "contact": {
     "homepage": "https://discord.gg/sDdMUJetQ2",
     "sources": "https://github.com/gigamicro/technetium-origins",
     "issues": "https://github.com/gigamicro/technetium-origins/issues"
   },
-  "license": "MIT",
   "icon": "assets/technetium/icon.png",
-    "schemaVersion": 1,
-    "environment": "*",
-    "depends": {
-        "fabric-api-base": "*",
-        "fabric": "*",
-        "minecraft": ">=1.20.0 <=1.20.1",
-        "origins": ">=1.10.0"
-    }
+  "schemaVersion": 1,
+  "environment": "*",
+  "depends": {
+    "minecraft": ">=1.20.0 <=1.20.1",
+    "origins": ">=1.10.0"
+  }
 }
