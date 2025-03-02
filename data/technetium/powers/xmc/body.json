@@ -294,23 +294,23 @@
 				"action":{"type":"origins:and","actions":[{
 					"type":"origins:revoke_power",
 					"power":"technetium:xmc/spirit",
-					"source":"technetium:xmc/machine_spirit"
+					"source":"technetium:machine_spirit"
 				},{
 					"type":"origins:if_else_list","actions":[
 						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":1},
-						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/wood"}},
+						"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/wood"}},
 						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":2},
-						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/stone"}},
+						"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/stone"}},
 						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":3},
-						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/iron"}},
+						"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/iron"}},
 						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":4},
-						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/gold"}},
+						"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/gold"}},
 						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":5},
-						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/diamond"}},
+						"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/diamond"}},
 						{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":6},
-						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/netherite"}},
+						"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/netherite"}},
 						{"condition":{"type":"origins:constant","value":true},
-						"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/other"}}
+						"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/other"}}
 					]
 				}]}
 			}
@@ -476,19 +476,19 @@
 		},{
 		"type":"origins:if_else_list","actions":[
 				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":1},
-				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/wood"}},
+				"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/wood"}},
 				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":2},
-				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/stone"}},
+				"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/stone"}},
 				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":3},
-				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/iron"}},
+				"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/iron"}},
 				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":4},
-				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/gold"}},
+				"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/gold"}},
 				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":5},
-				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/diamond"}},
+				"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/diamond"}},
 				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":6},
-				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/netherite"}},
+				"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/netherite"}},
 				{"condition":{"type":"origins:constant","value":true},
-				"action":{"type":"origins:grant_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/other"}}
+				"action":{"type":"origins:grant_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/other"}}
 			]
 		},{
 			"type":"origins:block_action_at",
@@ -520,7 +520,7 @@
 		},{
 			"type":"origins:revoke_power",
 			"power":"technetium:xmc/spirit",
-			"source":"technetium:xmc/machine_spirit"
+			"source":"technetium:machine_spirit"
 		}]},
 		"cooldown":200
 	},
@@ -543,15 +543,15 @@
 		},{
 			"type":"origins:grant_power",
 			"power":"technetium:xmc/spirit",
-			"source":"technetium:xmc/machine_spirit"
+			"source":"technetium:machine_spirit"
 		},
-		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/wood"},
-		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/stone"},
-		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/iron"},
-		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/gold"},
-		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/diamond"},
-		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/netherite"},
-		{"type":"origins:revoke_power","source":"technetium:xmc/machine_spirit","power":"technetium:xmc/body/other"}
+		{"type":"origins:revoke_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/wood"},
+		{"type":"origins:revoke_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/stone"},
+		{"type":"origins:revoke_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/iron"},
+		{"type":"origins:revoke_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/gold"},
+		{"type":"origins:revoke_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/diamond"},
+		{"type":"origins:revoke_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/netherite"},
+		{"type":"origins:revoke_power","source":"technetium:machine_spirit","power":"technetium:xmc/body/other"}
 		,{
 			"type":"origins:if_else_list","actions":[
 				{"condition":{"type":"origins:resource","resource":"technetium:xmc/body_material","comparison":"==","compare_to":1},

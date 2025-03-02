@@ -3,7 +3,7 @@
 	"description":"You can craft four (4) redstone blocks into 37 (4*9+1) redstone dust.",
 	"type": "origins:recipe",
 	"recipe": {
-		"id": "technetium:xmc/machine_spirit/redstone_duplication",
+		"id": "technetium:machine_spirit/redstone_duplication",
 		"type": "minecraft:crafting_shapeless",
 		"ingredients": [
 			{
