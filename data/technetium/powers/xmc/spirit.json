@@ -53,7 +53,8 @@
 				"command":"give @s redstone"
 			},{
 				"type":"origins:change_resource",
-				"resource":"technetium:xmc/spirit_range_time",
+				"resource":"technetium:xmc/spirit_discohesion",
+				"operation":"set",
 				"change":0
 			},{
 				"type":"origins:trigger_cooldown",
@@ -61,7 +62,7 @@
 			}]}
 		}
 	},
-	"range_time":{
+	"discohesion":{
 		"type":"origins:resource",
 		"min":0,
 		"max":70,
@@ -70,7 +71,7 @@
 			"bar_index":0,
 			"condition":{
 				"type":"origins:resource",
-				"resource":"technetium:xmc/spirit_range_time",
+				"resource":"technetium:xmc/spirit_discohesion",
 				"comparison":">",
 				"compare_to":0
 			}
@@ -202,12 +203,12 @@
 			}]},
 			"if_action":{
 				"type":"origins:change_resource",
-				"resource":"technetium:xmc/spirit_range_time",
+				"resource":"technetium:xmc/spirit_discohesion",
 				"change":-1
 			},
 			"else_action":{"type":"origins:and","actions":[{
 				"type":"origins:change_resource",
-				"resource":"technetium:xmc/spirit_range_time",
+				"resource":"technetium:xmc/spirit_discohesion",
 				"change":1
 			},{
 				"type":"origins:apply_effect",

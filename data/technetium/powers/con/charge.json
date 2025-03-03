@@ -12,6 +12,7 @@
 					"type": "origins:block_in_radius",
 					"block_condition": {
 						"type": "origins:offset",
+						"y": 1,
 						"condition": {
 							"type": "origins:or",
 							"conditions": [
@@ -32,8 +33,7 @@
 									"block": "minecraft:note_block"
 								}
 							]
-						},
-						"y": 1
+						}
 					},
 					"radius": 1,
 					"shape": "star",
@@ -44,6 +44,7 @@
 					"type": "origins:block_in_radius",
 					"block_condition": {
 						"type": "origins:offset",
+						"y": 1,
 						"condition": {
 							"type": "origins:or",
 							"conditions": [
@@ -85,8 +86,7 @@
 									]
 								}
 							]
-						},
-						"y": 1
+						}
 					},
 					"radius": 4,
 					"shape": "star",
@@ -97,6 +97,7 @@
 					"type": "origins:block_in_radius",
 					"block_condition": {
 						"type": "origins:offset",
+						"y": 1,
 						"condition": {
 							"type": "origins:or",
 							"conditions": [
@@ -153,8 +154,7 @@
 									]
 								}
 							]
-						},
-						"y": 1
+						}
 					},
 					"radius": 8,
 					"shape": "star",
@@ -165,6 +165,7 @@
 					"type": "origins:block_in_radius",
 					"block_condition": {
 						"type": "origins:offset",
+						"y": 1,
 						"condition": {
 							"type": "origins:or",
 							"conditions": [
@@ -224,8 +225,7 @@
 									"tag": "chipped:redstone_block"
 								}
 							]
-						},
-						"y": 1
+						}
 					},
 					"radius": 15,
 					"shape": "star",
