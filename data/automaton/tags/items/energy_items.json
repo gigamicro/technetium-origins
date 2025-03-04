@@ -7,6 +7,26 @@
 		{
 			"id": "minecraft:redstone_block",
 			"required":false
+		},
+		{
+			"id": "squashed:redstone_dust_block",
+			"required":false
+		},
+		{
+			"id": "squashed:compressed_redstone_block",
+			"required":false
+		},
+		{
+			"id": "squashed:dense_redstone_block",
+			"required":false
+		},
+		{
+			"id": "squashed:crammed_redstone_block",
+			"required":false
+		},
+		{
+			"id": "squashed:squashed_redstone_block",
+			"required":false
 		}
   ]
 }
