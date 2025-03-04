@@ -11,6 +11,26 @@
 		{
 			"id": "modern_industrialization:coke",
 			"required":false
+		},
+		{
+			"id": "squashed:charcoal_block",
+			"required":false
+		},
+		{
+			"id": "betterend:charcoal_block",
+			"required":false
+		},
+		{
+			"id": "minecraft:dried_kelp_block",
+			"required":false
+		},
+		{
+			"id": "minecraft:blaze_rod",
+			"required":false
+		},
+		{
+			"id": "modern_industrialization:coke",
+			"required":false
 		}
 	]
 }
