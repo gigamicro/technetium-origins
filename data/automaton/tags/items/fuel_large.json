@@ -3,6 +3,10 @@
 		{
 			"id": "modern_industrialization:coke_block",
 			"required":false
+		},
+		{
+			"id": "botania:blaze_block",
+			"required":false
 		}
 	]
 }
