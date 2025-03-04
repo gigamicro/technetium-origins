@@ -7,6 +7,14 @@
 		{
 			"id": "minecraft:dried_kelp_block",
 			"required":false
+		},
+		{
+			"id": "modern_industrialization:lignite_coal_dust",
+			"required":false
+		},
+		{
+			"id": "modern_industrialization:coal_dust",
+			"required":false
 		}
 	]
 }
