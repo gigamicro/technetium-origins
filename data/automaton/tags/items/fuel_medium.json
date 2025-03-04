@@ -21,10 +21,6 @@
 			"required":false
 		},
 		{
-			"id": "minecraft:dried_kelp_block",
-			"required":false
-		},
-		{
 			"id": "minecraft:blaze_rod",
 			"required":false
 		},
