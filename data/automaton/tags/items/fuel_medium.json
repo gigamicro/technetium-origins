@@ -31,6 +31,10 @@
 		{
 			"id": "modern_industrialization:coke",
 			"required":false
+		},
+		{
+			"id": "modern_industrialization:coke_dust",
+			"required":false
 		}
 	]
 }
