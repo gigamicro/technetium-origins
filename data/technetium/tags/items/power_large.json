@@ -1,3 +1,7 @@
 {"values":[
-{"id":"modern_industrialization:redstone_battery","required":false}
+{"id":"modern_industrialization:redstone_battery","required":false},
+{"id":"ad_astra:etrionic_capacitor","required":false},
+{"id":"create_new_age:overcharged_diamond","required":false}
+{"id":"modern_industrialization:silicon_battery","required":false},
+{"id":"squashed:compressed_redstone_block","required":false}
 ]}

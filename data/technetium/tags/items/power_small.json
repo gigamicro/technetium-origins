@@ -1,3 +1,4 @@
 {"values":[
-"minecraft:redstone"
+"minecraft:redstone",
+{"id":"create_new_age:overcharged_iron","required":false}
 ]}

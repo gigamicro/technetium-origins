@@ -20,7 +20,7 @@
 					"type": "origins:resource",
 					"resource": "technetium:con/energy_resource",
 					"comparison": "<",
-					"compare_to": 400
+					"compare_to": 71
 				},
 				{
 					"inverted": true,
@@ -43,7 +43,7 @@
 				{
 					"type": "origins:change_resource",
 					"resource": "technetium:con/energy_resource",
-					"change": 400,
+					"change": 71,
 					"operation": "add"
 				},
 				{
@@ -69,7 +69,7 @@
 					{
 						"type": "origins:change_resource",
 						"resource": "technetium:con/energy_resource",
-						"change": 400,
+						"change": 71,
 						"operation": "add"
 					},
 					{
@@ -119,7 +119,7 @@
 					"type": "origins:resource",
 					"resource": "technetium:con/energy_resource",
 					"comparison": "<",
-					"compare_to": 400
+					"compare_to": 71
 				},
 				{
 					"inverted": true,
@@ -235,7 +235,7 @@
 					"type": "origins:resource",
 					"resource": "technetium:con/energy_resource",
 					"comparison": "<",
-					"compare_to": 400
+					"compare_to": 71
 				},
 				{
 					"inverted": true,
@@ -305,7 +305,7 @@
 						"type": "origins:resource",
 						"resource": "technetium:con/energy_resource",
 						"comparison": "<",
-						"compare_to": 400
+						"compare_to": 71
 					}
 				},
 				{
