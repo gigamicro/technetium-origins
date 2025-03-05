@@ -2,9 +2,9 @@
 "minecraft:blaze_rod",
 "minecraft:coal_block",
 {"id":"betterend:charcoal_block","required":false},
-{"id":"modern_industrialization:carbon_dust","required":false}
+{"id":"modern_industrialization:carbon_dust","required":false},
 {"id":"modern_industrialization:coke","required":false},
 {"id":"modern_industrialization:coke_dust","required":false},
 {"id":"modern_industrialization:lignite_coal_block","required":false},
-{"id":"squashed:charcoal_block","required":false},
+{"id":"squashed:charcoal_block","required":false}
 ]}
