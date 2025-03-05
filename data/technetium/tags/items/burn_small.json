@@ -1,8 +1,6 @@
-{
-	"values": [
-		{
-			"id": "#minecraft:coals",
-			"required":false
-		}
-	]
-}
+{"values":[
+"#minecraft:coals",
+"minecraft:dried_kelp_block",
+{"id":"modern_industrialization:coal_dust","required":false},
+{"id":"modern_industrialization:lignite_coal_dust","required":false},
+]}

@@ -1,8 +1,6 @@
-{
-	"values": [
-		{
-			"id": "modern_industrialization:coke_block",
-			"required":false
-		}
-	]
-}
+{"values":[
+"minecraft:lava_bucket",
+{"id":"botania:blaze_block","required":false},
+{"id":"modern_industrialization:coke_block","required":false},
+{"id":"squashed:blaze_rod_block","required":false}
+]}
