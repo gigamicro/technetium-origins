@@ -1,8 +1,4 @@
-{
-	"values": [
-		{
-			"id": "",
-			"required":false
-		}
-	]
-}
+{"values": [
+"minecraft:drown",
+{"id":"ad_astra:oxygen","required":false}
+]}

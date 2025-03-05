@@ -1,8 +1,4 @@
-{
-	"values": [
-		{
-			"id": "",
-			"required":false
-		}
-	]
-}
+{"values": [
+"minecraft:cactus",
+{"id":"","required":false}
+]}
