@@ -2,7 +2,7 @@
 	"name": "Recharge",
 	"description": "You can use redstone to recharge your energy. Other players can do so too by right-clicking you with it.",
 	"type": "origins:multiple",
-	"self_battery": {
+	"self_large": {
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
@@ -12,7 +12,7 @@
 					"item_condition": {
 						"type": "origins:ingredient",
 						"ingredient": {
-							"item": "modern_industrialization:redstone_battery"
+							"tag": "technetium:power_large"
 						}
 					}
 				},
@@ -59,7 +59,7 @@
 			"key": "key.use"
 		}
 	},
-	"player_battery": {
+	"player_large": {
 		"type": "origins:action_on_being_used",
 		"bientity_action": {
 			"type": "origins:target_action",
@@ -93,7 +93,7 @@
 		"item_condition": {
 			"type": "origins:ingredient",
 			"ingredient": {
-				"item": "modern_industrialization:redstone_battery"
+				"tag": "technetium:power_large"
 			}
 		},
 		"held_item_action": {
@@ -101,7 +101,7 @@
 			"amount": 1
 		}
 	},
-	"self_block": {
+	"self_medium": {
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
@@ -111,7 +111,7 @@
 					"item_condition": {
 						"type": "origins:ingredient",
 						"ingredient": {
-							"tag": "chipped:redstone_block"
+							"tag": "technetium:power_medium"
 						}
 					}
 				},
@@ -158,7 +158,7 @@
 			"key": "key.use"
 		}
 	},
-	"player_block": {
+	"player_medium": {
 		"type": "origins:action_on_being_used",
 		"bientity_action": {
 			"type": "origins:target_action",
@@ -200,7 +200,7 @@
 						"item_condition": {
 							"type": "origins:ingredient",
 							"ingredient": {
-								"tag": "chipped:redstone_block"
+								"tag": "technetium:power_medium"
 							}
 						}
 					}
@@ -217,7 +217,7 @@
 		"action_result": "success",
 		"priority": 0
 	},
-	"self_dust": {
+	"self_small": {
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
@@ -227,7 +227,7 @@
 					"item_condition": {
 						"type": "origins:ingredient",
 						"ingredient": {
-							"item": "redstone"
+							"tag": "technetium:power_small"
 						}
 					}
 				},
@@ -274,7 +274,7 @@
 			"key": "key.use"
 		}
 	},
-	"player_dust": {
+	"player_small": {
 		"type": "origins:action_on_being_used",
 		"bientity_action": {
 			"type": "origins:target_action",
@@ -316,7 +316,7 @@
 						"item_condition": {
 							"type": "origins:ingredient",
 							"ingredient": {
-								"item": "redstone"
+								"tag": "technetium:power_small"
 							}
 						}
 					}

@@ -1,8 +1,3 @@
-{
-	"values": [
-		{
-			"id": "",
-			"required":false
-		}
-	]
-}
+{"values":[
+{"id":"chipped:redstone_block","required":false}
+]}
