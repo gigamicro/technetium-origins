@@ -1,0 +1,262 @@
+{
+"name":"Fuel Supply",
+"description":"You replenish your Fire by placing fuel in your Fire Box.",
+"type":"origins:multiple",
+"bar":{
+	"type":"origins:resource",
+	"min":0,
+	"max":10000,
+	"start_value":5000,
+	"hud_render":{
+		"bar_index":7,
+		"condition":{
+			"inverted":true,
+			"type":"origins:or","conditions":[
+				{"type":"origins:gamemode","gamemode":"creative"},
+				{"type":"origins:gamemode","gamemode":"spectator"}
+			]
+		}
+	}
+},
+"respawn":{
+	"type": "origins:action_on_callback",
+	"entity_action_respawned":{
+		"type": "origins:change_resource",
+		"resource": "technetium:stm/fire_bar",
+		"operation":"set",
+		"change": 5000
+	}
+},
+"box":{
+	"type":"origins:inventory",
+	"title":"Fire Box",
+	"container_type":"hopper",
+	"drop_on_death":true,
+	"key":"key.origins.secondary_active"
+},
+"box_smelt":{
+	"type":"origins:action_over_time",
+	"interval":200,
+	"condition":{"type":"origins:and","conditions":[
+		{
+			"type":"origins:resource",
+			"resource":"technetium:stm/fire_bar",
+			"comparison":">",
+			"compare_to":3200
+		},
+		{
+			"type": "origins:inventory",
+			"inventory_types":["power"],
+			"power":"technetium:stm/fire_box",
+			"process_mode": "stacks",
+			"item_condition":{"type":"origins:and","conditions":[
+				{"type":"origins:smeltable"},
+				{"type":"origins:amount","comparison": "==","compare_to":1}
+			]},
+			"comparison": ">",
+			"compare_to": 0
+		}
+	]},
+	"entity_action":{
+		"type":"origins:modify_inventory",
+		"inventory_type":"power",
+		"power":"technetium:stm/fire_box",
+		"limit":1,
+		"item_condition":{"type":"origins:and","conditions":[
+			{"type":"origins:smeltable"},
+			{"type":"origins:amount","comparison": "==","compare_to":1}
+		]},
+		"item_action":{"type":"origins:and","actions":[
+			{
+				"type":"apoli:holder",
+				"entity_action":{
+					"type": "origins:change_resource",
+					"resource": "technetium:stm/fire_bar",
+					"operation":"add",
+					"change": -100
+				}
+			},
+			{
+				"type":"origins:modify",
+				"modifier":"technetium:stm/smelt"
+			}
+		]}
+	}
+},
+"box_consume":{
+	"type":"origins:action_over_time",
+	"interval":8,
+	"condition":{"type":"origins:or","conditions":[
+		{
+			"type":"origins:resource",
+			"resource":"technetium:stm/fire_bar",
+			"comparison":"<",
+			"compare_to":2500
+		},
+		{"type":"origins:and","conditions":[
+			{
+				"type":"origins:resource",
+				"resource":"technetium:stm/fire_bar",
+				"comparison":"<",
+				"compare_to":6400
+			},
+			{
+				"type": "origins:inventory",
+				"inventory_types":["power"],
+				"power":"technetium:stm/fire_box",
+				"process_mode": "stacks",
+				"item_condition":{"type":"origins:ingredient","ingredient":[
+					{"item":"minecraft:lava_bucket"},
+					{"tag":"technetium:burn_large"}
+				]},
+				"comparison": "==",
+				"compare_to": 0
+			}
+		]}
+	]},"entity_action":{
+	"type":"origins:modify_inventory",
+	"inventory_type":"power",
+	"power":"technetium:stm/fire_box",
+	"limit":1,
+	"process_mode":"items",
+	"item_condition":{"type":"origins:and","conditions":[
+		{"type":"origins:empty","inverted":true},
+		{"type":"origins:ingredient","ingredient":{"item":"minecraft:bucket"},"inverted":true},
+		{"type":"origins:smeltable","inverted":true}
+	]},"item_action":{"type":"origins:if_else_list","actions":[
+	{"condition":{
+		"type":"origins:ingredient",
+		"ingredient":{
+			"tag":"technetium:burn_small"
+		}
+	},"action":{
+		"type":"origins:and",
+		"actions":[
+			{
+				"type":"apoli:holder",
+				"entity_action":{
+					"type": "origins:change_resource",
+					"resource": "technetium:stm/fire_bar",
+					"operation":"add",
+					"change": 400
+				}
+			},
+			{
+				"type":"apoli:holder",
+				"entity_action":{
+					"type": "origins:play_sound",
+					"sound": "minecraft:item.firecharge.use",
+					"volume": 0.5,
+					"pitch": 1.0
+				}
+			},
+			{
+				"type":"origins:consume",
+				"amount":1
+			}
+		]
+	}},
+	{"condition":{
+		"type":"origins:ingredient",
+		"ingredient":{
+			"tag":"technetium:burn_medium"
+		}
+	},"action":{
+		"type":"origins:and",
+		"actions":[
+			{
+				"type":"apoli:holder",
+				"entity_action":{
+					"type": "origins:change_resource",
+					"resource": "technetium:stm/fire_bar",
+					"operation":"add",
+					"change": 3600
+				}
+			},
+			{
+				"type":"apoli:holder",
+				"entity_action":{
+					"type": "origins:play_sound",
+					"sound": "minecraft:item.firecharge.use",
+					"volume": 1.5,
+					"pitch": 0.5
+				}
+			},
+			{
+					"type":"origins:consume",
+					"amount":1
+			}
+		]
+	}},
+	{"condition":{
+		"type":"origins:ingredient",
+		"ingredient":{
+			"tag":"technetium:burn_large"
+		}
+	},"action":{
+		"type":"origins:and",
+		"actions":[
+			{
+				"type":"apoli:holder",
+				"entity_action":{
+					"type": "origins:change_resource",
+					"resource": "technetium:stm/fire_bar",
+					"operation":"add",
+					"change": 7500
+				}
+			},
+			{
+				"type":"apoli:holder",
+				"entity_action":{
+					"type": "origins:play_sound",
+					"sound": "minecraft:item.firecharge.use",
+					"volume": 9,
+					"pitch": 0.5
+				}
+			},
+			{
+				"type":"origins:consume",
+				"amount":1
+			}
+		]
+	}},
+
+	{"condition":{
+		"type":"origins:ingredient",
+		"ingredient":{
+			"item":"minecraft:lava_bucket"
+		}
+	},"action":{"type":"origins:and","actions":[
+		{"type":"apoli:holder","entity_action":{"type":"origins:and","actions":[
+			{
+				"type": "origins:change_resource",
+				"resource": "technetium:stm/fire_bar",
+				"operation":"add",
+				"change": 7500
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.firecharge.use",
+				"volume": 9,
+				"pitch": 0.5
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:item.bucket.empty",
+				"volume": 1.5,
+				"pitch": 0.4
+			},
+			{
+				"comment":"this is dumb",
+				"type": "origins:execute_command",
+				"command":"give @s minecraft:bucket"
+			}
+		]}},
+		{
+			"type":"origins:consume"
+		}
+	]}}
+]}
+}
+}
+}

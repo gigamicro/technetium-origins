@@ -1,0 +1,20 @@
+{
+	"name":"Evaporation",
+	"description":"Hot climates slowly drain your water.",
+	"type":"origins:action_over_time",
+	"interval":1,
+	"entity_action":{
+		"type": "origins:change_resource",
+		"resource": "technetium:stm/water_bar",
+		"operation":"add",
+		"change": -1
+	},
+	"condition":{
+		"type":"origins:biome",
+		"condition":{
+			"type":"origins:temperature",
+			"comparison": ">",
+			"compare_to": 1.5
+		}
+	}
+}

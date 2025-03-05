@@ -1,0 +1,55 @@
+{
+	"name":"Waterlogging",
+	"description":"You first gain water, then lose Fire, when drowning. Crouch to release air.",
+"type":"origins:multiple",
+"damage":{
+	"type":"origins:modify_damage_taken",
+	"damage_condition":{
+		"type":"origins:name",
+		"name":"drown"
+	},
+	"self_action":{"type":"origins:and","actions":[
+		{
+			"type":"origins:if_else",
+			"condition":{
+				"type":"origins:resource",
+				"resource":"technetium:stm/water_bar",
+				"comparison":">=",
+				"compare_to":19900
+			},
+			"if_action":{
+				"type": "origins:change_resource",
+				"resource": "technetium:stm/fire_bar",
+				"operation":"add",
+				"change": -20
+			}
+		},
+		{
+			"type": "origins:change_resource",
+			"resource": "technetium:stm/water_bar",
+			"operation":"add",
+			"change": 200
+		}
+	]},
+	"modifier":{
+		"value":-1,
+		"operation":"multiply_total"
+	}
+}
+,"fill":{
+	"type":"origins:action_over_time",
+	"interval":1,
+	"entity_action":{
+		"type":"origins:gain_air",
+		"value":-4
+	},
+	"condition":{
+		"type":"origins:and",
+		"conditions":[
+			{"type":"origins:sneaking"},
+			{"type":"origins:air","comparison":">","compare_to":0},
+			{"type":"origins:air","comparison":"<","compare_to":300}
+		]
+	}
+}
+}

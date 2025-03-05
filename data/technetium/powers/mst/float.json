@@ -1,0 +1,44 @@
+{
+	"name": "Floaty",
+	"description":"You slowly float upward in non-freezing air.",
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"inverted": true,
+				"type": "origins:on_block"
+			},
+			{
+				"inverted": true,
+				"type": "origins:creative_flying"
+			},
+			{
+				"inverted": true,
+				"type": "origins:sneaking"
+			},
+			{
+				"inverted": true,
+				"type": "origins:power_active",
+				"power": "technetium:mst/calm_breeze"
+			},
+			{
+				"inverted": true,
+				"type": "origins:biome",
+				"condition": {
+					"type": "origins:temperature",
+					"comparison": "<",
+					"compare_to": 0.2
+				}
+			}
+		]
+	},
+	"type": "origins:action_over_time",
+	"interval": 1,
+	"entity_action": {
+		"type": "origins:add_velocity",
+		"y": 0.02,
+		"space": "world",
+		"client": true,
+		"server": true
+	}
+}

@@ -1,0 +1,48 @@
+{
+	"name": "Unfitted Form",
+	"description": "Thanks to the way you were constructed, most armour does not fit onto you. You also lack the ability to wear elytra, fly, and wield shields.",
+	"type":"origins:multiple",
+	"armor":{
+		"type": "origins:restrict_armor",
+		"head": {
+			"inverted": true,
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag":"technetium:con/fit"
+			}
+		},
+		"chest": {
+			"inverted": true,
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag":"technetium:con/fit"
+			}
+		},
+		"legs": {
+			"inverted": true,
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag":"technetium:con/fit"
+			}
+		},
+		"feet": {
+			"inverted": true,
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag":"technetium:con/fit"
+			}
+		}
+	},
+	"no_fly": {
+		"type": "origins:prevent_elytra_flight"
+	},
+	"no_shield": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:shield"
+			}
+		}
+	}
+}

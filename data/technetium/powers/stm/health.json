@@ -1,0 +1,83 @@
+{
+	"name":"Steam Vessel",
+	"description":"You are very hard to damage, but you don't regenerate and being damaged is exhausting.",
+	"type":"origins:multiple",
+	"effects":{
+		"type": "origins:effect_immunity",
+		"effects": [
+			"minecraft:poison"
+		]
+	},
+	"no_regen":{
+		"type":"origins:disable_regen"
+	},
+	"texture":{
+		"type":"origins:status_bar_texture",
+		"texture":"technetium:textures/gui/icons/stm.png",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "technetium:no_ui",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"damage":{
+		"type":"origins:modify_damage_taken",
+		"modifier":{
+			"value":-0.875,
+			"operation":"multiply_total"
+		}
+	},
+	"exhaust_high":{
+		"type":"origins:action_over_time",
+		"interval":1,
+		"entity_action": {
+			"type": "origins:exhaust",
+			"amount": 0.015625
+		},
+		"condition": {
+			"type": "origins:health",
+			"comparison": "<",
+			"compare_to": 20
+		}
+	},
+	"exhaust_medium":{
+		"type":"origins:action_over_time",
+		"interval":1,
+		"entity_action": {
+			"type": "origins:exhaust",
+			"amount": 0.015625
+		},
+		"condition": {
+			"type": "origins:health",
+			"comparison": "<",
+			"compare_to": 10
+		}
+	},
+	"exhaust_low":{
+		"type":"origins:action_over_time",
+		"interval":1,
+		"entity_action": {
+			"type": "origins:exhaust",
+			"amount": 0.03125
+		},
+		"condition": {
+			"type": "origins:health",
+			"comparison": "<",
+			"compare_to": 6
+		}
+	},
+	"exhaust_vlow":{
+		"type":"origins:action_over_time",
+		"interval":1,
+		"entity_action": {
+			"type": "origins:exhaust",
+			"amount": 0.1875
+		},
+		"condition": {
+			"type": "origins:health",
+			"comparison": "<",
+			"compare_to": 2
+		}
+	}
+}

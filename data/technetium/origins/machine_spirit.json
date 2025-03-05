@@ -1,0 +1,17 @@
+{
+	"name":"Machine Spirit",
+	"description": "Power at material cost. Dissipates without redstone exposure.",
+	"powers":[
+		"technetium:unnatural",
+		"technetium:xmc/spirit",
+		"technetium:xmc/desc4",
+		"technetium:xmc/body",
+		"technetium:xmc/desc1",
+		"technetium:xmc/desc2",
+		"technetium:xmc/desc3",
+		"technetium:xmc/dustdupe",
+		"technetium:no_ui"
+	],
+	"icon":"minecraft:redstone_block",
+	"impact":3
+}

@@ -2,8 +2,8 @@
 	"allow_random":true,
 	"origins":[
 		"origins-plus-plus:automaton",
-		"machine_spirit:machine_spirit",
-		"praoubls_origins:mistcat",
-		"focon:construct"
+		"technetium:machine_spirit",
+		"technetium:mistcat",
+		"technetium:construct"
 	]
 }
