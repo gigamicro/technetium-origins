@@ -13,7 +13,7 @@
 			"required":false
 		},
 	  	{
-			"id": "create_new_age:overcharged_iron",
+			"id": "create_new_age:overcharged_gold",
 			"required":false
 		},
 	  	{
