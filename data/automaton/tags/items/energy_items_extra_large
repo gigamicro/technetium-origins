@@ -1,0 +1,12 @@
+{
+  "values":[
+		{
+			"id": "squashed:dense_redstone_block",
+			"required":false
+		},
+		{
+			"id": "modern_industrialization:cadmium_battery",
+			"required":false
+		}
+  ]
+}
