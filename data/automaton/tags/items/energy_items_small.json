@@ -1,0 +1,24 @@
+{
+  "values":[
+		{
+			"id": "squashed:redstone_dust_block",
+			"required":false
+		},
+		{
+			"id": "modern_industrialization:redstone_battery",
+			"required":false
+		},
+		{
+			"id": "ae2:charged_certus_quartz_crystal",
+			"required":false
+		},
+	  	{
+			"id": "create_new_age:overcharged_iron",
+			"required":false
+		},
+	  	{
+			"id": "wired_redstone:redstone_alloy_ingot",
+			"required":false
+		}
+  ]
+}
