@@ -78,7 +78,7 @@
 			},
 			{
 				"type":"origins:modify",
-				"modifier":"technetium:stm/smelt"
+				"modifier":"technetium:smelt"
 			}
 		]}
 	}
