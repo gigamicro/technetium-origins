@@ -1,6 +1,62 @@
 {
   "values":[
 		{
+			"id": "betterend:flavolite_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:violecite_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:sulphuric_rock_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:virid_jadestone_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:sandy_jadestone_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:azure_jadestone_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:umbralith_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:andesite_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:diorite_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:granite_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:quartz_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:purpur_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:end_stone_lantern",
+			"required":false
+		},
+		{
+			"id": "betterend:blackstone_lantern",
+			"required":false
+		},
+		{
 			"id": "betternether:anchor_tree_bar_stool",
 			"required":false
 		},
