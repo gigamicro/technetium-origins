@@ -101,6 +101,14 @@
 			"required":false
 		},
 		{
+			"id": "betterend:mossy_glowshroom_trapdoor",
+			"required":false
+		},
+		{
+			"id": "betterend:mossy_glowshroom_door",
+			"required":false
+		},
+		{
 			"id": "betterend:pythadendron_bar_stool",
 			"required":false
 		},
@@ -126,6 +134,14 @@
 		},
 		{
 			"id": "betterend:pythadendron_taburet",
+			"required":false
+		},
+		{
+			"id": "betterend:pythadendron_trapdoor",
+			"required":false
+		},
+		{
+			"id": "betterend:pythadendron_door",
 			"required":false
 		},
 		{
@@ -157,6 +173,14 @@
 			"required":false
 		},
 		{
+			"id": "betterend:end_lotus_trapdoor",
+			"required":false
+		},
+		{
+			"id": "betterend:end_lotus_door",
+			"required":false
+		},
+		{
 			"id": "betterend:lacugrove_bar_stool",
 			"required":false
 		},
@@ -182,6 +206,14 @@
 		},
 		{
 			"id": "betterend:lacugrove_taburet",
+			"required":false
+		},
+		{
+			"id": "betterend:lacugrove_trapdoor",
+			"required":false
+		},
+		{
+			"id": "betterend:lacugrove_door",
 			"required":false
 		},
 		{
@@ -352,5 +384,33 @@
 			"id": "betterend:lucernia_taburet",
 			"required":false
 		},
+		{
+			"id": "betterend:lucernia_trapdoor",
+			"required":false
+		},
+		{
+			"id": "betterend:lucernia_door",
+			"required":false
+		},
+		{
+			"id": "betterend:thallasium_trapdoor",
+			"required":false
+		},
+		{
+			"id": "betterend:thallasium_door",
+			"required":false
+		},
+		{
+			"id": "betterend:thallasium_bars",
+			"required":false
+		},
+		{
+			"id": "betterend:terminite_trapdoor",
+			"required":false
+		},
+		{
+			"id": "betterend:terminite_bars",
+			"required":false
+		}
   ]
 }
