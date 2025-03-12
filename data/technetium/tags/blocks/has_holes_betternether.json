@@ -1,28 +1,60 @@
 {
   "values":[
 		{
-			"id": "#another_furniture:benches",
+			"id": "betternether:anchor_tree_bar_stool",
 			"required":false
 		},
-	  	{
-			"id": "#another_furniture:chairs",
+		{
+			"id": "betternether:anchor_tree_chair",
 			"required":false
 		},
-	  	{
-			"id": "#another_furniture:curtains",
+		{
+			"id": "betternether:anchor_tree_chest",
 			"required":false
 		},
-	  	{
-			"id": "#another_furniture:lamps",
+		{
+			"id": "betternether:anchor_tree_fence",
 			"required":false
 		},
-	  	{
-			"id": "#another_furniture:sofas",
+		{
+			"id": "betternether:anchor_tree_gate",
 			"required":false
 		},
-	  	{
-			"id": "#another_furniture:tall_stools",
+		{
+			"id": "betternether:anchor_tree_leaves",
 			"required":false
-		}
+		},
+		{
+			"id": "betternether:anchor_tree_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_reed_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_reed_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_reed_chest",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_reed_fence",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_reed_gate",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_reed_leaves",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_reed_taburet",
+			"required":false
+		},
   ]
 }
