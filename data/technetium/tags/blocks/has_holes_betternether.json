@@ -459,6 +459,18 @@
 		{
 			"id": "betternether:barrel_cactus",
 			"required":false
+		},
+		{
+			"id": "betternether:mushroom_fir_door",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_trapdoor",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_door",
+			"required":false
 		}
   ]
 }
