@@ -1,11 +1,27 @@
 {
   "values":[
 		{
-			"id": "squashed:crammed_redstone_block",
+			"id": "#another_furniture:benches",
 			"required":false
 		},
-		{
-			"id": "modern_industrialization:sodium_battery",
+	  	{
+			"id": "#another_furniture:chairs",
+			"required":false
+		},
+	  	{
+			"id": "#another_furniture:curtains",
+			"required":false
+		},
+	  	{
+			"id": "#another_furniture:lamps",
+			"required":false
+		},
+	  	{
+			"id": "#another_furniture:sofas",
+			"required":false
+		},
+	  	{
+			"id": "#another_furniture:tall_stools",
 			"required":false
 		}
   ]
