@@ -57,463 +57,47 @@
 			"required":false
 		},
 		{
-			"id": "betternether:anchor_tree_bar_stool",
+			"id": "betterend:neon_cactus",
 			"required":false
 		},
 		{
-			"id": "betternether:anchor_tree_chair",
+			"id": "betterend:thallasium_anvil",
 			"required":false
 		},
 		{
-			"id": "betternether:anchor_tree_chest",
+			"id": "betterend:terminite_anvil",
 			"required":false
 		},
 		{
-			"id": "betternether:anchor_tree_fence",
+			"id": "betterend:aeternium_anvil",
 			"required":false
 		},
 		{
-			"id": "betternether:anchor_tree_gate",
+			"id": "betterend:anchor_tree_bar_stool",
 			"required":false
 		},
 		{
-			"id": "betternether:anchor_tree_leaves",
+			"id": "betterend:anchor_tree_chair",
 			"required":false
 		},
 		{
-			"id": "betternether:anchor_tree_taburet",
+			"id": "betterend:anchor_tree_chest",
 			"required":false
 		},
 		{
-			"id": "betternether:nether_reed_bar_stool",
+			"id": "betterend:anchor_tree_fence",
 			"required":false
 		},
 		{
-			"id": "betternether:nether_reed_chair",
+			"id": "betterend:anchor_tree_gate",
 			"required":false
 		},
 		{
-			"id": "betternether:nether_reed_chest",
+			"id": "betterend:anchor_tree_leaves",
 			"required":false
 		},
 		{
-			"id": "betternether:nether_reed_fence",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_reed_gate",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_reed_leaves",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_reed_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:stalagnate_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:stalagnate_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:stalagnate_chest",
-			"required":false
-		},
-		{
-			"id": "betternether:stalagnate_fence",
-			"required":false
-		},
-		{
-			"id": "betternether:stalagnate_gate",
-			"required":false
-		},
-		{
-			"id": "betternether:stalagnate_leaves",
-			"required":false
-		},
-		{
-			"id": "betternether:stalagnate_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:willow_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:willow_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:willow_chest",
-			"required":false
-		},
-		{
-			"id": "betternether:willow_fence",
-			"required":false
-		},
-		{
-			"id": "betternether:willow_gate",
-			"required":false
-		},
-		{
-			"id": "betternether:willow_leaves",
-			"required":false
-		},
-		{
-			"id": "betternether:willow_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:wart_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:wart_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:wart_chest",
-			"required":false
-		},
-		{
-			"id": "betternether:wart_fence",
-			"required":false
-		},
-		{
-			"id": "betternether:wart_gate",
-			"required":false
-		},
-		{
-			"id": "betternether:wart_leaves",
-			"required":false
-		},
-		{
-			"id": "betternether:wart_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:rubeus_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:rubeus_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:rubeus_chest",
-			"required":false
-		},
-		{
-			"id": "betternether:rubeus_fence",
-			"required":false
-		},
-		{
-			"id": "betternether:rubeus_gate",
-			"required":false
-		},
-		{
-			"id": "betternether:rubeus_leaves",
-			"required":false
-		},
-		{
-			"id": "betternether:rubeus_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:rubeus_cone",
-			"required":false
-		},
-		{
-			"id": "betternether:mushroom_fir_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:mushroom_fir_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:mushroom_fir_chest",
-			"required":false
-		},
-		{
-			"id": "betternether:mushroom_fir_fence",
-			"required":false
-		},
-		{
-			"id": "betternether:mushroom_fir_gate",
-			"required":false
-		},
-		{
-			"id": "betternether:mushroom_fir_leaves",
-			"required":false
-		},
-		{
-			"id": "betternether:mushroom_fir_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_mushroom_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_mushroom_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_mushroom_chest",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_mushroom_fence",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_mushroom_gate",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_mushroom_leaves",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_mushroom_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_chest",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_fence",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_gate",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_leaves",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_chest",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_fence",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_gate",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_leaves",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_sakura_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:cincinnasite_anvil",
-			"required":false
-		},
-		{
-			"id": "betternether:taburet_cincinnasite",
-			"required":false
-		},
-		{
-			"id": "betternether:chair_cincinnasite",
-			"required":false
-		},
-		{
-			"id": "betternether:bar_stool_cincinnasite",
-			"required":false
-		},
-		{
-			"id": "betternether:cincinnasite_wall",
-			"required":false
-		},
-		{
-			"id": "betternether:cincinnasite_pedestal",
-			"required":false
-		},
-		{
-			"id": "betternether:bone_wall",
-			"required":false
-		},
-		{
-			"id": "betternether:pig_statue_respawner",
-			"required":false
-		},
-		{
-			"id": "betternether:pig_statue_respawner",
-			"required":false
-		},
-		{
-			"id": "betternether:acacia_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:acacia_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:acacia_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:warped_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:warped_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:warped_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:crimson_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:crimson_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:crimson_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:oak_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:oak_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:oak_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:spruce_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:spruce_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:spruce_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:birch_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:birch_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:birch_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:jungle_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:jungle_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:jungle_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:dark_oak_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:dark_oak_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:dark_oak_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:cherry_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:cherry_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:cherry_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:mangrove_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:mangrove_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:mangrove_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:bamboo_bar_stool",
-			"required":false
-		},
-		{
-			"id": "betternether:bamboo_taburet",
-			"required":false
-		},
-		{
-			"id": "betternether:bamboo_chair",
-			"required":false
-		},
-		{
-			"id": "betternether:nether_cactus",
-			"required":false
-		},
-		{
-			"id": "betternether:barrel_cactus",
+			"id": "betterend:anchor_tree_taburet",
 			"required":false
 		}
   ]
