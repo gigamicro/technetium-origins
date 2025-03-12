@@ -228,5 +228,109 @@
 			"id": "betternether:nether_mushroom_taburet",
 			"required":false
 		},
+		{
+			"id": "betternether:nether_sakura_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_chest",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_fence",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_gate",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_leaves",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_chest",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_fence",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_gate",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_leaves",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_sakura_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:cincinnasite_anvil",
+			"required":false
+		},
+		{
+			"id": "betternether:taburet_cincinnasite",
+			"required":false
+		},
+		{
+			"id": "betternether:chair_cincinnasite",
+			"required":false
+		},
+		{
+			"id": "betternether:bar_stool_cincinnasite",
+			"required":false
+		},
+		{
+			"id": "betternether:cincinnasite_wall",
+			"required":false
+		},
+		{
+			"id": "betternether:cincinnasite_pedestal",
+			"required":false
+		},
+		{
+			"id": "betternether:bone_wall",
+			"required":false
+		},
+		{
+			"id": "betternether:pig_statue_respawner",
+			"required":false
+		},
+		{
+			"id": "betternether:pig_statue_respawner",
+			"required":false
+		},
+		{
+			"id": "betternether:acacia_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:acacia_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:acacia_chair",
+			"required":false
+		},
   ]
 }
