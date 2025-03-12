@@ -325,12 +325,140 @@
 			"required":false
 		},
 		{
-			"id": "betternether:acacia_bar_stool",
+			"id": "betternether:acacia_taburet",
 			"required":false
 		},
 		{
 			"id": "betternether:acacia_chair",
 			"required":false
 		},
+		{
+			"id": "betternether:warped_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:warped_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:warped_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:crimson_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:crimson_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:crimson_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:oak_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:oak_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:oak_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:spruce_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:spruce_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:spruce_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:birch_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:birch_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:birch_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:jungle_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:jungle_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:jungle_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:dark_oak_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:dark_oak_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:dark_oak_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:cherry_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:cherry_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:cherry_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:mangrove_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:mangrove_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:mangrove_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:bamboo_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:bamboo_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:bamboo_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_cactus",
+			"required":false
+		},
+		{
+			"id": "betternether:barrel_cactus",
+			"required":false
+		}
   ]
 }
