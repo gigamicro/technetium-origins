@@ -73,32 +73,284 @@
 			"required":false
 		},
 		{
-			"id": "betterend:anchor_tree_bar_stool",
+			"id": "betterend:mossy_glowshroom_bar_stool",
 			"required":false
 		},
 		{
-			"id": "betterend:anchor_tree_chair",
+			"id": "betterend:mossy_glowshroom_chair",
 			"required":false
 		},
 		{
-			"id": "betterend:anchor_tree_chest",
+			"id": "betterend:mossy_glowshroom_chest",
 			"required":false
 		},
 		{
-			"id": "betterend:anchor_tree_fence",
+			"id": "betterend:mossy_glowshroom_fence",
 			"required":false
 		},
 		{
-			"id": "betterend:anchor_tree_gate",
+			"id": "betterend:mossy_glowshroom_gate",
 			"required":false
 		},
 		{
-			"id": "betterend:anchor_tree_leaves",
+			"id": "betterend:mossy_glowshroom_leaves",
 			"required":false
 		},
 		{
-			"id": "betterend:anchor_tree_taburet",
+			"id": "betterend:mossy_glowshroom_taburet",
 			"required":false
-		}
+		},
+		{
+			"id": "betterend:pythadendron_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betterend:pythadendron_chair",
+			"required":false
+		},
+		{
+			"id": "betterend:pythadendron_chest",
+			"required":false
+		},
+		{
+			"id": "betterend:pythadendron_fence",
+			"required":false
+		},
+		{
+			"id": "betterend:pythadendron_gate",
+			"required":false
+		},
+		{
+			"id": "betterend:pythadendron_leaves",
+			"required":false
+		},
+		{
+			"id": "betterend:pythadendron_taburet",
+			"required":false
+		},
+		{
+			"id": "betterend:end_lotus_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betterend:end_lotus_chair",
+			"required":false
+		},
+		{
+			"id": "betterend:end_lotus_chest",
+			"required":false
+		},
+		{
+			"id": "betterend:end_lotus_fence",
+			"required":false
+		},
+		{
+			"id": "betterend:end_lotus_gate",
+			"required":false
+		},
+		{
+			"id": "betterend:end_lotus_leaves",
+			"required":false
+		},
+		{
+			"id": "betterend:end_lotus_taburet",
+			"required":false
+		},
+		{
+			"id": "betterend:lacugrove_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betterend:lacugrove_chair",
+			"required":false
+		},
+		{
+			"id": "betterend:lacugrove_chest",
+			"required":false
+		},
+		{
+			"id": "betterend:lacugrove_fence",
+			"required":false
+		},
+		{
+			"id": "betterend:lacugrove_gate",
+			"required":false
+		},
+		{
+			"id": "betterend:lacugrove_leaves",
+			"required":false
+		},
+		{
+			"id": "betterend:lacugrove_taburet",
+			"required":false
+		},
+		{
+			"id": "betterend:dragon_tree_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betterend:dragon_tree_chair",
+			"required":false
+		},
+		{
+			"id": "betterend:dragon_tree_chest",
+			"required":false
+		},
+		{
+			"id": "betterend:dragon_tree_fence",
+			"required":false
+		},
+		{
+			"id": "betterend:dragon_tree_gate",
+			"required":false
+		},
+		{
+			"id": "betterend:dragon_tree_leaves",
+			"required":false
+		},
+		{
+			"id": "betterend:dragon_tree_taburet",
+			"required":false
+		},
+		{
+			"id": "betterend:tenanea_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betterend:tenanea_chair",
+			"required":false
+		},
+		{
+			"id": "betterend:tenanea_chest",
+			"required":false
+		},
+		{
+			"id": "betterend:tenanea_fence",
+			"required":false
+		},
+		{
+			"id": "betterend:tenanea_gate",
+			"required":false
+		},
+		{
+			"id": "betterend:tenanea_leaves",
+			"required":false
+		},
+		{
+			"id": "betterend:tenanea_taburet",
+			"required":false
+		},
+		{
+			"id": "betterend:helix_tree_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betterend:helix_tree_chair",
+			"required":false
+		},
+		{
+			"id": "betterend:helix_tree_chest",
+			"required":false
+		},
+		{
+			"id": "betterend:helix_tree_fence",
+			"required":false
+		},
+		{
+			"id": "betterend:helix_tree_gate",
+			"required":false
+		},
+		{
+			"id": "betterend:helix_tree_leaves",
+			"required":false
+		},
+		{
+			"id": "betterend:helix_tree_taburet",
+			"required":false
+		},
+		{
+			"id": "betterend:umbrella_tree_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betterend:umbrella_tree_chair",
+			"required":false
+		},
+		{
+			"id": "betterend:umbrella_tree_chest",
+			"required":false
+		},
+		{
+			"id": "betterend:umbrella_tree_fence",
+			"required":false
+		},
+		{
+			"id": "betterend:umbrella_tree_gate",
+			"required":false
+		},
+		{
+			"id": "betterend:umbrella_tree_leaves",
+			"required":false
+		},
+		{
+			"id": "betterend:umbrella_tree_taburet",
+			"required":false
+		},
+		{
+			"id": "betterend:jellyshroom_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betterend:jellyshroom_chair",
+			"required":false
+		},
+		{
+			"id": "betterend:jellyshroom_chest",
+			"required":false
+		},
+		{
+			"id": "betterend:jellyshroom_fence",
+			"required":false
+		},
+		{
+			"id": "betterend:jellyshroom_gate",
+			"required":false
+		},
+		{
+			"id": "betterend:jellyshroom_leaves",
+			"required":false
+		},
+		{
+			"id": "betterend:jellyshroom_taburet",
+			"required":false
+		},
+		{
+			"id": "betterend:lucernia_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betterend:lucernia_chair",
+			"required":false
+		},
+		{
+			"id": "betterend:lucernia_chest",
+			"required":false
+		},
+		{
+			"id": "betterend:lucernia_fence",
+			"required":false
+		},
+		{
+			"id": "betterend:lucernia_gate",
+			"required":false
+		},
+		{
+			"id": "betterend:lucernia_leaves",
+			"required":false
+		},
+		{
+			"id": "betterend:lucernia_taburet",
+			"required":false
+		},
   ]
 }
