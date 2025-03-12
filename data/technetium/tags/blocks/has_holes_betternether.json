@@ -113,7 +113,7 @@
 			"required":false
 		},
 		{
-			"id": "betternether:wart_stool",
+			"id": "betternether:wart_bar_stool",
 			"required":false
 		},
 		{
@@ -138,6 +138,94 @@
 		},
 		{
 			"id": "betternether:wart_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:rubeus_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:rubeus_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:rubeus_chest",
+			"required":false
+		},
+		{
+			"id": "betternether:rubeus_fence",
+			"required":false
+		},
+		{
+			"id": "betternether:rubeus_gate",
+			"required":false
+		},
+		{
+			"id": "betternether:rubeus_leaves",
+			"required":false
+		},
+		{
+			"id": "betternether:rubeus_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:rubeus_cone",
+			"required":false
+		},
+		{
+			"id": "betternether:mushroom_fir_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:mushroom_fir_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:mushroom_fir_chest",
+			"required":false
+		},
+		{
+			"id": "betternether:mushroom_fir_fence",
+			"required":false
+		},
+		{
+			"id": "betternether:mushroom_fir_gate",
+			"required":false
+		},
+		{
+			"id": "betternether:mushroom_fir_leaves",
+			"required":false
+		},
+		{
+			"id": "betternether:mushroom_fir_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_mushroom_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_mushroom_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_mushroom_chest",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_mushroom_fence",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_mushroom_gate",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_mushroom_leaves",
+			"required":false
+		},
+		{
+			"id": "betternether:nether_mushroom_taburet",
 			"required":false
 		},
   ]
