@@ -56,5 +56,89 @@
 			"id": "betternether:nether_reed_taburet",
 			"required":false
 		},
+		{
+			"id": "betternether:stalagnate_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:stalagnate_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:stalagnate_chest",
+			"required":false
+		},
+		{
+			"id": "betternether:stalagnate_fence",
+			"required":false
+		},
+		{
+			"id": "betternether:stalagnate_gate",
+			"required":false
+		},
+		{
+			"id": "betternether:stalagnate_leaves",
+			"required":false
+		},
+		{
+			"id": "betternether:stalagnate_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:willow_bar_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:willow_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:willow_chest",
+			"required":false
+		},
+		{
+			"id": "betternether:willow_fence",
+			"required":false
+		},
+		{
+			"id": "betternether:willow_gate",
+			"required":false
+		},
+		{
+			"id": "betternether:willow_leaves",
+			"required":false
+		},
+		{
+			"id": "betternether:willow_taburet",
+			"required":false
+		},
+		{
+			"id": "betternether:wart_stool",
+			"required":false
+		},
+		{
+			"id": "betternether:wart_chair",
+			"required":false
+		},
+		{
+			"id": "betternether:wart_chest",
+			"required":false
+		},
+		{
+			"id": "betternether:wart_fence",
+			"required":false
+		},
+		{
+			"id": "betternether:wart_gate",
+			"required":false
+		},
+		{
+			"id": "betternether:wart_leaves",
+			"required":false
+		},
+		{
+			"id": "betternether:wart_taburet",
+			"required":false
+		},
   ]
 }
