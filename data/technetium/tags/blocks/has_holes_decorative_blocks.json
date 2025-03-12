@@ -1,1 +1,8 @@
-
+{
+  "values":[
+		{
+			"id": "#decorative_blocks:seats",
+			"required":false
+    }
+  ]
+}
