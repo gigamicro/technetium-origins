@@ -32,7 +32,7 @@
 	"title":"Fire Box",
 	"container_type":"hopper",
 	"drop_on_death":true,
-	"key":"key.origins.secondary_active"
+	"key":"key.origins.primary_active"
 },
 "box_smelt":{
 	"type":"origins:action_over_time",
