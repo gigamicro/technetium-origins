@@ -1,0 +1,11 @@
+{
+    "name": "scug immunity",
+    "hidden": true,
+    "type": "origins:modify_status_effect_duration",
+    "status_effect": "minecraft:poison",
+    "modifier": {
+        "operation": "set_total",
+        "value": 0,
+        "name": "scug_immune"
+    }
+}

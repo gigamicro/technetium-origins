@@ -1,0 +1,97 @@
+{
+    "name": "Spears",
+    "description": "You can throw metal rods to defend yourself and hunt.",
+    "hidden": true,
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "modern_industrialization:titanium_rod"
+            }
+        }
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:fire_projectile",
+                "entity_type": "minecraft:arrow",
+                "count": 1,
+                "speed": 1.5,
+                "divergence": 1,
+                "projectile_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "scale multiply 1.5 @s"
+                        },
+                        {
+                            "type": "origins:delay",
+                            "action": {
+                                "type": "origins:if_else",
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:or",
+                                            "conditions": [
+                                                {
+                                                    "type": "origins:block_collision",
+                                                    "block_condition": {
+                                                        "type": "origins:movement_blocking"
+                                                    },
+                                                    "offset_x": 0.1,
+                                                    "offset_y": 0.1,
+                                                    "offset_z": 0.1
+                                                },
+                                                {
+                                                    "type": "origins:block_collision",
+                                                    "block_condition": {
+                                                        "type": "origins:movement_blocking"
+                                                    },
+                                                    "offset_x": -0.1,
+                                                    "offset_y": -0.5,
+                                                    "offset_z": -0.1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "if_action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "summon item ~ ~ ~ {Item:{id:\"modern_industrialization:titanium_rod\",Count:1b}}"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "kill @s"
+                                        }
+                                    ]
+                                }
+                            },
+                            "ticks": 80
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "mainhand",
+                "action": {
+                    "type": "origins:consume",
+                    "amount": 1
+                }
+            }
+        ]
+    },
+    "cooldown": 20,
+    "key": {
+        "key": "key.use"
+    }
+}

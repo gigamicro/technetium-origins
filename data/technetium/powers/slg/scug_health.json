@@ -1,0 +1,11 @@
+{
+    "name": "scug health",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:max_health",
+        "operation": "multiply_base",
+        "value": 0.8,
+        "name": "scug"
+    },
+    "update_health": true
+}

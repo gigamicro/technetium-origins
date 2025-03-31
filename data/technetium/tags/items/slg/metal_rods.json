@@ -1,0 +1,22 @@
+{
+    "values": [
+        "ad_astra:iron_rod",
+        "ad_astra:steel_rod",
+        "createaddition:copper_rod",
+        "createaddition:iron_rod",
+        "createaddition:gold_rod",
+        "createaddition:electrum_rod",
+        "createaddition:brass_rod",
+        "modern_industrialization:gold_rod",
+        "modern_industrialization:iron_rod",
+        "modern_industrialization:copper_rod",
+        "modern_industrialization:bronze_rod",
+        "modern_industrialization:tin_rod",
+        "modern_industrialization:steel_rod",
+        "modern_industrialization:aluminum_rod",
+        "modern_industrialization:invar_rod",
+        "modern_industrialization:titanium_rod",
+        "modern_industrialization:stainless_steel_rod",
+        "modern_industrialization:tungsten_rod"
+    ]
+}

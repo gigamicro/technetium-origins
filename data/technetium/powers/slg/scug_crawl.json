@@ -1,0 +1,26 @@
+{
+    "name": "scug crawl",
+    "hidden": true,
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:hitbox_height 0.5 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:eye_height 0.5 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:step_height 2 @s"
+            }
+        ]
+    }
+}

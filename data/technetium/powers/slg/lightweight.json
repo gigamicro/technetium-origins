@@ -1,0 +1,14 @@
+{
+    "name": "Lightweight",
+    "hidden": true,
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "fall"
+    },
+    "modifier": {
+        "operation": "add_base_late",
+        "value": -5,
+        "name": "lightweight"
+    }
+}

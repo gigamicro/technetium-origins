@@ -1,0 +1,12 @@
+{
+    "name": "Scug Agility",
+    "description": "You jump a bit higher and run a bit faster.",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_total",
+        "value": 1.125,
+        "name": "scug_agility"
+    },
+    "update_health": false
+}

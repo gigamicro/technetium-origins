@@ -1,0 +1,25 @@
+{
+    "name": "pipe grounded",
+    "hidden": true,
+    "condition": {
+        "type": "origins:in_block",
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:block",
+                    "block": "create:fluid_pipe"
+                },
+                {
+                    "type": "origins:block",
+                    "block": "create:glass_fluid_pipe"
+                },
+                {
+                    "type": "origins:block",
+                    "block": "create:encased_fluid_pipe"
+                }
+            ]
+        }
+    },
+    "type": "origins:grounded"
+}

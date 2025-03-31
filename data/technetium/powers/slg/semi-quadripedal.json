@@ -1,0 +1,19 @@
+{
+    "name": "Semi-quadripedal",
+    "description": "You sneak faster, and are shorter and can step up blocks while sneaking. You get a burst of speed when you stop sneaking.",
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 6,
+    "tick_rate": 5,
+    "effect": {
+        "effect": "minecraft:speed",
+        "duration": 5,
+        "amplifier": 9,
+        "show_particles": false,
+        "show_icon": false
+    }
+}

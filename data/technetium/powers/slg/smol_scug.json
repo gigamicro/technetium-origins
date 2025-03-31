@@ -1,0 +1,69 @@
+{
+    "name": "Smol Scug",
+    "description": "You are 1 block tall, have 8 hearts, and take less fall damage.",
+    "type": "origins:action_on_callback",
+    "execute_chosen_when_orb": true,
+    "entity_action_gained": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale divide 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply pehkui:jump_height 1.25 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply pehkui:reach 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply pehkui:motion 2 @s"
+            }
+        ]
+    },
+    "entity_action_removed": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale divide pehkui:jump_height 1.25 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale divide pehkui:reach 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale divide pehkui:motion 2 @s"
+            }
+        ]
+    },
+    "entity_action_respawned": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale divide 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply pehkui:jump_height 1.25 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply pehkui:reach 2 @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale multiply pehkui:motion 2 @s"
+            }
+        ]
+    }
+}
