@@ -1,6 +1,6 @@
 {"values":[
 {"id":"modern_industrialization:cadmium_battery","required":false},
-{"id":"modern_industrialization:plutonium_battery","required":false}
+{"id":"modern_industrialization:plutonium_battery","required":false},
 {"id":"modern_industrialization:sodium_battery","required":false},
 {"id":"squashed:crammed_redstone_block","required":false},
 {"id":"squashed:dense_redstone_block","required":false},
