@@ -1,6 +1,4 @@
-{
-    "values": [
-        "modern_industrialization:steel_rod_magnetic",
-        "modern_industrialization:stainless_steel_rod_magnetic"
-    ]
-}
+{"values":[
+{"id":"modern_industrialization:steel_rod_magnetic","required":false},
+{"id":"modern_industrialization:stainless_steel_rod_magnetic","required":false}
+]}

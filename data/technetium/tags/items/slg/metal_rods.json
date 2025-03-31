@@ -1,22 +1,20 @@
-{
-    "values": [
-        "ad_astra:iron_rod",
-        "ad_astra:steel_rod",
-        "createaddition:copper_rod",
-        "createaddition:iron_rod",
-        "createaddition:gold_rod",
-        "createaddition:electrum_rod",
-        "createaddition:brass_rod",
-        "modern_industrialization:gold_rod",
-        "modern_industrialization:iron_rod",
-        "modern_industrialization:copper_rod",
-        "modern_industrialization:bronze_rod",
-        "modern_industrialization:tin_rod",
-        "modern_industrialization:steel_rod",
-        "modern_industrialization:aluminum_rod",
-        "modern_industrialization:invar_rod",
-        "modern_industrialization:titanium_rod",
-        "modern_industrialization:stainless_steel_rod",
-        "modern_industrialization:tungsten_rod"
-    ]
-}
+{"values":[
+{"id":"ad_astra:iron_rod","required":false},
+{"id":"ad_astra:steel_rod","required":false},
+{"id":"createaddition:copper_rod","required":false},
+{"id":"createaddition:iron_rod","required":false},
+{"id":"createaddition:gold_rod","required":false},
+{"id":"createaddition:electrum_rod","required":false},
+{"id":"createaddition:brass_rod","required":false},
+{"id":"modern_industrialization:gold_rod","required":false},
+{"id":"modern_industrialization:iron_rod","required":false},
+{"id":"modern_industrialization:copper_rod","required":false},
+{"id":"modern_industrialization:bronze_rod","required":false},
+{"id":"modern_industrialization:tin_rod","required":false},
+{"id":"modern_industrialization:steel_rod","required":false},
+{"id":"modern_industrialization:aluminum_rod","required":false},
+{"id":"modern_industrialization:invar_rod","required":false},
+{"id":"modern_industrialization:titanium_rod","required":false},
+{"id":"modern_industrialization:stainless_steel_rod","required":false},
+{"id":"modern_industrialization:tungsten_rod","required":false}
+]}
