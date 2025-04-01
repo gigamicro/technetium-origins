@@ -1,6 +1,5 @@
 {
     "name": "scug not crawl",
-    "hidden": true,
     "condition": {
         "inverted": true,
         "type": "origins:sneaking"

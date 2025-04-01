@@ -1,7 +1,6 @@
 {
     "name": "Spears",
-    "description": "You can throw metal rods to defend yourself and hunt.",
-    "hidden": true,
+    "description": "You can throw arrows to defend yourself and hunt.",
     "condition": {
         "type": "origins:equipped_item",
         "equipment_slot": "mainhand",

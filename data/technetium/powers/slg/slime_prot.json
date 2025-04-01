@@ -1,6 +1,6 @@
 {
-    "name": "slime prot",
-    "hidden": true,
+    "name": "Slimy Protection",
+    "description": "You are immune to poison.",
     "type": "origins:modify_damage_taken",
     "bientity_condition": {
         "type": "origins:actor_condition",

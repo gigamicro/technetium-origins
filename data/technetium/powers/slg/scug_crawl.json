@@ -1,6 +1,5 @@
 {
     "name": "scug crawl",
-    "hidden": true,
     "condition": {
         "type": "origins:sneaking"
     },

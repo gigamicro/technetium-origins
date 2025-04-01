@@ -1,6 +1,6 @@
 {
-    "name": "Slimy",
-    "description": "Slimes are friendly towards you, and you are immune to poison.",
+    "name": "Slimy Affinity",
+    "description": "Slimes are friendly towards you.",
     "type": "apugli:mobs_ignore",
     "mob_condition": {
         "type": "origins:entity_type",
