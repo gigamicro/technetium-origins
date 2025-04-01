@@ -3,21 +3,8 @@
     "description": "You can crawl through pipes to reach new areas or evade predators. [you can phase through create pipes]",
     "type": "origins:phasing",
     "block_condition": {
-        "type": "origins:or",
-        "conditions": [
-            {
-                "type": "origins:block",
-                "block": "create:fluid_pipe"
-            },
-            {
-                "type": "origins:block",
-                "block": "create:glass_fluid_pipe"
-            },
-            {
-                "type": "origins:block",
-                "block": "create:encased_fluid_pipe"
-            }
-        ]
+        "type": "origins:in_tag",
+        "tag": "technetium:slg/pipes"
     },
     "render_type": "none",
     "view_distance": 10,
