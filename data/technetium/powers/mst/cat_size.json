@@ -19,6 +19,10 @@
 			},
 			{
 				"type": "origins:execute_command",
+				"command": "scale multiply pehkui:reach 2"
+			},
+			{
+				"type": "origins:execute_command",
 				"command": "scale multiply pehkui:step_height 1.67"
 			}
 		]
@@ -40,6 +44,10 @@
 			},
 			{
 				"type": "origins:execute_command",
+				"command": "scale multiply pehkui:reach 2"
+			},
+			{
+				"type": "origins:execute_command",
 				"command": "scale multiply pehkui:step_height 1.67"
 			}
 		]
@@ -54,6 +62,10 @@
 			{
 				"type": "origins:execute_command",
 				"command": "scale divide pehkui:motion 2"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "scale divide pehkui:reach 2"
 			},
 			{
 				"type": "origins:execute_command",
