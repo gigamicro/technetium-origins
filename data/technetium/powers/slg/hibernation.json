@@ -1,0 +1,12 @@
+{
+    "name": "Hibernation",
+    "description": "You need to be full enough to sleep.",
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": "<",
+        "compare_to": 16
+    },
+    "type": "origins:prevent_sleep",
+    "message": "You are too hungry to hibernate.",
+    "set_spawn_point": false
+}

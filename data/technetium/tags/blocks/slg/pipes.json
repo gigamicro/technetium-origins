@@ -1,0 +1,6 @@
+{"values":[
+"minecraft:iron_bars",
+{"id":"create:fluid_pipe","required":false},
+{"id":"create:glass_fluid_pipe","required":false},
+{"id":"create:encased_fluid_pipe","required":false}
+]}

@@ -1,0 +1,22 @@
+{
+    "name": "Dis-ascension",
+    "description": "Falling into the void returns you to spawn. (0,75,0)",
+    "type": "origins:action_when_damage_taken",
+    "damage_condition": {
+        "type": "origins:out_of_world"
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:set_fall_distance",
+                "fall_distance": 0
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "execute in minecraft:overworld run tp @s 0 75 0"
+            }
+        ]
+    },
+    "cooldown": 1
+}

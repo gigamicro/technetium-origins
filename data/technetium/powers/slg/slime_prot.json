@@ -1,0 +1,17 @@
+{
+    "name": "Slimy Protection",
+    "description": "You are immune to poison.",
+    "type": "origins:modify_damage_taken",
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:slime"
+        }
+    },
+    "modifier": {
+        "operation": "set_total",
+        "value": 0,
+        "name": "slime_prot"
+    }
+}

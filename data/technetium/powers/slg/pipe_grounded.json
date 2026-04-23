@@ -1,0 +1,11 @@
+{
+    "name": "pipe grounded",
+    "condition": {
+        "type": "origins:in_block",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "technetium:slg/pipes"
+        }
+    },
+    "type": "origins:grounded"
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Leap",
+    "description": "You can jump further. (boosts you in the direction you're looking) [origins primary key]",
+    "condition": {
+        "type": "origins:on_block"
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "x": 0,
+        "y": 0,
+        "z": 1,
+        "space": "local",
+        "client": true,
+        "server": true
+    },
+    "cooldown": 50,
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}
